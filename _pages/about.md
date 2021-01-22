@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m currently a second year Ph.D. student at the [Clark University](https://www.clarku.edu/) in [DEPARTMENT OF Economics](https://www.clarku.edu/departments/economics/), advised by [Prof. Junfu Zhang](https://wordpress.clarku.edu/juzhang/).
+I’m currently a second year Ph.D. student at the [Clark University](https://www.clarku.edu/) in [Department of Economics](https://www.clarku.edu/departments/economics/), advised by [Prof. Junfu Zhang](https://wordpress.clarku.edu/juzhang/).
 
 
 I love my cat - “panda”.
