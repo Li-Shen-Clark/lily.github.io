@@ -1,15 +1,12 @@
 ---
-title: "Paper Title Number 2"
-collection: publications
+title: "The Effect of Time, Price of Stock Research and Development, and Number of Bugs on Net Revenue for Intel Corporation"
+collection: publication
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
+excerpt: 'Intel Corporation studied the effect of bugs in the revenue of the company. In this paper, we look at the factors affecting the revenue of Intel Corporation with respect to how bugs affect the revenue. By doing research on the development and number of Intel employees, we examined the effect it has on stock price, and how bugs affect this in the corporation.'
+date: 2019-1-01
 venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+paperurl: ''
+citation: 'Ozgur, C., Shen, L., Shen, Y., Chen, H., & Bridwell, A. (2019). The Effect of Time, Price of Stock Research and Development, and Number of Bugs on Net Revenue for Intel Corporation. Engineering and Technology Quarterly Reviews, 2(1).'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
-
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+In this paper, we look at the factors affecting the revenue of Intel Corporation with respect to how bugs affect the revenue. By doing research on the development and number of Intel employees, we examined the effect it has on stock price, and how bugs affect this in the corporation.
