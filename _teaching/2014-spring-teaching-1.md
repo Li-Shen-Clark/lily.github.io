@@ -10,14 +10,10 @@ location: "Worcester, MA USA"
 
 
 
-Investment
-======
+[1] Investment
 
-Computational Finance
-======
+[2] Computational Finance
 
-Derivatives
-======
+[3] Derivatives
 
-Investment strategy
-======
+[4] Investment strategy
