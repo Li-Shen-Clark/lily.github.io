@@ -1,5 +1,5 @@
 ---
-title: "ozgur2019effect"
+title: "The Effect of Time, Price of Stock Research and Development, and Number of Bugs on Net Revenue for Intel Corporation"
 collection: publications
 permalink: /publication/ozgur2019effect
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
