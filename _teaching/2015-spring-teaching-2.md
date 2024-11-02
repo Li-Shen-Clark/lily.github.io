@@ -1,20 +1,18 @@
 ---
-title: "Teaching Assistant"
-collection: teaching
-type: "Undergraduate Courses"
-permalink: /teaching/2015-spring-teaching-1
+title: "Undergraduate courses"
+collection: TA
+type: "Undergraduate course"
+permalink: /teaching/2014-spring-teaching-1
 venue: "Clark University, Department of Economics"
-date: 2023-present
+date: 2023-01-01
 location: "Worcester, MA USA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
+
+Macroeconomic Theory
 ======
 
-Heading 2
+Economics and the world Economy
 ======
 
-Heading 3
-======
