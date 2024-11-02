@@ -187,9 +187,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  skills:
-    output: true
-    permalink: /:collection/:path/
 
 
 # Defaults
@@ -212,15 +209,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _skills
-  - scope:
-      path: ""
-      type: skills
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _teaching
   - scope:
       path: ""
