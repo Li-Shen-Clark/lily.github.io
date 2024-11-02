@@ -5,6 +5,6 @@ permalink: /publication/ozgur2019effect
 excerpt: 'Intel Corporation studied the effect of bugs in the revenue of the company. In this paper, we look at the factors affecting the revenue of Intel Corporation with respect to how bugs affect the revenue. By doing research on the development and number of Intel employees, we examined the effect it has on stock price, and how bugs affect this in the corporation.'
 date: Jan 1, 2019
 venue: 'Engineering and Technology Quarterly Reviews'
-paperurl: 'https://www.asianinstituteofresearch.org/'
+paperurl: ''
 ---
 Intel Corporation studied the effect of bugs in the revenue of the company. In this paper, we look at the factors affecting the revenue of Intel Corporation with respect to how bugs affect the revenue. By doing research on the development and number of Intel employees, we examined the effect it has on stock price, and how bugs affect this in the corporation.
