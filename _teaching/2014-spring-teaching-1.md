@@ -8,7 +8,7 @@ date: 2020-01-01
 location: "Worcester, MA USA"
 ---
 
-I serve as a teaching assistant for courses including Investment, Computational Finance, Derivatives, and Investment Strategy, where I support students in understanding complex financial theories and applying them to real-world scenarios. My role involves facilitating discussions, clarifying concepts, and assisting in the practical application of investment and financial strategies.
+As a Teaching Assistant for graduate-level finance courses, I facilitate learning in Investment, Computational Finance, Derivatives, and Investment Strategy. My role involves clarifying complex financial concepts and supporting students in mastering both theoretical and practical aspects of finance.
 
 [1] Investment
 
