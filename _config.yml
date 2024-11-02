@@ -209,6 +209,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _skills
+  - scope:
+      path: ""
+      type: skills
+    values:
+      layout: single
+      author_profile: true
   # _teaching
   - scope:
       path: ""
