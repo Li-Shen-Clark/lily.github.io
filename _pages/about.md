@@ -22,7 +22,6 @@ redirect_from:
 
       <div class="home-actions">
         <a href="{{ '/files/Li_Shen_CV_Economist_2026.pdf' | relative_url }}" class="home-button home-button--primary">Economist CV</a>
-        <a href="{{ '/files/Li_Shen_CV_Consulting_2026.pdf' | relative_url }}" class="home-button home-button--ghost">Consulting CV</a>
         <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Detailed CV</a>
       </div>
 
@@ -51,7 +50,7 @@ redirect_from:
       <div class="home-panel__profile">
         <img src="{{ '/images/p1.jpg' | relative_url }}" alt="Li Shen" class="home-avatar">
         <div>
-          <p class="home-availability">On the 2026 economics job market and open to research and consulting opportunities.</p>
+          <p class="home-availability">On the 2026 economics job market and open to research and policy analysis opportunities.</p>
           <p class="home-rotator-label">Rotating between</p>
           <p class="home-rotator" data-home-rotator data-words="local trade multipliers and labor spillovers|high-speed rail and market integration|causal inference with large administrative and price data">
             local trade multipliers and labor spillovers
@@ -59,18 +58,22 @@ redirect_from:
         </div>
       </div>
 
-      <div class="home-jmp" data-jmp-model aria-label="JMP export shock simulator">
+      <div class="home-jmp" data-jmp-map aria-label="JMP local multiplier map animation">
         <div class="home-jmp__top">
-          <span class="home-jmp__title">JMP Shock Simulator</span>
-          <span class="home-jmp__round" data-jmp-round>Round 1</span>
+          <span class="home-jmp__title">JMP Local Multiplier Map</span>
+          <span class="home-jmp__round" data-jmp-map-focus>Shock: Bohai Rim</span>
         </div>
-        <div class="home-jmp__panel">
-          <div class="home-jmp__pulse" data-jmp-pulse aria-hidden="true"></div>
-          <div class="home-jmp__barfield" data-jmp-bars></div>
+        <div class="home-jmp-map__panel">
+          <img src="{{ '/images/mgdp_map.png' | relative_url }}" alt="Provincial local GDP multiplier map in China" class="home-jmp-map__image">
+          <div class="home-jmp-map__overlay" data-jmp-map-overlay>
+            <span class="home-jmp-map__beam" data-jmp-map-beam aria-hidden="true"></span>
+            <span class="home-jmp-map__pulse" data-jmp-map-pulse aria-hidden="true"></span>
+            <div class="home-jmp-map__nodes" data-jmp-map-nodes aria-hidden="true"></div>
+          </div>
         </div>
         <div class="home-jmp__legend">
-          <span>Multiplier 0.30</span>
-          <span>Multiplier 1.02</span>
+          <span>Map from JMP calibration</span>
+          <span>Multiplier range 0.30-1.02</span>
         </div>
       </div>
 
@@ -259,7 +262,7 @@ redirect_from:
       <p class="home-label">Contact</p>
       <h2>Interested in trade, regional development, or policy-relevant quantitative analysis?</h2>
       <p>
-        I am happy to discuss research collaboration, RA opportunities, policy projects, and consulting work.
+        I am happy to discuss research collaboration, RA opportunities, and policy projects.
         Email is the fastest way to reach me.
       </p>
     </div>

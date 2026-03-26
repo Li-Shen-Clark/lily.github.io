@@ -9,7 +9,7 @@
   var shell = document.querySelector(".home-shell");
   var clockNode = document.querySelector("[data-home-time]");
   var rotatorNode = document.querySelector("[data-home-rotator]");
-  var jmpNode = document.querySelector("[data-jmp-model]");
+  var jmpNode = document.querySelector("[data-jmp-map]");
   var revealNodes = Array.prototype.slice.call(document.querySelectorAll("[data-home-reveal]"));
   var counterNodes = Array.prototype.slice.call(document.querySelectorAll("[data-counter]"));
 
@@ -134,81 +134,80 @@
   }
 
   if (jmpNode) {
-    var jmpBarsNode = jmpNode.querySelector("[data-jmp-bars]");
-    var jmpRoundNode = jmpNode.querySelector("[data-jmp-round]");
-    var jmpPulseNode = jmpNode.querySelector("[data-jmp-pulse]");
-    var provinceCodes = [
-      "BJ", "TJ", "HE", "SX", "NM", "LN", "JL", "HL", "SH", "JS", "ZJ",
-      "AH", "FJ", "JX", "SD", "HA", "HB", "HN", "GD", "GX", "HI", "CQ",
-      "SC", "GZ", "YN", "XZ", "SN", "GS", "QH", "NX", "XJ"
+    var mapNodesWrap = jmpNode.querySelector("[data-jmp-map-nodes]");
+    var mapPulseNode = jmpNode.querySelector("[data-jmp-map-pulse]");
+    var mapBeamNode = jmpNode.querySelector("[data-jmp-map-beam]");
+    var mapFocusNode = jmpNode.querySelector("[data-jmp-map-focus]");
+    var mapHubs = [
+      { name: "Bohai Rim", x: 57, y: 26 },
+      { name: "Northeast", x: 64, y: 18 },
+      { name: "Central Plains", x: 53, y: 45 },
+      { name: "Yangtze Delta", x: 63, y: 56 },
+      { name: "Middle Yangtze", x: 54, y: 54 },
+      { name: "Pearl River Delta", x: 56, y: 77 },
+      { name: "Chengdu-Chongqing", x: 43, y: 56 },
+      { name: "Northwest", x: 33, y: 36 }
     ];
-    var baseMultipliers = provinceCodes.map(function (_, index) {
-      var seeded = (Math.sin((index + 1) * 1.73) + 1) / 2;
-      return 0.30 + (0.72 * seeded);
-    });
-    var barNodes = [];
+    var mapNodeEls = [];
 
-    function circularDistance(a, b, size) {
-      var diff = Math.abs(a - b);
-      return Math.min(diff, size - diff);
+    function distancePercent(a, b) {
+      var dx = a.x - b.x;
+      var dy = a.y - b.y;
+      return Math.sqrt((dx * dx) + (dy * dy));
     }
 
-    if (jmpBarsNode) {
-      provinceCodes.forEach(function (code) {
-        var barNode = document.createElement("article");
-        barNode.className = "home-jmp__bar";
-        barNode.innerHTML = '<span class="home-jmp__bar-fill"></span><span class="home-jmp__abbr">' + code + "</span>";
-        jmpBarsNode.appendChild(barNode);
-        barNodes.push(barNode);
+    if (mapNodesWrap) {
+      mapHubs.forEach(function (hub) {
+        var dot = document.createElement("span");
+        dot.className = "home-jmp-map__node";
+        dot.style.setProperty("--node-x", hub.x.toFixed(2) + "%");
+        dot.style.setProperty("--node-y", hub.y.toFixed(2) + "%");
+        mapNodesWrap.appendChild(dot);
+        mapNodeEls.push(dot);
       });
 
-      function paintJmpShock(step) {
-        var shockIndex = (step * 5) % provinceCodes.length;
-        var round = (step % 6) + 1;
+      function paintMap(step) {
+        var activeIndex = step % mapHubs.length;
+        var active = mapHubs[activeIndex];
+        var beamShift = ((activeIndex / mapHubs.length) * 140) - 110;
 
-        if (jmpRoundNode) {
-          jmpRoundNode.textContent = "Round " + round;
+        if (mapFocusNode) {
+          mapFocusNode.textContent = "Shock: " + active.name;
         }
 
-        if (jmpPulseNode) {
-          var pulsePercent = ((shockIndex / (provinceCodes.length - 1)) * 100) - 50;
-          jmpPulseNode.style.setProperty("--jmp-pulse-x", pulsePercent.toFixed(1) + "%");
+        if (mapPulseNode) {
+          mapPulseNode.style.setProperty("--map-pulse-x", active.x.toFixed(2) + "%");
+          mapPulseNode.style.setProperty("--map-pulse-y", active.y.toFixed(2) + "%");
+          mapPulseNode.style.setProperty("--map-pulse-scale", String(0.84 + (0.12 * Math.sin(step * 0.8))));
+          mapPulseNode.style.setProperty("--map-pulse-alpha", String(0.62 + (0.25 * Math.abs(Math.sin(step * 0.6)))));
         }
 
-        barNodes.forEach(function (node, index) {
-          var distance = circularDistance(index, shockIndex, provinceCodes.length);
-          var spread = Math.max(0, 1 - (distance / 7));
-          var ripple = 0.06 * Math.sin((step * 0.8) + (index * 0.6));
-          var value = clamp(baseMultipliers[index] + (spread * 0.32) + ripple, 0.30, 1.02);
-          var intensity = (value - 0.30) / 0.72;
-          var height = 22 + (intensity * 78);
-          var warmR = Math.round(160 + (intensity * 25));
-          var warmG = Math.round(95 + (intensity * 20));
-          var coolR = Math.round(13 + (intensity * 8));
-          var coolG = Math.round(106 + (intensity * 16));
-          var fillNode = node.querySelector(".home-jmp__bar-fill");
+        if (mapBeamNode) {
+          mapBeamNode.style.setProperty("--map-beam-x", beamShift.toFixed(2) + "%");
+        }
 
-          node.classList.toggle("is-shock", distance === 0);
+        mapNodeEls.forEach(function (dot, index) {
+          var hub = mapHubs[index];
+          var dist = distancePercent(hub, active);
+          var influence = clamp(1 - (dist / 44), 0.14, 1);
+          var pulse = 0.08 * Math.sin((step * 0.7) + (index * 0.95));
+          var alpha = clamp((0.36 + (influence * 0.58)) + pulse, 0.22, 1);
+          var scale = clamp((0.72 + (influence * 0.62)) + pulse, 0.64, 1.34);
 
-          if (!fillNode) {
-            return;
-          }
-
-          fillNode.style.setProperty("--jmp-height", height.toFixed(1) + "%");
-          fillNode.style.setProperty("--jmp-opacity", (0.62 + (intensity * 0.38)).toFixed(2));
-          fillNode.style.setProperty("--jmp-color-top", "rgb(" + warmR + ", " + warmG + ", 26)");
-          fillNode.style.setProperty("--jmp-color-bottom", "rgb(" + coolR + ", " + coolG + ", 97)");
+          dot.classList.toggle("is-active", index === activeIndex);
+          dot.style.setProperty("--node-alpha", alpha.toFixed(2));
+          dot.style.setProperty("--node-scale", scale.toFixed(2));
         });
       }
 
-      paintJmpShock(0);
+      paintMap(0);
 
       if (!reduceMotion) {
-        var shockStep = 0;
+        var mapStep = 0;
         window.setInterval(function () {
-          shockStep += 1;
-          paintJmpShock(shockStep);
-        }, 620);
+          mapStep += 1;
+          paintMap(mapStep);
+        }, 900);
       }
     }
   }

@@ -12,7 +12,6 @@ redirect_from:
 ## Download PDF
 
 - [Economist CV (2026)]({{ '/files/Li_Shen_CV_Economist_2026.pdf' | relative_url }})
-- [Consulting CV (2026)]({{ '/files/Li_Shen_CV_Consulting_2026.pdf' | relative_url }})
 
 ## Contact
 
