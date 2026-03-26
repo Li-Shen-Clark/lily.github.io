@@ -9,9 +9,13 @@
   var shell = document.querySelector(".home-shell");
   var clockNode = document.querySelector("[data-home-time]");
   var rotatorNode = document.querySelector("[data-home-rotator]");
-  var signalNode = document.querySelector("[data-home-signal]");
+  var jmpNode = document.querySelector("[data-jmp-model]");
   var revealNodes = Array.prototype.slice.call(document.querySelectorAll("[data-home-reveal]"));
   var counterNodes = Array.prototype.slice.call(document.querySelectorAll("[data-counter]"));
+
+  function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+  }
 
   function updateClock() {
     if (!clockNode) {
@@ -71,11 +75,12 @@
   function revealNow(node) {
     node.classList.add("is-visible");
     var counters = node.querySelectorAll("[data-counter]");
-
     Array.prototype.forEach.call(counters, animateCounter);
   }
 
   if ("IntersectionObserver" in window && !reduceMotion) {
+    body.classList.add("home-animate");
+
     var revealObserver = new IntersectionObserver(function (entries, observer) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) {
@@ -128,111 +133,83 @@
     }
   }
 
-  if (signalNode) {
-    var bars = [];
-    var signalBarsNode = signalNode.querySelector("[data-home-signal-bars]");
-    var signalLineNode = signalNode.querySelector("[data-home-signal-line]");
-    var signalGlowNode = signalNode.querySelector("[data-home-signal-glow]");
-    var signalSpikesNode = signalNode.querySelector("[data-home-signal-spikes]");
-    var barCount = window.innerWidth < 620 ? 20 : 28;
+  if (jmpNode) {
+    var jmpBarsNode = jmpNode.querySelector("[data-jmp-bars]");
+    var jmpRoundNode = jmpNode.querySelector("[data-jmp-round]");
+    var jmpPulseNode = jmpNode.querySelector("[data-jmp-pulse]");
+    var provinceCodes = [
+      "BJ", "TJ", "HE", "SX", "NM", "LN", "JL", "HL", "SH", "JS", "ZJ",
+      "AH", "FJ", "JX", "SD", "HA", "HB", "HN", "GD", "GX", "HI", "CQ",
+      "SC", "GZ", "YN", "XZ", "SN", "GS", "QH", "NX", "XJ"
+    ];
+    var baseMultipliers = provinceCodes.map(function (_, index) {
+      var seeded = (Math.sin((index + 1) * 1.73) + 1) / 2;
+      return 0.30 + (0.72 * seeded);
+    });
+    var barNodes = [];
 
-    function clamp(value, min, max) {
-      return Math.min(max, Math.max(min, value));
+    function circularDistance(a, b, size) {
+      var diff = Math.abs(a - b);
+      return Math.min(diff, size - diff);
     }
 
-    function buildSmoothPath(values) {
-      if (!values.length) {
-        return "";
-      }
-
-      var step = values.length > 1 ? 100 / (values.length - 1) : 100;
-      var points = values.map(function (value, index) {
-        return {
-          x: step * index,
-          y: value
-        };
+    if (jmpBarsNode) {
+      provinceCodes.forEach(function (code) {
+        var barNode = document.createElement("article");
+        barNode.className = "home-jmp__bar";
+        barNode.innerHTML = '<span class="home-jmp__bar-fill"></span><span class="home-jmp__abbr">' + code + "</span>";
+        jmpBarsNode.appendChild(barNode);
+        barNodes.push(barNode);
       });
 
-      var d = "M " + points[0].x.toFixed(2) + " " + points[0].y.toFixed(2);
+      function paintJmpShock(step) {
+        var shockIndex = (step * 5) % provinceCodes.length;
+        var round = (step % 6) + 1;
 
-      if (points.length === 1) {
-        return d;
-      }
-
-      for (var pointIndex = 1; pointIndex < points.length - 1; pointIndex += 1) {
-        var current = points[pointIndex];
-        var next = points[pointIndex + 1];
-        var midX = (current.x + next.x) / 2;
-        var midY = (current.y + next.y) / 2;
-
-        d += " Q " + current.x.toFixed(2) + " " + current.y.toFixed(2) + " " + midX.toFixed(2) + " " + midY.toFixed(2);
-      }
-
-      var penultimate = points[points.length - 2];
-      var last = points[points.length - 1];
-
-      d += " Q " + penultimate.x.toFixed(2) + " " + penultimate.y.toFixed(2) + " " + last.x.toFixed(2) + " " + last.y.toFixed(2);
-
-      return d;
-    }
-
-    for (var i = 0; i < barCount; i += 1) {
-      var bar = document.createElement("span");
-      signalBarsNode.appendChild(bar);
-      bars.push(bar);
-    }
-
-    function paintSignal() {
-      var now = Date.now();
-      var curvePoints = [];
-      var spikeSegments = [];
-      var step = barCount > 1 ? 100 / (barCount - 1) : 100;
-
-      bars.forEach(function (bar, index) {
-        var phase = now / 210;
-        var envelope = Math.sin((phase * 0.34) + (index * 0.27));
-        var pulse = Math.sin((phase * 1.08) + (index * 0.92));
-        var ripple = Math.sin((phase * 2.45) + (index * 2.14));
-        var spikeGate = Math.sin((phase * 0.72) - (index * 0.58)) + (0.35 * Math.sin((phase * 2.6) + (index * 1.15)));
-        var spike = spikeGate > 0.95 ? Math.pow((spikeGate - 0.95) / 0.4, 3) * 42 : 0;
-        var height = clamp(12 + Math.abs(pulse) * 18 + Math.max(envelope, 0) * 10 + spike * 0.25, 8, 52);
-        var alpha = clamp(0.44 + Math.abs(pulse) * 0.2 + spike * 0.008, 0.44, 0.96).toFixed(2);
-        var waveY = clamp(56 - (envelope * 9) - (pulse * 7) - (ripple * 4) - (spike * 0.9), 10, 86);
-        var x = step * index;
-
-        curvePoints.push(waveY);
-        bar.style.setProperty("--bar-height", Math.round(height) + "px");
-        bar.style.setProperty("--bar-alpha", alpha);
-
-        if (spike > 10) {
-          var baseY = clamp(waveY + 10, 18, 90);
-          var tipY = clamp(waveY - (spike * 0.95), 2, baseY - 18);
-          var leftX = clamp(x - (step * 0.18), 0, 100);
-          var rightX = clamp(x + (step * 0.16), 0, 100);
-
-          spikeSegments.push(
-            "M " + leftX.toFixed(2) + " " + baseY.toFixed(2) +
-            " L " + x.toFixed(2) + " " + tipY.toFixed(2) +
-            " L " + rightX.toFixed(2) + " " + (baseY + 1.5).toFixed(2)
-          );
+        if (jmpRoundNode) {
+          jmpRoundNode.textContent = "Round " + round;
         }
-      });
 
-      if (signalLineNode && signalGlowNode) {
-        var curvePath = buildSmoothPath(curvePoints);
-        signalLineNode.setAttribute("d", curvePath);
-        signalGlowNode.setAttribute("d", curvePath);
+        if (jmpPulseNode) {
+          var pulsePercent = ((shockIndex / (provinceCodes.length - 1)) * 100) - 50;
+          jmpPulseNode.style.setProperty("--jmp-pulse-x", pulsePercent.toFixed(1) + "%");
+        }
+
+        barNodes.forEach(function (node, index) {
+          var distance = circularDistance(index, shockIndex, provinceCodes.length);
+          var spread = Math.max(0, 1 - (distance / 7));
+          var ripple = 0.06 * Math.sin((step * 0.8) + (index * 0.6));
+          var value = clamp(baseMultipliers[index] + (spread * 0.32) + ripple, 0.30, 1.02);
+          var intensity = (value - 0.30) / 0.72;
+          var height = 22 + (intensity * 78);
+          var warmR = Math.round(160 + (intensity * 25));
+          var warmG = Math.round(95 + (intensity * 20));
+          var coolR = Math.round(13 + (intensity * 8));
+          var coolG = Math.round(106 + (intensity * 16));
+          var fillNode = node.querySelector(".home-jmp__bar-fill");
+
+          node.classList.toggle("is-shock", distance === 0);
+
+          if (!fillNode) {
+            return;
+          }
+
+          fillNode.style.setProperty("--jmp-height", height.toFixed(1) + "%");
+          fillNode.style.setProperty("--jmp-opacity", (0.62 + (intensity * 0.38)).toFixed(2));
+          fillNode.style.setProperty("--jmp-color-top", "rgb(" + warmR + ", " + warmG + ", 26)");
+          fillNode.style.setProperty("--jmp-color-bottom", "rgb(" + coolR + ", " + coolG + ", 97)");
+        });
       }
 
-      if (signalSpikesNode) {
-        signalSpikesNode.setAttribute("d", spikeSegments.join(" "));
+      paintJmpShock(0);
+
+      if (!reduceMotion) {
+        var shockStep = 0;
+        window.setInterval(function () {
+          shockStep += 1;
+          paintJmpShock(shockStep);
+        }, 620);
       }
-    }
-
-    paintSignal();
-
-    if (!reduceMotion) {
-      window.setInterval(paintSignal, 180);
     }
   }
 

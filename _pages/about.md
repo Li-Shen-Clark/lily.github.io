@@ -59,20 +59,19 @@ redirect_from:
         </div>
       </div>
 
-      <div class="home-signal" data-home-signal aria-hidden="true">
-        <svg class="home-signal__scope" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="home-signal-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#b45309"></stop>
-              <stop offset="55%" stop-color="#0f5f56"></stop>
-              <stop offset="100%" stop-color="#1f4d4a"></stop>
-            </linearGradient>
-          </defs>
-          <path class="home-signal__scope-glow" data-home-signal-glow stroke="url(#home-signal-gradient)"></path>
-          <path class="home-signal__scope-line" data-home-signal-line stroke="url(#home-signal-gradient)"></path>
-          <path class="home-signal__scope-spikes" data-home-signal-spikes stroke="url(#home-signal-gradient)"></path>
-        </svg>
-        <div class="home-signal__bars" data-home-signal-bars></div>
+      <div class="home-jmp" data-jmp-model aria-label="JMP export shock simulator">
+        <div class="home-jmp__top">
+          <span class="home-jmp__title">JMP Shock Simulator</span>
+          <span class="home-jmp__round" data-jmp-round>Round 1</span>
+        </div>
+        <div class="home-jmp__panel">
+          <div class="home-jmp__pulse" data-jmp-pulse aria-hidden="true"></div>
+          <div class="home-jmp__barfield" data-jmp-bars></div>
+        </div>
+        <div class="home-jmp__legend">
+          <span>Multiplier 0.30</span>
+          <span>Multiplier 1.02</span>
+        </div>
       </div>
 
       <div class="home-metrics">
