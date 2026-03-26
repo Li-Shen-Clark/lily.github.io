@@ -187,9 +187,9 @@
     function colorForMultiplier(multiplier, boost) {
       var normalized = clamp((multiplier - 0.30) / 0.72, 0, 1);
       var mid = 0.52;
-      var low = { r: 23, g: 43, b: 140 };
-      var pivot = { r: 142, g: 28, b: 178 };
-      var high = { r: 242, g: 224, b: 57 };
+      var low = { r: 24, g: 46, b: 122 };
+      var pivot = { r: 164, g: 54, b: 171 };
+      var high = { r: 234, g: 230, b: 78 };
       var top;
       var bottom;
 
@@ -209,7 +209,7 @@
         };
       }
 
-      var bonus = Math.round(32 * boost);
+      var bonus = Math.round(26 * boost);
       top.r = clamp(top.r + bonus, 0, 255);
       top.g = clamp(top.g + bonus, 0, 255);
       top.b = clamp(top.b + bonus, 0, 255);
