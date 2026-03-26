@@ -274,9 +274,9 @@ redirect_from:
   <section class="home-card home-card--cta" data-home-reveal>
     <div>
       <p class="home-label">Contact</p>
-      <h2>Interested in trade, regional development, or policy-relevant quantitative analysis?</h2>
+      <h2>Interested in trade, regional development, policy-relevant quantitative analysis, or economic consulting?</h2>
       <p>
-        I am happy to discuss research collaboration, RA opportunities, and policy projects.
+        I am happy to discuss research collaboration, RA opportunities, policy projects, and economic consulting work with consulting firms and the economic consulting industry.
         Email is the fastest way to reach me.
       </p>
     </div>
