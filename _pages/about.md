@@ -4,6 +4,8 @@ title: "Li Shen"
 excerpt: "Applied Economist and Ph.D. Candidate"
 layout: home
 author_profile: false
+robots: index,follow
+sitemap: true
 redirect_from:
   - /about/
   - /about.html

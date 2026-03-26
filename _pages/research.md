@@ -3,6 +3,8 @@ layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
+robots: index,follow
+sitemap: true
 ---
 
 ## Research Interests

@@ -204,6 +204,8 @@ defaults:
       comments: true
       share: true
       related: true
+      robots: noindex,follow
+      sitemap: false
   # _pages
   - scope:
       path: ""
@@ -211,6 +213,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      robots: noindex,follow
+      sitemap: false
   # _teaching
   - scope:
       path: ""
@@ -220,6 +224,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      robots: noindex,follow
+      sitemap: false
   # _publications
   - scope:
       path: ""
@@ -229,6 +235,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      robots: noindex,follow
+      sitemap: false
   # _portfolio
   - scope:
       path: ""
@@ -238,6 +246,8 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      robots: noindex,follow
+      sitemap: false
   # _talks
   - scope:
       path: ""
@@ -246,6 +256,8 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      robots: noindex,follow
+      sitemap: false
 
 # Sass/SCSS
 sass:
