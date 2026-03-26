@@ -1,40 +1,24 @@
 ---
-layout: archive
-title: "Sitemap"
+layout: null
+title: "Sitemap Redirect"
 permalink: /sitemap/
-author_profile: true
-published: false
+author_profile: false
 sitemap: false
 robots: noindex,nofollow
 ---
-
-{% include base_path %}
-
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
-
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <script>
+      window.location.replace("{{ '/' | relative_url }}");
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to the <a href="{{ '/' | relative_url }}">home page</a>.</p>
+  </body>
+</html>
