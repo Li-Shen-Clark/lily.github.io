@@ -241,31 +241,31 @@ redirect_from:
       <div class="home-list home-list--profile">
         <article class="home-list__item home-profile__item">
           <p class="home-list__meta">Education</p>
-          <p class="home-profile__headline">Clark University, Ph.D. in Economics (Expected Aug 2026)</p>
-          <ul class="home-profile__details">
-            <li>SUNY Buffalo, M.A. in Economics</li>
-            <li>Valparaiso University, M.S. in International Economics and Finance</li>
-            <li>Chongqing University, B.Mgmt. in Accounting</li>
-          </ul>
+          <div class="home-profile__lines">
+            <p class="home-profile__line">Clark University, Ph.D. in Economics (Expected Aug 2026)</p>
+            <p class="home-profile__line">SUNY Buffalo, M.A. in Economics</p>
+            <p class="home-profile__line">Valparaiso University, M.S. in International Economics and Finance</p>
+            <p class="home-profile__line">Chongqing University, B.Mgmt. in Accounting</p>
+          </div>
         </article>
 
         <article class="home-list__item home-profile__item">
           <p class="home-list__meta">Awards</p>
-          <p class="home-profile__headline">Sheftel Award for Research Excellence (twice, 2025)</p>
-          <ul class="home-profile__details">
-            <li>Veendorp Best Field Paper Award (2022)</li>
-            <li>Doctoral Fellowship, Clark University (2019-Present)</li>
-          </ul>
+          <div class="home-profile__lines">
+            <p class="home-profile__line">Sheftel Award for Research Excellence (twice, 2025)</p>
+            <p class="home-profile__line">Veendorp Best Field Paper Award (2022)</p>
+            <p class="home-profile__line">Doctoral Fellowship, Clark University (2019-Present)</p>
+          </div>
         </article>
 
         <article class="home-list__item home-profile__item">
           <p class="home-list__meta">Selected publication and presentations</p>
-          <p class="home-profile__headline">Engineering and Technology Quarterly Reviews (2019)</p>
-          <ul class="home-profile__details">
-            <li>Southern Economic Association (2025)</li>
-            <li>Midwest Economic Conference (2025)</li>
-            <li>Clark Ph.D. seminars (2022-2025)</li>
-          </ul>
+          <div class="home-profile__lines">
+            <p class="home-profile__line">Engineering and Technology Quarterly Reviews (2019)</p>
+            <p class="home-profile__line">Southern Economic Association (2025)</p>
+            <p class="home-profile__line">Midwest Economic Conference (2025)</p>
+            <p class="home-profile__line">Clark Ph.D. seminars (2022-2025)</p>
+          </div>
         </article>
       </div>
     </div>

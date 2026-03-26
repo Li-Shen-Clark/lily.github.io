@@ -666,29 +666,18 @@
   margin-bottom: 0.15rem;
 }
 
-.home-profile__headline {
-  margin: 0;
-  font-family: "Manrope", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.45;
-  color: var(--home-ink);
-}
-
-.home-profile__details {
-  margin: 0;
-  padding-left: 1.15rem;
+.home-profile__lines {
   display: grid;
   gap: 0.3rem;
 }
 
-.home-profile__details li {
+.home-profile__line {
   margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.5;
-}
-
-.home-profile__details li::marker {
-  color: var(--home-accent-strong);
+  color: var(--home-ink);
 }
 
 .home-list__item a,
@@ -853,8 +842,8 @@
     width: 100%;
   }
 
-  .home-profile__details {
-    padding-left: 1rem;
+  .home-profile__lines {
+    gap: 0.25rem;
   }
 }
 
