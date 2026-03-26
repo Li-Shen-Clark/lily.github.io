@@ -1,28 +1,275 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+title: "Li Shen"
+excerpt: "Applied Economist and Ph.D. Candidate"
+layout: home
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I’m currently a Ph.D. candidate at the [Clark University](https://www.clarku.edu/) in [Department of Economics](https://www.clarku.edu/departments/economics/), advised by [Prof. Junfu Zhang](https://wordpress.clarku.edu/juzhang/).
+<div class="home-shell">
+  <section class="home-hero">
+    <div class="home-copy" data-home-reveal>
+      <p class="home-kicker">Applied Economist - Trade - Mobility - Market Integration</p>
+      <h1 class="home-title">Measuring how trade and transport shocks reshape local economies.</h1>
+      <p class="home-lead">
+        I am a Ph.D. Candidate in Economics at <a href="https://www.clarku.edu/">Clark University</a>, advised by
+        <a href="https://wordpress.clarku.edu/juzhang/">Prof. Junfu Zhang</a>. My research combines causal inference,
+        structural modeling, and high-frequency data to quantify local multiplier effects, labor spillovers, and market integration.
+      </p>
 
+      <div class="home-actions">
+        <a href="{{ '/files/Li_Shen_CV_Economist_2026.pdf' | relative_url }}" class="home-button home-button--primary">Economist CV</a>
+        <a href="{{ '/files/Li_Shen_CV_Consulting_2026.pdf' | relative_url }}" class="home-button home-button--ghost">Consulting CV</a>
+        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Detailed CV</a>
+      </div>
 
-Working paper
-----
-- 1 **Cross-City Mobility and Market Integration: Evidence from Vegetable Price Covariation in
-China**
+      <div class="home-skill-row" aria-label="Core skills">
+        <span>Difference-in-Differences</span>
+        <span>Shift-Share IV</span>
+        <span>Quantitative Spatial Models</span>
+        <span>Time-Series Forecasting</span>
+        <span>Python / SQL / Stata</span>
+        <span>MRIO / ICIO</span>
+      </div>
+    </div>
 
-This paper utilizes high-frequency data on fresh vegetable prices across China to examine the determinants of intercity price dispersion. We developed Python programs to obtain daily vegetable price data and daily information on cross-city passenger mobility. Utilizing this data, we calculate the intercity price dispersion for each vegetable, defined as the monthly standard deviation of the daily relative prices between city pairs. Additionally, we synthesize this travel flow information into a monthly mobility intensity index for each city pair. Our analysis includes employing a gravity model regression and a difference-in-differences approach to determine the impact of various factors on intercity price dispersion. We conclude by discussing how reduced price dispersion increases social welfare, and perform some back-of-the-envelope calculations to gauge the overall economic significance of our estimates.
+    <aside class="home-card home-card--signal" data-home-reveal>
+      <div class="home-panel__top">
+        <div>
+          <p class="home-label">Live Profile</p>
+          <h2 class="home-panel__title">Current focus</h2>
+        </div>
+        <div class="home-clock">
+          <span class="home-clock__time" data-home-time>--:--</span>
+          <span class="home-clock__meta">Worcester, MA</span>
+        </div>
+      </div>
 
+      <div class="home-panel__profile">
+        <img src="{{ '/images/p1.jpg' | relative_url }}" alt="Li Shen" class="home-avatar">
+        <div>
+          <p class="home-availability">On the 2026 economics job market and open to research and consulting opportunities.</p>
+          <p class="home-rotator-label">Rotating between</p>
+          <p class="home-rotator" data-home-rotator data-words="local trade multipliers and labor spillovers|high-speed rail and market integration|causal inference with large administrative and price data">
+            local trade multipliers and labor spillovers
+          </p>
+        </div>
+      </div>
 
-- 2 **Quantitative Analysis of Local Export Multipliers in China**
+      <div class="home-signal" data-home-signal aria-hidden="true">
+        <svg class="home-signal__scope" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="home-signal-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#b45309"></stop>
+              <stop offset="55%" stop-color="#0f5f56"></stop>
+              <stop offset="100%" stop-color="#1f4d4a"></stop>
+            </linearGradient>
+          </defs>
+          <path class="home-signal__scope-glow" data-home-signal-glow stroke="url(#home-signal-gradient)"></path>
+          <path class="home-signal__scope-line" data-home-signal-line stroke="url(#home-signal-gradient)"></path>
+          <path class="home-signal__scope-spikes" data-home-signal-spikes stroke="url(#home-signal-gradient)"></path>
+        </svg>
+        <div class="home-signal__bars" data-home-signal-bars></div>
+      </div>
 
-This paper studies how international trade aﬀects the aggregate output of the local economies in China.
-Specifically, we focus on the local multiplier eﬀects of exports on GDP across Chinese provinces. By quantifying the model to the data, this paper addresses two central questions: how do the local export multipliers diﬀer across Chinese provides? and What shapes the patterns of the local export multipliers?
-We develop a two-sector, multi-region general equilibrium model to examine the mechanisms through
-which the local multiplier eﬀects work. Upon formalizing the model, we derive a key theoretical proposition that identifies the determinants of the local export multiplier. The model is calibrated using the China Multi-Regional Input-Output (MRIO) Table to estimate critical parameters such as trade costs and sectoral productivity. To further explore the determinants of these multipliers, we conduct a counterfactual analysis by simulating the economy under alternative parameter configurations using additional MRIO data. 
+      <div class="home-metrics">
+        <article>
+          <strong data-counter="31">31</strong>
+          <span>provinces in spatial model</span>
+        </article>
+        <article>
+          <strong>3.99M</strong>
+          <span>city-pair-month observations</span>
+        </article>
+        <article>
+          <strong data-counter="117">117</strong>
+          <span>cities in price panel</span>
+        </article>
+        <article>
+          <strong>1.721+</strong>
+          <span>real export-GDP multiplier (IV lower bound)</span>
+        </article>
+      </div>
+    </aside>
+  </section>
 
+  <section class="home-pillars">
+    <article class="home-card home-card--pillar" data-home-reveal>
+      <p class="home-label">Research Theme 1</p>
+      <h2>Trade shocks and local multipliers</h2>
+      <p>I study how export demand propagates through domestic production networks and labor markets across regions.</p>
+    </article>
+
+    <article class="home-card home-card--pillar" data-home-reveal>
+      <p class="home-label">Research Theme 2</p>
+      <h2>Transport connectivity and price convergence</h2>
+      <p>I quantify how high-speed rail changes passenger mobility and reduces intercity price dispersion, especially in short-haul markets.</p>
+    </article>
+
+    <article class="home-card home-card--pillar" data-home-reveal>
+      <p class="home-label">Research Theme 3</p>
+      <h2>Causal + structural workflow</h2>
+      <p>I pair quasi-experimental evidence with structural counterfactuals to produce policy-relevant estimates.</p>
+    </article>
+  </section>
+
+  <section class="home-grid home-grid--major">
+    <div class="home-card" data-home-reveal>
+      <div class="home-section__header">
+        <div>
+          <p class="home-label">Working Papers</p>
+          <h2>Selected research</h2>
+        </div>
+        <a href="{{ '/publications/' | relative_url }}" class="home-inline-link">Publication list</a>
+      </div>
+
+      <div class="home-research-grid">
+        <article class="home-feature-card">
+          <p class="home-feature-card__meta">Job Market Paper - 2024-Present</p>
+          <h3>The Local Multiplier Effects of Trade</h3>
+          <p>
+            Built a multi-sector quantitative spatial model for 31 Chinese provinces using MRIO data. Findings show strong
+            heterogeneity in local GDP multipliers and estimate a real export-GDP multiplier of at least 1.721 using shift-share IV.
+          </p>
+        </article>
+
+        <article class="home-feature-card">
+          <p class="home-feature-card__meta">Working Paper - 2022-2025</p>
+          <h3>High-Speed Rail and Market Integration</h3>
+          <p>
+            Constructed a panel with 3.99 million city-pair-month observations from daily wholesale prices and mobility indices.
+            Estimates indicate HSR connectivity lowers intercity price dispersion by about 2% on average and up to 5% in short-haul markets.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <aside class="home-card" data-home-reveal>
+      <div class="home-section__header">
+        <div>
+          <p class="home-label">Methods and Data</p>
+          <h2>Empirical toolkit</h2>
+        </div>
+      </div>
+
+      <div class="home-list">
+        <article class="home-list__item">
+          <p class="home-list__meta">Causal identification</p>
+          <h3>Staggered DiD and event-study designs</h3>
+          <p>Applied to HSR rollout, policy shocks, and mobility restrictions with robustness and mechanism checks.</p>
+        </article>
+
+        <article class="home-list__item">
+          <p class="home-list__meta">Structural quantification</p>
+          <h3>Multi-region general equilibrium modeling</h3>
+          <p>Counterfactual simulations with calibrated trade costs, productivity, and input-output coefficients.</p>
+        </article>
+
+        <article class="home-list__item">
+          <p class="home-list__meta">Programming stack</p>
+          <h3>Python, SQL, Stata, MATLAB, R, SAS</h3>
+          <p>Data engineering, econometric workflows, and reproducible research communication.</p>
+        </article>
+      </div>
+    </aside>
+  </section>
+
+  <section class="home-grid home-grid--split">
+    <div class="home-card" data-home-reveal>
+      <div class="home-section__header">
+        <div>
+          <p class="home-label">Experience</p>
+          <h2>Research and professional background</h2>
+        </div>
+      </div>
+
+      <div class="home-timeline">
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2024 - Present</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Research</span>
+            <h3>The Local Multiplier Effects of Trade</h3>
+            <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2022 - 2025</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Research</span>
+            <h3>High-Speed Rail and Market Integration</h3>
+            <p>Linked large-scale price and mobility data to evaluate transport infrastructure effects on market integration.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2020 - 2025</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Teaching</span>
+            <h3>Teaching Assistant, Clark University</h3>
+            <p>Supported graduate finance and undergraduate economics courses and coached students in quantitative methods.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2014 - 2016</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Industry</span>
+            <h3>Financial Auditor</h3>
+            <p>Conducted internal audits, reconciled inventory records, and prepared general-ledger entries.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="home-card" data-home-reveal>
+      <div class="home-section__header">
+        <div>
+          <p class="home-label">Education and Honors</p>
+          <h2>Academic profile</h2>
+        </div>
+      </div>
+
+      <div class="home-list">
+        <article class="home-list__item">
+          <p class="home-list__meta">Education</p>
+          <h3>Clark University, Ph.D. in Economics (Expected Aug 2026)</h3>
+          <p>Earlier degrees from SUNY Buffalo (M.A. Economics), Valparaiso University (M.S. International Economics and Finance), and Chongqing University (B.Mgmt. Accounting).</p>
+        </article>
+
+        <article class="home-list__item">
+          <p class="home-list__meta">Awards</p>
+          <h3>Sheftel Award (Research Excellence, twice, 2025)</h3>
+          <p>Also received Veendorp Best Field Paper Award (2022) and ongoing Doctoral Fellowship support (2019-Present).</p>
+        </article>
+
+        <article class="home-list__item">
+          <p class="home-list__meta">Selected publication and presentations</p>
+          <h3>Engineering and Technology Quarterly Reviews (2019)</h3>
+          <p>Presented at Southern Economic Association (2025), Midwest Economic Conference (2025), and Clark Ph.D. seminars (2022-2025).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-card home-card--cta" data-home-reveal>
+    <div>
+      <p class="home-label">Contact</p>
+      <h2>Interested in trade, regional development, or policy-relevant quantitative analysis?</h2>
+      <p>
+        I am happy to discuss research collaboration, RA opportunities, policy projects, and consulting work.
+        Email is the fastest way to reach me.
+      </p>
+    </div>
+
+    <div class="home-actions home-actions--compact">
+      <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">Email Me</a>
+      <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
+      <a href="{{ '/publications/' | relative_url }}" class="home-button home-button--ghost">Publications</a>
+      <a href="{{ '/teaching/' | relative_url }}" class="home-button home-button--ghost">Teaching</a>
+    </div>
+  </section>
+</div>

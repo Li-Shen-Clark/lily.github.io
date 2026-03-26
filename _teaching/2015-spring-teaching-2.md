@@ -1,6 +1,6 @@
 ---
 title: "Undergraduate courses"
-collection: TA
+collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-2
 venue: "Clark University, Department of Economics"
