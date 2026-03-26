@@ -138,15 +138,39 @@
     var mapPulseNode = jmpNode.querySelector("[data-jmp-map-pulse]");
     var mapBeamNode = jmpNode.querySelector("[data-jmp-map-beam]");
     var mapFocusNode = jmpNode.querySelector("[data-jmp-map-focus]");
-    var mapHubs = [
-      { name: "Bohai Rim", x: 57, y: 26 },
-      { name: "Northeast", x: 64, y: 18 },
-      { name: "Central Plains", x: 53, y: 45 },
-      { name: "Yangtze Delta", x: 63, y: 56 },
-      { name: "Middle Yangtze", x: 54, y: 54 },
-      { name: "Pearl River Delta", x: 56, y: 77 },
-      { name: "Chengdu-Chongqing", x: 43, y: 56 },
-      { name: "Northwest", x: 33, y: 36 }
+    var mapValueNode = jmpNode.querySelector("[data-jmp-map-value]");
+    var provinces = [
+      { code: "BJ", name: "Beijing", x: 58, y: 28, m: 0.82 },
+      { code: "TJ", name: "Tianjin", x: 60, y: 30, m: 0.79 },
+      { code: "HE", name: "Hebei", x: 56, y: 33, m: 0.73 },
+      { code: "SX", name: "Shanxi", x: 52, y: 35, m: 0.68 },
+      { code: "NM", name: "Inner Mongolia", x: 49, y: 26, m: 0.61 },
+      { code: "LN", name: "Liaoning", x: 63, y: 24, m: 0.75 },
+      { code: "JL", name: "Jilin", x: 66, y: 20, m: 0.64 },
+      { code: "HL", name: "Heilongjiang", x: 69, y: 16, m: 0.58 },
+      { code: "SH", name: "Shanghai", x: 64, y: 56, m: 0.91 },
+      { code: "JS", name: "Jiangsu", x: 62, y: 51, m: 0.88 },
+      { code: "ZJ", name: "Zhejiang", x: 64, y: 58, m: 0.93 },
+      { code: "AH", name: "Anhui", x: 58, y: 51, m: 0.77 },
+      { code: "FJ", name: "Fujian", x: 63, y: 64, m: 0.84 },
+      { code: "JX", name: "Jiangxi", x: 58, y: 60, m: 0.72 },
+      { code: "SD", name: "Shandong", x: 61, y: 40, m: 0.86 },
+      { code: "HA", name: "Henan", x: 55, y: 46, m: 0.74 },
+      { code: "HB", name: "Hubei", x: 54, y: 52, m: 0.78 },
+      { code: "HN", name: "Hunan", x: 53, y: 60, m: 0.71 },
+      { code: "GD", name: "Guangdong", x: 56, y: 75, m: 1.02 },
+      { code: "GX", name: "Guangxi", x: 50, y: 72, m: 0.69 },
+      { code: "HI", name: "Hainan", x: 56, y: 88, m: 0.57 },
+      { code: "CQ", name: "Chongqing", x: 46, y: 56, m: 0.80 },
+      { code: "SC", name: "Sichuan", x: 41, y: 58, m: 0.76 },
+      { code: "GZ", name: "Guizhou", x: 50, y: 66, m: 0.66 },
+      { code: "YN", name: "Yunnan", x: 44, y: 72, m: 0.62 },
+      { code: "XZ", name: "Tibet", x: 27, y: 54, m: 0.30 },
+      { code: "SN", name: "Shaanxi", x: 49, y: 45, m: 0.70 },
+      { code: "GS", name: "Gansu", x: 42, y: 40, m: 0.52 },
+      { code: "QH", name: "Qinghai", x: 35, y: 44, m: 0.41 },
+      { code: "NX", name: "Ningxia", x: 46, y: 38, m: 0.49 },
+      { code: "XJ", name: "Xinjiang", x: 20, y: 37, m: 0.37 }
     ];
     var mapNodeEls = [];
 
@@ -156,23 +180,80 @@
       return Math.sqrt((dx * dx) + (dy * dy));
     }
 
+    function channelLerp(start, end, ratio) {
+      return Math.round(start + ((end - start) * ratio));
+    }
+
+    function colorForMultiplier(multiplier, boost) {
+      var normalized = clamp((multiplier - 0.30) / 0.72, 0, 1);
+      var mid = 0.52;
+      var low = { r: 23, g: 43, b: 140 };
+      var pivot = { r: 142, g: 28, b: 178 };
+      var high = { r: 242, g: 224, b: 57 };
+      var top;
+      var bottom;
+
+      if (normalized <= mid) {
+        var leftRatio = normalized / mid;
+        top = {
+          r: channelLerp(low.r, pivot.r, leftRatio),
+          g: channelLerp(low.g, pivot.g, leftRatio),
+          b: channelLerp(low.b, pivot.b, leftRatio)
+        };
+      } else {
+        var rightRatio = (normalized - mid) / (1 - mid);
+        top = {
+          r: channelLerp(pivot.r, high.r, rightRatio),
+          g: channelLerp(pivot.g, high.g, rightRatio),
+          b: channelLerp(pivot.b, high.b, rightRatio)
+        };
+      }
+
+      var bonus = Math.round(32 * boost);
+      top.r = clamp(top.r + bonus, 0, 255);
+      top.g = clamp(top.g + bonus, 0, 255);
+      top.b = clamp(top.b + bonus, 0, 255);
+      bottom = {
+        r: clamp(top.r - 34, 0, 255),
+        g: clamp(top.g - 34, 0, 255),
+        b: clamp(top.b - 34, 0, 255)
+      };
+
+      return {
+        top: "rgb(" + top.r + ", " + top.g + ", " + top.b + ")",
+        bottom: "rgb(" + bottom.r + ", " + bottom.g + ", " + bottom.b + ")"
+      };
+    }
+
     if (mapNodesWrap) {
-      mapHubs.forEach(function (hub) {
-        var dot = document.createElement("span");
-        dot.className = "home-jmp-map__node";
-        dot.style.setProperty("--node-x", hub.x.toFixed(2) + "%");
-        dot.style.setProperty("--node-y", hub.y.toFixed(2) + "%");
-        mapNodesWrap.appendChild(dot);
-        mapNodeEls.push(dot);
+      provinces.forEach(function (province) {
+        var node = document.createElement("span");
+        var code = document.createElement("span");
+
+        node.className = "home-jmp-map__node";
+        node.style.setProperty("--node-x", province.x.toFixed(2) + "%");
+        node.style.setProperty("--node-y", province.y.toFixed(2) + "%");
+        node.setAttribute("title", province.name + " (" + province.code + ")");
+
+        code.className = "home-jmp-map__code";
+        code.textContent = province.code;
+        node.appendChild(code);
+
+        mapNodesWrap.appendChild(node);
+        mapNodeEls.push(node);
       });
 
       function paintMap(step) {
-        var activeIndex = step % mapHubs.length;
-        var active = mapHubs[activeIndex];
-        var beamShift = ((activeIndex / mapHubs.length) * 140) - 110;
+        var activeIndex = step % provinces.length;
+        var active = provinces[activeIndex];
+        var beamShift = ((active.x - 50) * 2.4);
 
         if (mapFocusNode) {
-          mapFocusNode.textContent = "Shock: " + active.name;
+          mapFocusNode.textContent = "Active: " + active.name + " (" + active.code + ")";
+        }
+
+        if (mapValueNode) {
+          mapValueNode.textContent = "m = " + active.m.toFixed(2);
         }
 
         if (mapPulseNode) {
@@ -186,17 +267,23 @@
           mapBeamNode.style.setProperty("--map-beam-x", beamShift.toFixed(2) + "%");
         }
 
-        mapNodeEls.forEach(function (dot, index) {
-          var hub = mapHubs[index];
-          var dist = distancePercent(hub, active);
-          var influence = clamp(1 - (dist / 44), 0.14, 1);
-          var pulse = 0.08 * Math.sin((step * 0.7) + (index * 0.95));
-          var alpha = clamp((0.36 + (influence * 0.58)) + pulse, 0.22, 1);
-          var scale = clamp((0.72 + (influence * 0.62)) + pulse, 0.64, 1.34);
+        mapNodeEls.forEach(function (node, index) {
+          var province = provinces[index];
+          var dist = distancePercent(province, active);
+          var influence = clamp(1 - (dist / 37), 0, 1);
+          var ripple = 0.06 * Math.sin((step * 0.74) + (index * 0.9));
+          var alpha = clamp((0.24 + (influence * 0.62)) + ripple, 0.16, 1);
+          var scale = clamp((0.74 + (influence * 0.52)) + ripple, 0.62, 1.36);
+          var ringAlpha = clamp(0.18 + (influence * 0.72), 0.18, 1);
+          var colors = colorForMultiplier(province.m, influence * 0.45);
 
-          dot.classList.toggle("is-active", index === activeIndex);
-          dot.style.setProperty("--node-alpha", alpha.toFixed(2));
-          dot.style.setProperty("--node-scale", scale.toFixed(2));
+          node.classList.toggle("is-active", index === activeIndex);
+          node.classList.toggle("is-near", influence > 0.36 && index !== activeIndex);
+          node.style.setProperty("--node-alpha", alpha.toFixed(2));
+          node.style.setProperty("--node-scale", scale.toFixed(2));
+          node.style.setProperty("--node-ring-alpha", ringAlpha.toFixed(2));
+          node.style.setProperty("--node-color-top", colors.top);
+          node.style.setProperty("--node-color-bottom", colors.bottom);
         });
       }
 
@@ -207,7 +294,7 @@
         window.setInterval(function () {
           mapStep += 1;
           paintMap(mapStep);
-        }, 900);
+        }, 760);
       }
     }
   }

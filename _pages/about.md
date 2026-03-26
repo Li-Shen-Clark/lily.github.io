@@ -61,7 +61,10 @@ redirect_from:
       <div class="home-jmp" data-jmp-map aria-label="JMP local multiplier map animation">
         <div class="home-jmp__top">
           <span class="home-jmp__title">JMP Local Multiplier Map</span>
-          <span class="home-jmp__round" data-jmp-map-focus>Shock: Bohai Rim</span>
+          <div class="home-jmp__meta">
+            <span class="home-jmp__round" data-jmp-map-focus>Active: Beijing (BJ)</span>
+            <span class="home-jmp__round home-jmp__round--value" data-jmp-map-value>m = 0.82</span>
+          </div>
         </div>
         <div class="home-jmp-map__panel">
           <img src="{{ '/images/mgdp_map.png' | relative_url }}" alt="Provincial local GDP multiplier map in China" class="home-jmp-map__image">
