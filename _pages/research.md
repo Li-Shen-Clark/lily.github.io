@@ -27,6 +27,15 @@ Trade and development, regional economics, market integration, labor spillovers,
 - Use staggered HSR rollout and the Green Passage Policy for identification.
 - Find that HSR connectivity reduces intercity price dispersion by about 2% on average and up to 5% in short-haul markets.
 
+### Population Agglomeration and Spatial Reallocation in China
+
+- SSRN preprint: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569183](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569183)
+- Companion website: [https://cpde.streamlit.app](https://cpde.streamlit.app)
+- Use annual WorldPop population density rasters (2002-2020), downsampled to approximately 5 km, to document the evolution of China's population geography.
+- Show rising spatial agglomeration: the spatial Gini increases from 0.852 to 0.868, the top-decile population share rises from 73.5% to 76.7%, and the footprint of high-density areas expands by 24%.
+- Track a 17 km southeastward shift in the population-weighted centroid and find no evidence of systematic provincial catch-up in β/σ convergence tests.
+- Provide raster-based descriptive evidence for spatial economics, regional science, and China regional development.
+
 ## Other Applied Work
 
 ### Applied Econometric Research and Forecasting
