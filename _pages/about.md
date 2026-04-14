@@ -23,7 +23,7 @@ redirect_from:
       </p>
 
       <div class="home-actions">
-        <a href="{{ '/files/Li_Shen_CV_Economist_2026.pdf' | relative_url }}" class="home-button home-button--primary">Economist CV</a>
+        <a href="{{ '/files/CV_LS.pdf' | relative_url }}" class="home-button home-button--primary">CV</a>
         <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Detailed CV</a>
       </div>
 
@@ -151,6 +151,15 @@ redirect_from:
             Estimates indicate HSR connectivity lowers intercity price dispersion by about 2% on average and up to 5% in short-haul markets.
           </p>
         </article>
+
+        <article class="home-feature-card">
+          <p class="home-feature-card__meta">Working Paper - 2022-Present</p>
+          <h3>Population Agglomeration and Spatial Reallocation in China</h3>
+          <p>
+            Uses annual population-density rasters at approximately 5 km resolution to document increasing spatial agglomeration,
+            expansion of dense urban corridors, and little evidence of province-level convergence across China (2002--2020).
+          </p>
+        </article>
       </div>
     </div>
 
@@ -209,6 +218,15 @@ redirect_from:
             <span class="home-badge">Research</span>
             <h3>High-Speed Rail and Market Integration</h3>
             <p>Linked large-scale price and mobility data to evaluate transport infrastructure effects on market integration.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2022 - Present</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Research</span>
+            <h3>Population Agglomeration and Spatial Reallocation in China</h3>
+            <p>Processed geospatial population-density rasters to document changing spatial distribution of China's population.</p>
           </div>
         </article>
 

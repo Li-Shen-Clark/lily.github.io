@@ -9,23 +9,22 @@ sitemap: true
 
 ## Research Interests
 
-Trade and development, regional economics, market integration, labor spillovers, and applied econometrics.
+International trade; quantitative spatial economics; market integration; regional development; urban and population geography; industrial policy; China and emerging Asia.
 
 ## Working Papers
 
-### The Local Multiplier Effects of Trade (Job Market Paper)
+### The Local Multiplier Effects of Trade: A Quantitative Analysis of China (Job Market Paper)
+*with Kensuke Suzuki, Xiaocong Xu, and Junfu Zhang*
 
-- Build a multi-sector, 31-province quantitative spatial model calibrated to China's 2017 MRIO table.
-- Study how trade shocks propagate through production networks and local labor markets.
-- Show substantial local heterogeneity in multiplier effects, with model-implied multipliers ranging from 0.30 to 1.02.
-- Estimate a real export-GDP multiplier of at least 1.721 using shift-share IV.
+- Develops a multi-sector quantitative spatial model calibrated to China's 2017 MRIO table to study how export shocks propagate through domestic production networks and labor markets.
+- Shows that multiplier heterogeneity is driven by the intra-regional manufacturing trade share; model-implied local GDP multipliers range from 0.30 to 1.02 across provinces.
+- Combines structural analysis with IV evidence from city-level data, estimating sizable export-income and export-employment spillovers.
 
-### High-Speed Rail and Market Integration
+### High-Speed Railway and Market Integration: Evidence from Vegetable Price Dispersion in China
 
-- Construct a panel with 3.99 million city-pair-month observations from daily wholesale prices in 117 Chinese cities.
-- Combine city-pair prices with AutoNavi intercity mobility indices.
-- Use staggered HSR rollout and the Green Passage Policy for identification.
-- Find that HSR connectivity reduces intercity price dispersion by about 2% on average and up to 5% in short-haul markets.
+- Builds a panel of 3.99 million city-pair-month observations from daily wholesale prices in 117 Chinese cities, matched with AutoNavi intercity mobility data.
+- Studies how passenger infrastructure affects market integration in a setting where freight conditions are stabilized by China's Green Passage policy.
+- Finds that HSR connectivity is associated with lower intercity price dispersion, with evidence pointing to passenger mobility and trader interaction as the main mechanism.
 
 ### Population Agglomeration and Spatial Reallocation in China
 
@@ -44,9 +43,8 @@ Trade and development, regional economics, market integration, labor spillovers,
 - Coauthored publication in *Engineering and Technology Quarterly Reviews*.
 - Forecasted international passenger demand with seasonal ARIMA models in SAS.
 
-## Methods and Data
+## Methods and Data Expertise
 
-- Causal inference: difference-in-differences, staggered adoption designs, event studies, shift-share IV.
-- Structural and spatial modeling: quantitative spatial models, counterfactual simulation, gravity models, input-output analysis.
-- Programming: Python, SQL, Stata, MATLAB, R, SAS.
-- Data tools: GeoPandas, ArcGIS, Tableau, ggplot2, LaTeX.
+- **Methods:** causal inference; shift-share IV; panel-data econometrics; event studies; staggered-adoption designs; gravity models; quantitative spatial modeling; input-output analysis; counterfactual simulation.
+- **Data:** Chinese MRIO and ICIO tables; Chinese Customs data; AutoNavi mobility data; high-frequency wholesale price data; geospatial population rasters; GIS-based regional datasets.
+- **Programming:** Python; Stata; R; MATLAB; SQL; SAS; GeoPandas; ArcGIS; Tableau; LaTeX.

@@ -13,13 +13,17 @@ redirect_from:
 
 ## Download PDF
 
-- [Economist CV (2026)]({{ '/files/Li_Shen_CV_Economist_2026.pdf' | relative_url }})
+- [Download CV (PDF)]({{ '/files/CV_LS.pdf' | relative_url }})
 
 ## Contact
 
 - Worcester, MA, USA
 - Email: [lshen@clarku.edu](mailto:lshen@clarku.edu)
 - LinkedIn: [linkedin.com/in/lily-shen](https://www.linkedin.com/in/lily-shen/)
+
+## Research Interests
+
+International trade; quantitative spatial economics; market integration; regional development; urban and population geography; industrial policy; China and emerging Asia.
 
 ## Education
 
@@ -32,59 +36,57 @@ redirect_from:
 - **Chongqing University**, Chongqing, China  
   B.Mgmt. in Accounting, June 2014
 
-## Research Experience
+## Working Papers
 
-### The Local Multiplier Effects of Trade (Job Market Paper), 2024-Present
+### The Local Multiplier Effects of Trade: A Quantitative Analysis of China (Job Market Paper)
+*with Kensuke Suzuki, Xiaocong Xu, and Junfu Zhang*
 
-- Developed a multi-sector, 31-province quantitative spatial model calibrated to China's 2017 MRIO table.
-- Identified own-trade share as a key source of heterogeneity in local GDP multipliers.
-- Estimated a real export-GDP multiplier of at least 1.721 with shift-share IV.
-- Calibrated trade costs, productivity, and input-output coefficients using MRIO, ICIO, and Chinese Customs data.
+- Develops a multi-sector quantitative spatial model calibrated to China's 2017 MRIO table to study how export shocks propagate through domestic production networks and labor markets.
+- Shows that multiplier heterogeneity is driven by the intra-regional manufacturing trade share; model-implied local GDP multipliers range from 0.30 to 1.02 across provinces.
+- Combines structural analysis with IV evidence from city-level data, estimating sizable export-income and export-employment spillovers.
 
-### High-Speed Rail and Market Integration, 2022-2025
+### High-Speed Railway and Market Integration: Evidence from Vegetable Price Dispersion in China
 
-- Built a panel with 3.99 million city-pair-month observations from wholesale prices in 117 Chinese cities.
-- Matched price data with AutoNavi intercity mobility indices.
-- Leveraged staggered HSR rollout and the Green Passage Policy for identification.
-- Found that HSR connectivity reduced intercity price dispersion by about 2% on average and up to 5% in short-haul markets.
+- Builds a panel of 3.99 million city-pair-month observations from daily wholesale prices in 117 Chinese cities, matched with AutoNavi intercity mobility data.
+- Studies how passenger infrastructure affects market integration in a setting where freight conditions are stabilized by China's Green Passage policy.
+- Finds that HSR connectivity is associated with lower intercity price dispersion, with evidence pointing to passenger mobility and trader interaction as the main mechanism.
 
-### Applied Econometric Research and Forecasting, 2017-2019
+### Population Agglomeration and Spatial Reallocation in China
 
-- Modeled determinants of Intel Corporation's net revenue with regression methods.
-- Coauthored publication in *Engineering and Technology Quarterly Reviews*.
-- Forecasted international passenger demand using seasonal ARIMA models in SAS.
+- Uses annual population-density rasters at approximately 5 km resolution to document the changing geography of China's population between 2002 and 2020.
+- Finds increasing spatial agglomeration, expansion of dense urban corridors, and little evidence of province-level convergence.
 
-### Financial Auditor, Datong Jiaye Property Management Co., Ltd., 2014-2016
+## Methods and Data Expertise
 
-- Conducted internal audits and inventory reconciliation.
-- Prepared general-ledger journal entries and accounting documentation.
+- **Methods:** causal inference; shift-share IV; panel-data econometrics; event studies; staggered-adoption designs; gravity models; quantitative spatial modeling; input-output analysis; counterfactual simulation.
+- **Data:** Chinese MRIO and ICIO tables; Chinese Customs data; AutoNavi mobility data; high-frequency wholesale price data; geospatial population rasters; GIS-based regional datasets.
+- **Programming:** Python; Stata; R; MATLAB; SQL; SAS; GeoPandas; ArcGIS; Tableau; LaTeX.
+- **Languages:** Mandarin Chinese (native); English (fluent).
 
 ## Teaching Experience
 
-- **Teaching Assistant, Clark University (2020-2025)**  
-  Supported graduate finance and undergraduate economics courses; coached students in quantitative and computational methods.
+### Clark University School of Management, Graduate Teaching Assistant (Fall 2020 -- Spring 2023)
 
-## Publications
+- **Investments (FIN 5401):** Instructed graduate students on equity valuation, DCF modeling, and portfolio risk-return analysis.
+- **Computational Finance (FIN 5216):** Led graduate-level computational sessions on Monte Carlo methods, stochastic processes, and Black-Scholes pricing using R and Excel.
+- **Case Studies in Derivatives (FIN 5310):** Guided students in quantifying financial risk, analyzing gold price risk management, and evaluating FX hedging strategies for global operations.
+- **Investment Strategy (FIN 5203):** Supported instruction on advanced portfolio management and asset allocation strategies.
 
-- Ozgur, C., Shen, L., Shen, Y., Chen, H., and Bridwell, A. (2019).  
-  "The Effect of Time, Price of Stock Research and Development, and Number of Bugs on Net Revenue for Intel Corporation."  
-  *Engineering and Technology Quarterly Reviews*, 2(1).
+### Clark University Department of Economics, Teaching Assistant (Fall 2023 -- Spring 2025)
 
-{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}
+- **Macroeconomic Theory (ECON 206):** Facilitated undergraduate instruction and problem-solving sessions.
+- **Economics and the World Economy (ECON 10):** Supported undergraduate teaching on global economic issues.
 
-## Honors and Distinctions
+## Honors and Awards
 
-- Sheftel Award (Research Excellence), 2025 (twice)
-- Veendorp Best Field Paper Award, 2022
-- Doctoral Fellowship, 2019-Present
+- Sheftel Award for Research Excellence, Clark University, 2025
+- Veendorp Best Field Paper Award, Clark University, 2022
+- Doctoral Fellowship, Clark University, 2019--present
 - Kaggle Silver Medal, 2024
 - Kaggle Bronze Medals, 2023
 
-## Technical Skills
+## References
 
-- Econometrics: difference-in-differences, shift-share IV, staggered adoption, event studies, panel methods, gravity models.
-- Modeling: quantitative spatial modeling, counterfactual simulation, time-series forecasting (ARIMA), input-output analysis.
-- Programming: Python, SQL, Stata, MATLAB, R, SAS.
-- Data and communication: GeoPandas, ArcGIS, Tableau, ggplot2, LaTeX.
+- **Dr. Junfu Zhang**, Professor of Economics, Clark University ([juzhang@clarku.edu](mailto:juzhang@clarku.edu))
+- **Dr. Kensuke Suzuki**, Assistant Professor of Economics, Clark University ([KSuzuki@clarku.edu](mailto:KSuzuki@clarku.edu))
+- **Dr. Moshi Alam**, Assistant Professor of Economics, Clark University ([mdalam@clarku.edu](mailto:mdalam@clarku.edu))
