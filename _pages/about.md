@@ -139,8 +139,9 @@ redirect_from:
           <p class="home-feature-card__meta">Job Market Paper - 2024-Present</p>
           <h3>The Local Multiplier Effects of Trade</h3>
           <p>
-            Built a multi-sector quantitative spatial model for 31 Chinese provinces using MRIO data. Findings show strong
-            heterogeneity in local GDP multipliers and estimate a real export-GDP multiplier of at least 1.721 using shift-share IV.
+            Built a multi-sector quantitative spatial model for 31 Chinese provinces calibrated to MRIO, ICIO, and Customs micro-data.
+            Identifies the own-trade share as the structural organizing statistic for multiplier heterogeneity, with inland inward-oriented
+            economies amplifying external shocks through non-tradable service demand.
           </p>
         </article>
 

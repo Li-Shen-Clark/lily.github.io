@@ -12,14 +12,18 @@ sitemap: true
 
 International trade; quantitative spatial economics; market integration; regional development; urban and population geography; industrial policy; China and emerging Asia.
 
-## Working Papers
+## Job Market Paper
 
-### The Local Multiplier Effects of Trade: A Quantitative Analysis of China (Job Market Paper)
+### The Local Multiplier Effects of Trade: A Quantitative Analysis of China
 *with Kensuke Suzuki, Xiaocong Xu, and Junfu Zhang*
+
+**[Abstract](mailto:lshen@clarku.edu?subject=JMP%20Abstract%20Request) · [Paper PDF](mailto:lshen@clarku.edu?subject=JMP%20Paper%20Request) · [Slides](mailto:lshen@clarku.edu?subject=JMP%20Slides%20Request)** (available on request)
 
 - Develops a multi-sector quantitative spatial model with inter-provincial input-output linkages, non-tradable production, and labor mobility, calibrated to China's 2017 MRIO table; parameters recovered via structural inversion from MRIO, ICIO, and Customs micro-data.
 - Establishes that local trade multipliers are equilibrium objects shaped by the structure of domestic production linkages rather than universal parameters, and identifies the own-trade share---not raw export exposure---as the structural organizing statistic for multiplier heterogeneity.
 - Extends the quantitative spatial economics framework, typically used for national welfare analysis, to the mechanics of sub-national shock amplification; counterfactual simulations yield model-implied local GDP multipliers ranging from 0.30 to 1.02 across provinces, with inland inward-oriented economies amplifying external shocks through non-tradable service demand.
+
+## Other Working Papers
 
 ### High-Speed Railway and Market Integration: Evidence from Vegetable Price Dispersion in China
 

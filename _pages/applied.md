@@ -22,7 +22,7 @@ Applied data-science and machine-learning work that complements my academic rese
 
 End-to-end demand-estimation and decision-support tool built on 6.6M rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks).
 
-- Estimated a log-log fixed-effects demand model with Duan smearing retransformation for unbiased level-scale predictions.
+- Estimated a log-log fixed-effects demand model with Duan smearing retransformation to reduce log-to-level retransformation bias.
 - Implemented counterfactual price and promotion simulations with constrained profit optimization under cost, inventory, and margin limits.
 - Designed A/B validation plans with power analysis for raise-and-test pricing candidates; flagged input ranges that leave the support of the model.
 - Deployed as an interactive Streamlit application backed by a modular Python codebase, a pytest test suite, reproducible requirements, and auto-deploy from GitHub.
@@ -63,7 +63,7 @@ Competition on a small, severely class-imbalanced medical dataset with auxiliary
 
 - Designed a stratified resampling strategy using the Greek metadata (RandomOverSampler on Alpha-defined latent subgroups) to preserve population structure under severe class imbalance.
 - Co-developed a voting ensemble combining parametric (XGBoost) and non-parametric (TabPFN) models under a custom Balanced Log Loss metric.
-- Calibrated decision thresholds to minimize false negatives, trading off precision for recall as appropriate to the medical-screening use case.
+- Calibrated decision thresholds to prioritize recall in a severely imbalanced classification setting.
 
 ## Toolkit
 
