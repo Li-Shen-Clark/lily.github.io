@@ -14,20 +14,17 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <div class="home-copy" data-home-reveal>
-      <p class="home-kicker">Applied Economist - Trade - Spatial Economics - Data Science</p>
-      <h1 class="home-title">Measuring how trade and transport shocks reshape local economies.</h1>
+      <h1 class="home-title">Applied Economist and Quantitative Scientist</h1>
       <p class="home-lead">
-        I am a Ph.D. Candidate in Economics at <a href="https://www.clarku.edu/">Clark University</a>, advised by
-        <a href="https://wordpress.clarku.edu/juzhang/">Prof. Junfu Zhang</a>. My research combines causal inference,
-        structural modeling, and high-frequency data to quantify local multiplier effects, labor spillovers, and market integration.
-        I also ship production applied work --- live decision tools on scanner-scale data and top-tier performance in tabular ML competitions.
+        I study how trade, transport, and pricing shocks propagate through regional economies and markets.
+        My work combines causal inference, quantitative spatial models, and large-scale data systems to produce
+        decision-relevant evidence for research, policy, and business applications.
       </p>
 
       <div class="home-actions">
-        <a href="{{ '/files/CV_LS.pdf' | relative_url }}" class="home-button home-button--primary">CV (PDF)</a>
-        <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
-        <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
-        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">CV Page</a>
+        <a href="{{ '/research/' | relative_url }}" class="home-button home-button--primary">Research</a>
+        <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Projects</a>
+        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">CV</a>
       </div>
 
       <div class="home-skill-row" aria-label="Core skills">
@@ -318,6 +315,7 @@ redirect_from:
     <div class="home-actions home-actions--compact">
       <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">Email Me</a>
       <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
+      <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
       <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Projects</a>
       <a href="{{ '/teaching/' | relative_url }}" class="home-button home-button--ghost">Teaching</a>
     </div>
