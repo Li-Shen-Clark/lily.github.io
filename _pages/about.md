@@ -175,9 +175,9 @@ redirect_from:
 
       <div class="home-list">
         <article class="home-list__item">
-          <p class="home-list__meta">Causal identification</p>
-          <h3>Staggered DiD and event-study designs</h3>
-          <p>Applied to the staggered rollout of China's high-speed rail network; dynamic treatment effects, cross-product heterogeneity, and mechanism checks via passenger-mobility controls.</p>
+          <p class="home-list__meta">Empirical panel evidence</p>
+          <h3>High-frequency gravity and within-pair analysis</h3>
+          <p>Panel gravity regressions on 3.99M city-pair-month observations of daily Chinese wholesale prices with city-pair fixed effects. Distance heterogeneity and cross-product heterogeneity (bulky low-value vs. perishable goods) separate passenger-mobility channels from direct freight substitution.</p>
         </article>
 
         <article class="home-list__item">
