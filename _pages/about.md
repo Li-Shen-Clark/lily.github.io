@@ -20,16 +20,18 @@ redirect_from:
         I am a Ph.D. Candidate in Economics at <a href="https://www.clarku.edu/">Clark University</a>, advised by
         <a href="https://wordpress.clarku.edu/juzhang/">Prof. Junfu Zhang</a>. My research combines causal inference,
         structural modeling, and high-frequency data to quantify local multiplier effects, labor spillovers, and market integration.
+        I also ship production applied work --- live decision tools on scanner-scale data and top-tier performance in tabular ML competitions.
       </p>
 
       <div class="home-actions">
-        <a href="{{ '/files/CV_LS.pdf' | relative_url }}" class="home-button home-button--primary">CV</a>
-        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Detailed CV</a>
+        <a href="{{ '/files/CV_LS.pdf' | relative_url }}" class="home-button home-button--primary">CV (PDF)</a>
+        <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
+        <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
+        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">CV Page</a>
       </div>
 
       <div class="home-skill-row" aria-label="Core skills">
-        <span>Difference-in-Differences</span>
-        <span>Shift-Share IV</span>
+        <span>Causal Inference (DiD, Shift-Share IV)</span>
         <span>Quantitative Spatial Models</span>
         <span>Demand Estimation + Optimization</span>
         <span>Machine Learning (Kaggle Silver/Bronze)</span>
@@ -54,8 +56,9 @@ redirect_from:
         <img src="{{ '/images/p1.jpg' | relative_url }}" alt="Li Shen" class="home-avatar">
         <div>
           <p class="home-availability">On the 2026 economics job market and open to research and policy analysis opportunities.</p>
+          <p class="home-availability">Live apps: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
           <p class="home-rotator-label">Rotating between</p>
-          <p class="home-rotator" data-home-rotator data-words="local trade multipliers and labor spillovers|high-speed rail and market integration|causal inference with large administrative and price data|demand estimation and pricing optimization at scale">
+          <p class="home-rotator" data-home-rotator data-words="local trade multipliers and labor spillovers|high-speed rail and market integration|demand estimation and pricing optimization at scale">
             local trade multipliers and labor spillovers
           </p>
         </div>
@@ -79,7 +82,7 @@ redirect_from:
         </div>
         <div class="home-jmp__legend">
           <span>Map from JMP calibration</span>
-          <span>Multiplier range 0.30-1.02</span>
+          <span>Inland provinces amplify shocks most</span>
         </div>
       </div>
 
@@ -97,8 +100,8 @@ redirect_from:
           <span>cities in price panel</span>
         </article>
         <article>
-          <strong>1.721+</strong>
-          <span>real export-GDP multiplier (IV lower bound)</span>
+          <strong>0.30–1.02</strong>
+          <span>model-implied multiplier range across provinces</span>
         </article>
       </div>
     </aside>
@@ -119,8 +122,8 @@ redirect_from:
 
     <article class="home-card home-card--pillar" data-home-reveal>
       <p class="home-label">Research Theme 3</p>
-      <h2>Causal + structural workflow</h2>
-      <p>I pair quasi-experimental evidence with structural counterfactuals to produce policy-relevant estimates.</p>
+      <h2>Applied analytics and production data science</h2>
+      <p>I build demand-estimation and constrained-optimization tools on large-scale transaction data, deploy them as live Streamlit apps, and compete in top-tier tabular ML competitions (Kaggle Silver and Bronze).</p>
     </article>
   </section>
 
@@ -206,6 +209,15 @@ redirect_from:
 
       <div class="home-timeline">
         <article class="home-timeline__item">
+          <p class="home-timeline__date">2024 - Present</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Job Market Paper</span>
+            <h3>The Local Multiplier Effects of Trade</h3>
+            <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data; model-implied provincial GDP multipliers from 0.30 to 1.02.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
           <p class="home-timeline__date">2025 - Present</p>
           <div class="home-timeline__body">
             <span class="home-badge">Applied</span>
@@ -215,11 +227,11 @@ redirect_from:
         </article>
 
         <article class="home-timeline__item">
-          <p class="home-timeline__date">2024 - Present</p>
+          <p class="home-timeline__date">2022 - 2025</p>
           <div class="home-timeline__body">
             <span class="home-badge">Research</span>
-            <h3>The Local Multiplier Effects of Trade</h3>
-            <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data.</p>
+            <h3>High-Speed Rail and Market Integration</h3>
+            <p>Linked large-scale price and mobility data to evaluate transport infrastructure effects on market integration.</p>
           </div>
         </article>
 
@@ -229,15 +241,6 @@ redirect_from:
             <span class="home-badge">ML</span>
             <h3>Kaggle Competitions (Silver and Bronze)</h3>
             <p>Silver Medal on Home Credit Credit Risk Model Stability (LightGBM/CatBoost, Polars ETL); Bronze on ICR Identifying Age-Related Conditions (XGBoost/TabPFN ensemble).</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2022 - 2025</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Research</span>
-            <h3>High-Speed Rail and Market Integration</h3>
-            <p>Linked large-scale price and mobility data to evaluate transport infrastructure effects on market integration.</p>
           </div>
         </article>
 
@@ -256,15 +259,6 @@ redirect_from:
             <span class="home-badge">Teaching</span>
             <h3>Teaching Assistant, Clark University</h3>
             <p>Supported graduate finance and undergraduate economics courses and coached students in quantitative methods.</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2014 - 2016</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Industry</span>
-            <h3>Financial Auditor</h3>
-            <p>Conducted internal audits, reconciled inventory records, and prepared general-ledger entries.</p>
           </div>
         </article>
       </div>
@@ -292,7 +286,7 @@ redirect_from:
         <article class="home-list__item home-profile__item">
           <p class="home-list__meta">Awards</p>
           <div class="home-profile__lines">
-            <p class="home-profile__line">Sheftel Award for Research Excellence (twice, 2025)</p>
+            <p class="home-profile__line">Sheftel Award for Research Excellence, Clark University (2025, two-time recipient)</p>
             <p class="home-profile__line">Veendorp Best Field Paper Award (2022)</p>
             <p class="home-profile__line">Doctoral Fellowship, Clark University (2019-Present)</p>
             <p class="home-profile__line">Kaggle Silver Medal (2024) and Bronze Medal (2023)</p>
@@ -314,9 +308,9 @@ redirect_from:
   <section class="home-card home-card--cta" data-home-reveal>
     <div>
       <p class="home-label">Contact</p>
-      <h2>Interested in trade, regional development, policy-relevant quantitative analysis, or economic consulting?</h2>
+      <h2>Interested in trade, regional development, applied data science, quantitative research, or economic consulting?</h2>
       <p>
-        I am happy to discuss research collaboration, RA opportunities, policy projects, and economic consulting work with consulting firms and the economic consulting industry.
+        I am happy to discuss research collaboration, applied data-science projects, economic consulting, policy analysis, and quantitative research roles in industry or government.
         Email is the fastest way to reach me.
       </p>
     </div>
