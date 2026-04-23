@@ -35,13 +35,23 @@ International trade; quantitative spatial economics; market integration; regiona
 - Track a 17 km southeastward shift in the population-weighted centroid and find no evidence of systematic provincial catch-up in β/σ convergence tests.
 - Provide raster-based descriptive evidence for spatial economics, regional science, and China regional development.
 
-## Other Applied Work
+## Applied Projects
 
-### Applied Econometric Research and Forecasting
+### Pricing and Promotion Decision Engine (2025--Present)
 
-- Modeled determinants of Intel Corporation's net revenue with regression analysis.
-- Coauthored publication in *Engineering and Technology Quarterly Reviews*.
-- Forecasted international passenger demand with seasonal ARIMA models in SAS.
+- Live app: [pricing-promotion-decision-engine.streamlit.app](https://pricing-promotion-decision-engine.streamlit.app/) | Code: [GitHub](https://github.com/Li-Shen-Clark/pricing-promotion-decision-engine)
+- End-to-end demand-estimation and decision-support tool on 6.6M rows of Dominick's Finer Foods scanner data: log-log fixed-effects demand model with Duan smearing retransformation, counterfactual simulation, constrained profit optimization, and A/B validation with power analysis.
+- Deployed as an interactive Streamlit application with a modular Python codebase and a pytest test suite.
+
+### China Population Density Atlas (2022--Present)
+
+- Live app: [pop-density-spatial.streamlit.app](https://pop-density-spatial.streamlit.app/)
+- Interactive geospatial visualization built from 19 years of 5 km-resolution population-density rasters (2002--2020) harmonized into an annual panel; companion product to the Population Agglomeration paper above.
+
+## Machine Learning Competitions
+
+- **Kaggle Silver Medal, Home Credit --- Credit Risk Model Stability (Feb--May 2024).** Polars lazy-execution ETL, gradient boosting (LightGBM, CatBoost), direct optimization for Gini Stability metric.
+- **Kaggle Bronze Medal, ICR --- Identifying Age-Related Conditions (May--Aug 2023).** Stratified resampling for severe class imbalance, XGBoost + TabPFN voting ensemble under Balanced Log Loss.
 
 ## Methods and Data Expertise
 

@@ -31,7 +31,8 @@ redirect_from:
         <span>Difference-in-Differences</span>
         <span>Shift-Share IV</span>
         <span>Quantitative Spatial Models</span>
-        <span>Time-Series Forecasting</span>
+        <span>Demand Estimation + Optimization</span>
+        <span>Machine Learning (Kaggle Silver/Bronze)</span>
         <span>Python / SQL / Stata</span>
         <span>MRIO / ICIO</span>
       </div>
@@ -54,7 +55,7 @@ redirect_from:
         <div>
           <p class="home-availability">On the 2026 economics job market and open to research and policy analysis opportunities.</p>
           <p class="home-rotator-label">Rotating between</p>
-          <p class="home-rotator" data-home-rotator data-words="local trade multipliers and labor spillovers|high-speed rail and market integration|causal inference with large administrative and price data">
+          <p class="home-rotator" data-home-rotator data-words="local trade multipliers and labor spillovers|high-speed rail and market integration|causal inference with large administrative and price data|demand estimation and pricing optimization at scale">
             local trade multipliers and labor spillovers
           </p>
         </div>
@@ -153,11 +154,12 @@ redirect_from:
         </article>
 
         <article class="home-feature-card">
-          <p class="home-feature-card__meta">Working Paper - 2022-Present</p>
-          <h3>Population Agglomeration and Spatial Reallocation in China</h3>
+          <p class="home-feature-card__meta">Applied Project - 2025-Present</p>
+          <h3>Pricing and Promotion Decision Engine</h3>
           <p>
-            Uses annual population-density rasters at approximately 5 km resolution to document increasing spatial agglomeration,
-            expansion of dense urban corridors, and little evidence of province-level convergence across China (2002--2020).
+            Live end-to-end demand-estimation and decision-support tool on 6.6M rows of Dominick's scanner data: log-log fixed-effects
+            demand model, constrained profit optimization, A/B validation with power analysis, deployed as a Streamlit app with a modular
+            Python codebase and pytest suite.
           </p>
         </article>
       </div>
@@ -204,11 +206,29 @@ redirect_from:
 
       <div class="home-timeline">
         <article class="home-timeline__item">
+          <p class="home-timeline__date">2025 - Present</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Applied</span>
+            <h3>Pricing and Promotion Decision Engine</h3>
+            <p>Live demand-estimation and constrained-optimization tool on 6.6M rows of scanner data, deployed as a Streamlit app.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
           <p class="home-timeline__date">2024 - Present</p>
           <div class="home-timeline__body">
             <span class="home-badge">Research</span>
             <h3>The Local Multiplier Effects of Trade</h3>
             <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2023 - 2024</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">ML</span>
+            <h3>Kaggle Competitions (Silver and Bronze)</h3>
+            <p>Silver Medal on Home Credit Credit Risk Model Stability (LightGBM/CatBoost, Polars ETL); Bronze on ICR Identifying Age-Related Conditions (XGBoost/TabPFN ensemble).</p>
           </div>
         </article>
 
@@ -224,9 +244,9 @@ redirect_from:
         <article class="home-timeline__item">
           <p class="home-timeline__date">2022 - Present</p>
           <div class="home-timeline__body">
-            <span class="home-badge">Research</span>
-            <h3>Population Agglomeration and Spatial Reallocation in China</h3>
-            <p>Processed geospatial population-density rasters to document changing spatial distribution of China's population.</p>
+            <span class="home-badge">Applied</span>
+            <h3>China Population Density Atlas</h3>
+            <p>Processed 19 years of 5 km population rasters into a harmonized panel; deployed an interactive Streamlit map in 2025.</p>
           </div>
         </article>
 
@@ -275,6 +295,7 @@ redirect_from:
             <p class="home-profile__line">Sheftel Award for Research Excellence (twice, 2025)</p>
             <p class="home-profile__line">Veendorp Best Field Paper Award (2022)</p>
             <p class="home-profile__line">Doctoral Fellowship, Clark University (2019-Present)</p>
+            <p class="home-profile__line">Kaggle Silver Medal (2024) and Bronze Medal (2023)</p>
           </div>
         </article>
 
