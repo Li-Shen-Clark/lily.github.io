@@ -177,7 +177,7 @@ redirect_from:
         <article class="home-list__item">
           <p class="home-list__meta">Causal identification</p>
           <h3>Staggered DiD and event-study designs</h3>
-          <p>Applied to HSR rollout, policy shocks, and mobility restrictions with robustness and mechanism checks.</p>
+          <p>Applied to the staggered rollout of China's high-speed rail network; dynamic treatment effects, cross-product heterogeneity, and mechanism checks via passenger-mobility controls.</p>
         </article>
 
         <article class="home-list__item">
