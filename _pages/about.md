@@ -35,7 +35,7 @@ redirect_from:
         <span>Quantitative Spatial Models</span>
         <span>Demand Estimation + Optimization</span>
         <span>Machine Learning (Kaggle Silver/Bronze)</span>
-        <span>Python / SQL / Stata</span>
+        <span>Python / SQL / Stata / MATLAB</span>
         <span>MRIO / ICIO</span>
       </div>
     </div>
