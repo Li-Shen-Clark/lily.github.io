@@ -38,6 +38,12 @@ redirect_from:
     </div>
 
     <aside class="home-card home-card--signal" data-home-reveal>
+      <div class="home-actions home-actions--compact" style="justify-content: flex-end; margin-bottom: 1em;">
+        <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">✉ Email</a>
+        <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
+        <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
+      </div>
+
       <div class="home-panel__top">
         <div>
           <p class="home-label">Live Profile</p>
