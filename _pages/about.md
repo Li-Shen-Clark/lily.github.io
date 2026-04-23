@@ -16,14 +16,14 @@ redirect_from:
     <div class="home-copy" data-home-reveal>
       <h1 class="home-title">Applied Economist and Quantitative Scientist</h1>
       <p class="home-lead">
-        I study how trade, transport, and pricing shocks propagate through regional economies and markets.
+        I study how trade, transport, and pricing shocks propagate through connected markets and local economies.
         My work combines causal inference, quantitative spatial models, and large-scale data systems to produce
-        decision-relevant evidence for research, policy, and business applications.
+        counterfactual evidence for policy and business decisions.
       </p>
 
       <div class="home-actions">
         <a href="{{ '/research/' | relative_url }}" class="home-button home-button--primary">Research</a>
-        <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Projects</a>
+        <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Decision Tools</a>
         <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">CV</a>
       </div>
 
@@ -106,21 +106,21 @@ redirect_from:
 
   <section class="home-pillars">
     <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Research Theme 1</p>
-      <h2>Trade shocks and local multipliers</h2>
-      <p>I study how export demand propagates through domestic production networks and labor markets across regions.</p>
+      <p class="home-label">Trade shocks and local multipliers</p>
+      <h2>How do external trade-cost shocks propagate across regional economies?</h2>
+      <p>I build quantitative spatial models to measure how international trade shocks propagate across China's provincial economies through domestic production networks and non-tradable demand. <strong>Core asset: Job Market Paper.</strong></p>
     </article>
 
     <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Research Theme 2</p>
-      <h2>Transport connectivity and price convergence</h2>
-      <p>I quantify how high-speed rail changes passenger mobility and reduces intercity price dispersion, especially in short-haul markets.</p>
+      <p class="home-label">Transport and market integration</p>
+      <h2>How do mobility and connectivity shocks integrate spatial markets?</h2>
+      <p>I use high-frequency wholesale prices and smartphone-based mobility data to study how passenger connectivity, rather than freight costs, shapes spatial price dispersion across Chinese cities. <strong>Core asset: HSR and Market Integration paper.</strong></p>
     </article>
 
     <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Research Theme 3</p>
-      <h2>Applied analytics and production data science</h2>
-      <p>I build demand-estimation and constrained-optimization tools on large-scale transaction data, deploy them as live Streamlit apps, and compete in top-tier tabular ML competitions (Kaggle Silver and Bronze).</p>
+      <p class="home-label">Pricing and business counterfactuals</p>
+      <h2>How does the same counterfactual logic translate into firm-level decisions?</h2>
+      <p>I extend the estimate--simulate--optimize workflow from regional trade models to firm-level pricing: estimate demand response, simulate alternative policies, and optimize revenue or margin under cost, inventory, and feasibility constraints. <strong>Core asset: Pricing and Promotion Decision Engine.</strong></p>
     </article>
   </section>
 
@@ -155,12 +155,11 @@ redirect_from:
         </article>
 
         <article class="home-feature-card">
-          <p class="home-feature-card__meta">Applied Project - 2025-Present</p>
+          <p class="home-feature-card__meta">Decision Tool - 2025-Present</p>
           <h3>Pricing and Promotion Decision Engine</h3>
           <p>
-            Live end-to-end demand-estimation and decision-support tool on 6.6M rows of Dominick's scanner data: log-log fixed-effects
-            demand model, constrained profit optimization, A/B validation with power analysis, deployed as a Streamlit app with a modular
-            Python codebase and pytest suite.
+            Extends the estimate--simulate--optimize workflow from regional trade models to firm-level pricing on 6.6M rows of Dominick's scanner data:
+            log-log fixed-effects demand estimation, counterfactual simulation, and constrained profit optimization, deployed as a live Streamlit app.
           </p>
         </article>
       </div>
@@ -306,9 +305,9 @@ redirect_from:
   <section class="home-card home-card--cta" data-home-reveal>
     <div>
       <p class="home-label">Contact</p>
-      <h2>Interested in trade, regional development, applied data science, quantitative research, or economic consulting?</h2>
+      <h2>Interested in shock propagation, market integration, counterfactual decision systems, or the research-to-decision pipeline behind them?</h2>
       <p>
-        I am happy to discuss research collaboration, applied data-science projects, economic consulting, policy analysis, and quantitative research roles in industry or government.
+        I am happy to discuss research collaboration, counterfactual decision tools, economic consulting, policy analysis, and quantitative research roles in industry or government.
         Email is the fastest way to reach me.
       </p>
     </div>
@@ -317,7 +316,7 @@ redirect_from:
       <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">Email Me</a>
       <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
       <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
-      <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Projects</a>
+      <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Decision Tools</a>
       <a href="{{ '/teaching/' | relative_url }}" class="home-button home-button--ghost">Teaching</a>
     </div>
   </section>

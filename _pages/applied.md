@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Applied Projects"
+title: "Applied Decision Tools"
 permalink: /applied/
 author_profile: true
 hide_title: true
@@ -10,36 +10,23 @@ sitemap: true
 
 {% include base_path %}
 
-Applied data-science and machine-learning work that complements my academic research. Each project below ships as a live tool or a competition submission with open code where possible.
+These projects translate the same research workflow that drives my academic work---**estimate behavioral response, simulate counterfactuals, and evaluate decision rules**---into deployable tools for pricing, market analytics, and regional decision support. The core logic is identical to the one used in regional trade and market-integration models; the unit of analysis simply shifts from regions to firms or places.
 
-## Applied Projects
+## Counterfactual Decision Tools
 
 ### Pricing and Promotion Decision Engine (2025--Present)
 
 - **Live app:** [pricing-promotion-decision-engine.streamlit.app](https://pricing-promotion-decision-engine.streamlit.app/)
 - **Code:** [github.com/Li-Shen-Clark/pricing-promotion-decision-engine](https://github.com/Li-Shen-Clark/pricing-promotion-decision-engine)
 - **Stack:** Python (pandas, statsmodels, scikit-learn), Streamlit, pytest, Git/GitHub
+- **Narrative role:** Industry translation of the estimate--simulate--optimize workflow used in my regional trade research.
 
-End-to-end demand-estimation and decision-support tool built on 6.6M rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks).
+An end-to-end demand-estimation and decision-support tool built on 6.6M rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks). The workflow is the same one I use in my academic work, applied to firm-level pricing instead of regional GDP.
 
-- Estimated a log-log fixed-effects demand model with Duan smearing retransformation to reduce log-to-level retransformation bias.
-- Implemented counterfactual price and promotion simulations with constrained profit optimization under cost, inventory, and margin limits.
-- Designed A/B validation plans with power analysis for raise-and-test pricing candidates; flagged input ranges that leave the support of the model.
-- Deployed as an interactive Streamlit application backed by a modular Python codebase, a pytest test suite, reproducible requirements, and auto-deploy from GitHub.
-
-The workflow---estimate signal, simulate counterfactual, optimize under constraints, validate before shipping---mirrors the research-to-decision pipeline used in systematic investment and pricing research.
-
-### China Population Density Atlas (2022--Present)
-
-- **Live app:** [pop-density-spatial.streamlit.app](https://pop-density-spatial.streamlit.app/)
-- **Stack:** Python (GeoPandas, rasterio, NumPy), Streamlit
-- **Companion paper:** [Population Agglomeration and Spatial Reallocation in China](/research/) (SSRN preprint)
-
-Interactive geospatial visualization of China's population geography built from 19 years of 5 km-resolution population-density rasters (2002--2020) harmonized into an annual panel.
-
-- Processed WorldPop rasters covering the full territory of China into grid-cell and province-level summaries.
-- Surfaced documented patterns from the underlying research: rising spatial Gini, expansion of dense urban corridors, and a 17 km southeastward shift in the population-weighted centroid.
-- Deployed in 2025 for map-based exploration of density, agglomeration, and urban-corridor metrics at multiple spatial scales.
+- **Estimate behavioral response:** log-log fixed-effects demand model with Duan smearing retransformation to reduce log-to-level retransformation bias.
+- **Simulate counterfactuals:** price and promotion counterfactual simulations over the estimated demand system.
+- **Optimize under constraints:** constrained profit optimization under cost, inventory, and margin limits; A/B validation plans with power analysis before any candidate action ships.
+- **Ship:** deployed as an interactive Streamlit application backed by a modular Python codebase, a pytest test suite, reproducible requirements, and auto-deploy from GitHub.
 
 ## Machine Learning Competitions
 
@@ -59,11 +46,26 @@ Competition focused on model stability over time (Gini Stability metric) rather 
 - **Stack:** Python, TabPFN, XGBoost, imbalanced-learn
 - **Role:** ML researcher and co-developer
 
-Competition on a small, severely class-imbalanced medical dataset with auxiliary metadata (Greek) hinting at latent subgroup structure.
+Competition on a small, severely class-imbalanced tabular dataset with auxiliary metadata (Greek) hinting at latent subgroup structure.
 
 - Designed a stratified resampling strategy using the Greek metadata (RandomOverSampler on Alpha-defined latent subgroups) to preserve population structure under severe class imbalance.
 - Co-developed a voting ensemble combining parametric (XGBoost) and non-parametric (TabPFN) models under a custom Balanced Log Loss metric.
 - Calibrated decision thresholds to prioritize recall in a severely imbalanced classification setting.
+
+## Geospatial Measurement Infrastructure
+
+### China Population Density Atlas (2022--Present)
+
+- **Live app:** [pop-density-spatial.streamlit.app](https://pop-density-spatial.streamlit.app/)
+- **Stack:** Python (GeoPandas, rasterio, NumPy), Streamlit
+- **Companion paper:** [Population Agglomeration and Spatial Reallocation in China](/research/) (SSRN preprint)
+- **Narrative role:** Supporting capability --- demonstrates geospatial data construction, visual analytics, and regional measurement infrastructure that underpin my regional-economics research.
+
+Interactive geospatial visualization of China's population geography built from 19 years of 5 km-resolution population-density rasters (2002--2020) harmonized into an annual panel.
+
+- Processed WorldPop rasters covering the full territory of China into grid-cell and province-level summaries.
+- Surfaced documented patterns from the underlying research: rising spatial Gini, expansion of dense urban corridors, and a 17 km southeastward shift in the population-weighted centroid.
+- Deployed in 2025 for map-based exploration of density, agglomeration, and urban-corridor metrics at multiple spatial scales.
 
 ## Toolkit
 

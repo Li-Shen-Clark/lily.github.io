@@ -36,7 +36,7 @@ International trade; quantitative spatial economics; market integration; regiona
 ## Detail pages
 
 - **Working papers and research methods:** [Research](/research/)
-- **Applied projects and machine-learning competitions:** [Applied Projects](/applied/)
+- **Counterfactual decision tools and machine-learning competitions:** [Applied Decision Tools](/applied/)
 - **Teaching assistantships and courses supported:** [Teaching](/teaching/)
 
 ## Honors and Awards
