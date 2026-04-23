@@ -3,6 +3,7 @@ layout: archive
 title: "Applied Projects"
 permalink: /applied/
 author_profile: true
+hide_title: true
 robots: index,follow
 sitemap: true
 ---

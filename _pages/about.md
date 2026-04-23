@@ -14,7 +14,7 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <div class="home-copy" data-home-reveal>
-      <p class="home-kicker">Applied Economist - Trade - Mobility - Market Integration</p>
+      <p class="home-kicker">Applied Economist - Trade - Spatial Economics - Data Science</p>
       <h1 class="home-title">Measuring how trade and transport shocks reshape local economies.</h1>
       <p class="home-lead">
         I am a Ph.D. Candidate in Economics at <a href="https://www.clarku.edu/">Clark University</a>, advised by
