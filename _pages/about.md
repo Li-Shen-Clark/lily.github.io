@@ -131,7 +131,7 @@ redirect_from:
           <p class="home-label">Working Papers</p>
           <h2>Selected research</h2>
         </div>
-        <a href="{{ '/publications/' | relative_url }}" class="home-inline-link">Publication list</a>
+        <a href="{{ '/research/' | relative_url }}" class="home-inline-link">Full research list</a>
       </div>
 
       <div class="home-research-grid">
@@ -300,9 +300,8 @@ redirect_from:
         </article>
 
         <article class="home-list__item home-profile__item">
-          <p class="home-list__meta">Selected publication and presentations</p>
+          <p class="home-list__meta">Selected presentations</p>
           <div class="home-profile__lines">
-            <p class="home-profile__line">Engineering and Technology Quarterly Reviews (2019)</p>
             <p class="home-profile__line">Southern Economic Association (2025)</p>
             <p class="home-profile__line">Midwest Economic Conference (2025)</p>
             <p class="home-profile__line">Clark Ph.D. seminars (2022-2025)</p>
@@ -325,7 +324,7 @@ redirect_from:
     <div class="home-actions home-actions--compact">
       <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">Email Me</a>
       <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
-      <a href="{{ '/publications/' | relative_url }}" class="home-button home-button--ghost">Publications</a>
+      <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Projects</a>
       <a href="{{ '/teaching/' | relative_url }}" class="home-button home-button--ghost">Teaching</a>
     </div>
   </section>

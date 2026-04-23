@@ -16,45 +16,31 @@ International trade; quantitative spatial economics; market integration; regiona
 ### The Local Multiplier Effects of Trade: A Quantitative Analysis of China (Job Market Paper)
 *with Kensuke Suzuki, Xiaocong Xu, and Junfu Zhang*
 
-- Develops a multi-sector quantitative spatial model calibrated to China's 2017 MRIO table to study how export shocks propagate through domestic production networks and labor markets.
-- Shows that multiplier heterogeneity is driven by the intra-regional manufacturing trade share; model-implied local GDP multipliers range from 0.30 to 1.02 across provinces.
-- Combines structural analysis with IV evidence from city-level data, estimating sizable export-income and export-employment spillovers.
+- Develops a multi-sector quantitative spatial model with inter-provincial input-output linkages, non-tradable production, and labor mobility, calibrated to China's 2017 MRIO table; parameters recovered via structural inversion from MRIO, ICIO, and Customs micro-data.
+- Establishes that local trade multipliers are equilibrium objects shaped by the structure of domestic production linkages rather than universal parameters, and identifies the own-trade share---not raw export exposure---as the structural organizing statistic for multiplier heterogeneity.
+- Extends the quantitative spatial economics framework, typically used for national welfare analysis, to the mechanics of sub-national shock amplification; counterfactual simulations yield model-implied local GDP multipliers ranging from 0.30 to 1.02 across provinces, with inland inward-oriented economies amplifying external shocks through non-tradable service demand.
 
 ### High-Speed Railway and Market Integration: Evidence from Vegetable Price Dispersion in China
 
-- Builds a panel of 3.99 million city-pair-month observations from daily wholesale prices in 117 Chinese cities, matched with AutoNavi intercity mobility data.
-- Studies how passenger infrastructure affects market integration in a setting where freight conditions are stabilized by China's Green Passage policy.
-- Finds that HSR connectivity is associated with lower intercity price dispersion, with evidence pointing to passenger mobility and trader interaction as the main mechanism.
+- Constructs the largest daily-frequency panel of Chinese vegetable wholesale prices to date: 3.99 million city-pair-month observations covering ten commodities across 117 prefecture-level cities (2014--2022), merged with AutoNavi smartphone-based intercity passenger mobility indices.
+- Leverages two institutional features---China's Green Passage highway-toll exemption (which fixes variable freight costs for fresh vegetables) and prohibitive HSR freight tariffs for bulk produce---to study a setting in which differences in HSR connectivity reflect variation in passenger rather than freight costs.
+- Documents that HSR-connected city pairs exhibit 2--5% lower intercity price dispersion; passenger-mobility controls absorb the direct HSR coefficient, and cross-product heterogeneity (larger effects for bulky, low-value commodities) argues against a freight substitution channel, pointing to passenger mobility and trader interaction as the operative mechanism.
 
 ### Population Agglomeration and Spatial Reallocation in China
 
 - SSRN preprint: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569183](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569183)
-- Companion website: [https://pop-density-spatial.streamlit.app/](https://pop-density-spatial.streamlit.app/)
-- Use annual WorldPop population density rasters (2002-2020), downsampled to approximately 5 km, to document the evolution of China's population geography.
-- Show rising spatial agglomeration: the spatial Gini increases from 0.852 to 0.868, the top-decile population share rises from 73.5% to 76.7%, and the footprint of high-density areas expands by 24%.
-- Track a 17 km southeastward shift in the population-weighted centroid and find no evidence of systematic provincial catch-up in β/σ convergence tests.
-- Provide raster-based descriptive evidence for spatial economics, regional science, and China regional development.
-
-## Applied Projects
-
-### Pricing and Promotion Decision Engine (2025--Present)
-
-- Live app: [pricing-promotion-decision-engine.streamlit.app](https://pricing-promotion-decision-engine.streamlit.app/) | Code: [GitHub](https://github.com/Li-Shen-Clark/pricing-promotion-decision-engine)
-- End-to-end demand-estimation and decision-support tool on 6.6M rows of Dominick's Finer Foods scanner data: log-log fixed-effects demand model with Duan smearing retransformation, counterfactual simulation, constrained profit optimization, and A/B validation with power analysis.
-- Deployed as an interactive Streamlit application with a modular Python codebase and a pytest test suite.
-
-### China Population Density Atlas (2022--Present)
-
-- Live app: [pop-density-spatial.streamlit.app](https://pop-density-spatial.streamlit.app/)
-- Interactive geospatial visualization built from 19 years of 5 km-resolution population-density rasters (2002--2020) harmonized into an annual panel; companion product to the Population Agglomeration paper above.
-
-## Machine Learning Competitions
-
-- **Kaggle Silver Medal, Home Credit --- Credit Risk Model Stability (Feb--May 2024).** Polars lazy-execution ETL, gradient boosting (LightGBM, CatBoost), direct optimization for Gini Stability metric.
-- **Kaggle Bronze Medal, ICR --- Identifying Age-Related Conditions (May--Aug 2023).** Stratified resampling for severe class imbalance, XGBoost + TabPFN voting ensemble under Balanced Log Loss.
+- Companion interactive atlas: [Applied Projects](/applied/)
+- Uses annual WorldPop population density rasters (2002-2020), downsampled to approximately 5 km, to document the evolution of China's population geography.
+- Shows rising spatial agglomeration: the spatial Gini increases from 0.852 to 0.868, the top-decile population share rises from 73.5% to 76.7%, and the footprint of high-density areas expands by 24%.
+- Tracks a 17 km southeastward shift in the population-weighted centroid and finds no evidence of systematic provincial catch-up in β/σ convergence tests.
+- Provides raster-based descriptive evidence for spatial economics, regional science, and China regional development.
 
 ## Methods and Data Expertise
 
 - **Methods:** causal inference; shift-share IV; panel-data econometrics; event studies; staggered-adoption designs; gravity models; quantitative spatial modeling; input-output analysis; counterfactual simulation.
 - **Data:** Chinese MRIO and ICIO tables; Chinese Customs data; AutoNavi mobility data; high-frequency wholesale price data; geospatial population rasters; GIS-based regional datasets.
 - **Programming:** Python; Stata; R; MATLAB; SQL; SAS; GeoPandas; ArcGIS; Tableau; LaTeX.
+
+---
+
+See also: [Applied Projects](/applied/) | [CV](/cv/)
