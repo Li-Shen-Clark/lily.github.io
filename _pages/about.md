@@ -4,8 +4,7 @@ title: "Li Shen — Applied Economist & Quantitative Scientist"
 excerpt: "Research portfolio on trade shocks, market integration, and pricing analytics. Ph.D. Candidate in Economics at Clark University combining causal inference, quantitative spatial models, and large-scale data systems."
 layout: home
 author_profile: false
-header:
-  image: "og_research.png"
+og_image: "og_research.png"
 robots: index,follow
 sitemap: true
 redirect_from:

@@ -5,8 +5,7 @@ excerpt: "Curriculum vitae of Li Shen. Ph.D. Candidate in Economics at Clark Uni
 permalink: /cv/
 author_profile: true
 hide_title: true
-header:
-  image: "og_cv.png"
+og_image: "og_cv.png"
 robots: index,follow
 sitemap: true
 redirect_from:

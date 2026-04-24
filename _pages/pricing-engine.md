@@ -5,8 +5,7 @@ permalink: /pricing-engine/
 author_profile: true
 hide_title: true
 excerpt: "Live applied decision tool on 6.6M rows of scanner data. Demand estimation, counterfactual simulation, and constrained profit optimization — deployed as an interactive Streamlit app."
-header:
-  image: "og_pricing.png"
+og_image: "og_pricing.png"
 robots: index,follow
 sitemap: true
 ---
