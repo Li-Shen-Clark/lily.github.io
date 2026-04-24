@@ -44,6 +44,7 @@ International trade; quantitative spatial economics; market integration; regiona
 - Sheftel Award for Research Excellence, Clark University, 2025
 - Veendorp Best Field Paper Award, Clark University, 2022
 - Doctoral Fellowship, Clark University, 2019--present
+- Distinguished Student Award (Graduate School), Valparaiso University Alumni Association, 2018
 - Kaggle Silver Medal (2024) and Bronze Medal (2023)
 
 ## References
