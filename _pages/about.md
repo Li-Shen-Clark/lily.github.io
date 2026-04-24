@@ -292,6 +292,7 @@ redirect_from:
             <p class="home-profile__line">Sheftel Award for Research Excellence, Clark University (2025, two-time recipient)</p>
             <p class="home-profile__line">Veendorp Best Field Paper Award (2022)</p>
             <p class="home-profile__line">Doctoral Fellowship, Clark University (2019-Present)</p>
+            <p class="home-profile__line">Distinguished Student Award (Graduate School), Valparaiso University Alumni Association (2018)</p>
             <p class="home-profile__line">Kaggle Silver Medal (2024) and Bronze Medal (2023)</p>
           </div>
         </article>
