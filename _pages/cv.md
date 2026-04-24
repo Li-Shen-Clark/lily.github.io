@@ -1,9 +1,12 @@
 ---
 layout: archive
-title: "CV"
+title: "CV — Li Shen, Applied Economist & Quantitative Scientist"
+excerpt: "Curriculum vitae of Li Shen. Ph.D. Candidate in Economics at Clark University. Working papers, applied decision tools, machine learning competitions, teaching, and references."
 permalink: /cv/
 author_profile: true
 hide_title: true
+header:
+  image: "og_cv.png"
 robots: index,follow
 sitemap: true
 redirect_from:
