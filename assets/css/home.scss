@@ -171,6 +171,39 @@
   justify-content: flex-end;
 }
 
+.home-signal__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.home-avatar--inline {
+  width: clamp(4.4rem, 7vw, 6rem);
+  flex: 0 0 auto;
+}
+
+.home-panel__top--center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.home-panel__top--center .home-clock {
+  text-align: center;
+}
+
+.home-panel__profile--center {
+  justify-content: center;
+  text-align: center;
+}
+
+.home-panel__profile--center > div {
+  max-width: 36rem;
+}
+
 .home-button {
   display: inline-flex;
   align-items: center;
@@ -768,6 +801,15 @@
   .home-section__header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .home-panel__top--center,
+  .home-panel__profile--center {
+    align-items: center;
+  }
+
+  .home-panel__top--center .home-clock {
+    text-align: center;
   }
 
   .home-actions--compact {

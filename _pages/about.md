@@ -39,13 +39,16 @@ redirect_from:
     </div>
 
     <aside class="home-card home-card--signal" data-home-reveal>
-      <div class="home-actions home-actions--compact" style="justify-content: flex-end; margin-bottom: 1em;">
-        <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">✉ Email</a>
-        <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
-        <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
+      <div class="home-signal__top">
+        <img src="{{ '/images/profile-photo.png' | relative_url }}" alt="Li Shen" class="home-avatar home-avatar--inline">
+        <div class="home-actions home-actions--compact">
+          <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">✉ Email</a>
+          <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
+          <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
+        </div>
       </div>
 
-      <div class="home-panel__top">
+      <div class="home-panel__top home-panel__top--center">
         <div>
           <p class="home-label">Live Profile</p>
           <h2 class="home-panel__title">Current focus</h2>
@@ -56,8 +59,7 @@ redirect_from:
         </div>
       </div>
 
-      <div class="home-panel__profile">
-        <img src="{{ '/images/profile-photo.png' | relative_url }}" alt="Li Shen" class="home-avatar">
+      <div class="home-panel__profile home-panel__profile--center">
         <div>
           <p class="home-availability">On the 2026 economics job market and open to research and policy analysis opportunities.</p>
           <p class="home-availability">Live apps: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
