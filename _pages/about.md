@@ -57,7 +57,7 @@ redirect_from:
       </div>
 
       <div class="home-panel__profile">
-        <img src="{{ '/images/p1.jpg' | relative_url }}" alt="Li Shen" class="home-avatar">
+        <img src="{{ '/images/profile-photo.png' | relative_url }}" alt="Li Shen" class="home-avatar">
         <div>
           <p class="home-availability">On the 2026 economics job market and open to research and policy analysis opportunities.</p>
           <p class="home-availability">Live apps: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
