@@ -43,8 +43,6 @@ redirect_from:
         <img src="{{ '/images/profile-photo.png' | relative_url }}" alt="Li Shen" class="home-avatar home-avatar--inline">
         <div class="home-actions home-actions--compact">
           <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">✉ Email</a>
-          <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
-          <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
         </div>
       </div>
 
