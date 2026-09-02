@@ -16,7 +16,7 @@ redirect_from:
 
 ## Download
 
-- **[Download Public Resume (PDF)]({{ '/files/CV_LS.pdf' | relative_url }})**
+- **[Download Public Resume (PDF)]({{ '/files/Li_Shen_Public_Resume.pdf' | relative_url }})**
 
 ## Contact
 
