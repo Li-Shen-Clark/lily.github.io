@@ -10,7 +10,7 @@ sitemap: true
 
 ## Research Interests
 
-Shock propagation through connected markets and local economies; local multipliers; quantitative spatial economics; market integration; international trade; regional development; urban and population geography; industrial policy; China and emerging Asia.
+Price, cost, demand, and shock propagation through connected markets and local economies; local multipliers; quantitative spatial economics; market integration; international trade; regional development; urban and population geography; industrial policy; China and emerging Asia.
 
 ## Job Market Paper
 
@@ -37,7 +37,7 @@ Shock propagation through connected markets and local economies; local multiplie
 *Independent regional science project: population agglomeration, spatial exposure, and prefecture-level heterogeneity --- demonstrates geospatial measurement and regional data infrastructure capability.*
 
 - SSRN preprint: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569183](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569183)
-- Companion interactive atlas: [Applied Decision Tools](/applied/)
+- Companion interactive atlas: [Pricing & Data Projects](/applied/)
 - Uses annual WorldPop population density rasters (2002-2020), downsampled to approximately 5 km, to document the evolution of China's population geography.
 - Shows rising spatial agglomeration: the spatial Gini increases from 0.852 to 0.868, the top-decile population share rises from 73.5% to 76.7%, and the footprint of high-density areas expands by 24%.
 - Tracks a 17 km southeastward shift in the population-weighted centroid and finds no evidence of systematic provincial catch-up in β/σ convergence tests.
@@ -46,9 +46,9 @@ Shock propagation through connected markets and local economies; local multiplie
 ## Methods and Data Expertise
 
 - **Methods:** causal inference; shift-share IV; panel-data econometrics; event studies; staggered-adoption designs; gravity models; quantitative spatial modeling; input-output analysis; counterfactual simulation.
-- **Data:** Chinese MRIO and ICIO tables; Chinese Customs data; AutoNavi mobility data; high-frequency wholesale price data; geospatial population rasters; GIS-based regional datasets.
+- **Data:** retail scanner panels; high-frequency wholesale price data; Chinese MRIO and ICIO tables; Chinese Customs data; AutoNavi mobility data; geospatial population rasters; GIS-based regional datasets.
 - **Programming:** Python; Stata; R; MATLAB; SQL; SAS; GeoPandas; ArcGIS; Tableau; LaTeX.
 
 ---
 
-See also: [Applied Decision Tools](/applied/) | [CV](/cv/)
+See also: [Pricing & Data Projects](/applied/) | [CV](/cv/)

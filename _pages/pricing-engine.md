@@ -4,7 +4,7 @@ title: "Pricing and Promotion Decision Engine"
 permalink: /pricing-engine/
 author_profile: true
 hide_title: true
-excerpt: "Live applied decision tool on 6.6M rows of scanner data. Demand estimation, counterfactual simulation, and constrained profit optimization — deployed as an interactive Streamlit app."
+excerpt: "Live pricing decision tool on 6.6M rows of scanner data. Demand estimation, price and promotion counterfactuals, constrained profit optimization, and A/B power analysis."
 og_image: "og_pricing.png"
 robots: index,follow
 sitemap: true
@@ -12,7 +12,7 @@ sitemap: true
 
 # Pricing and Promotion Decision Engine
 
-**A live, end-to-end applied decision tool** built on 6.6 million rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks). Translates academic counterfactual-simulation workflow into firm-level pricing decisions.
+**A live, end-to-end pricing decision tool** built on 6.6 million rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks). Translates academic counterfactual-simulation workflow into product-level pricing decisions.
 
 ## 🚀 [Launch the Live App](https://pricing-promotion-decision-engine.streamlit.app/)
 
@@ -37,4 +37,4 @@ The workflow — **estimate → simulate → optimize** — mirrors the research
 
 ---
 
-See also: [Applied Decision Tools](/applied/) | [Research](/research/) | [CV](/cv/)
+See also: [Pricing & Data Projects](/applied/) | [Research](/research/) | [CV](/cv/)

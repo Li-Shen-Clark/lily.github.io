@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Li Shen | Applied Economist"
+title                    : "Li Shen, Ph.D. | Applied Economist & Pricing Data Scientist"
 title_separator          : "-"
 name                     : &name "Li Shen"
-description              : &description "Applied Economist and Ph.D. Candidate at Clark University"
+description              : &description "Applied economist and pricing data scientist with a Ph.D. in Economics from Clark University."
 url                      : https://lshen.com.cn/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Li-Shen-Clark/lily.github.io"
@@ -82,11 +82,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Li Shen"
+  name             : "Li Shen, Ph.D."
   avatar           : "profile-photo.png"
-  bio              : "Applied Economist | Ph.D. Candidate at Clark University | Trade · Spatial · Data Science"
+  bio              : "Applied Economist & Pricing Data Scientist | Price · Demand · Cost Modeling | Causal Inference · Python/SQL"
   location         : "Worcester, MA, USA"
-  employer         : "Clark University"
+  employer         : "Ph.D. in Economics, Clark University"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            : "lshen@clarku.edu"

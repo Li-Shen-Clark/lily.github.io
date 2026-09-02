@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Applied Decision Tools"
+title: "Pricing & Data Projects"
 permalink: /applied/
 author_profile: true
 hide_title: true
@@ -10,18 +10,18 @@ sitemap: true
 
 {% include base_path %}
 
-These projects translate the same research workflow that drives my academic work---**estimate behavioral response, simulate counterfactuals, and evaluate decision rules**---into deployable tools for pricing, market analytics, and regional decision support. The core logic is identical to the one used in regional trade and market-integration models; the unit of analysis simply shifts from regions to firms or places.
+These projects translate the same research workflow that drives my academic work---**estimate behavioral response, simulate counterfactuals, and evaluate decision rules**---into deployable tools for pricing, market analytics, machine learning, and regional decision support. The common thread is price, cost, demand, and market-integration data; the unit of analysis shifts from products to regions, borrowers, or places.
 
-## Counterfactual Decision Tools
+## Pricing Decision Tools
 
 ### Pricing and Promotion Decision Engine (2025--Present)
 
 - **Live app:** [pricing-promotion-decision-engine.streamlit.app](https://pricing-promotion-decision-engine.streamlit.app/)
 - **Code:** [github.com/Li-Shen-Clark/pricing-promotion-decision-engine](https://github.com/Li-Shen-Clark/pricing-promotion-decision-engine)
 - **Stack:** Python (pandas, statsmodels, scikit-learn), Streamlit, pytest, Git/GitHub
-- **Narrative role:** Industry translation of the estimate--simulate--optimize workflow used in my regional trade research.
+- **Narrative role:** Industry translation of the estimate--simulate--optimize workflow used in my regional trade and market-integration research.
 
-An end-to-end demand-estimation and decision-support tool built on 6.6M rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks). The workflow is the same one I use in my academic work, applied to firm-level pricing instead of regional GDP.
+An end-to-end demand-estimation and decision-support tool built on 6.6M rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks). The workflow is the same one I use in my academic work, applied to product-level pricing instead of regional GDP.
 
 - **Estimate behavioral response:** log-log fixed-effects demand model with Duan smearing retransformation to reduce log-to-level retransformation bias.
 - **Simulate counterfactuals:** price and promotion counterfactual simulations over the estimated demand system.
@@ -72,7 +72,7 @@ Interactive geospatial visualization of China's population geography built from 
 - **Programming:** Python (pandas, NumPy, scikit-learn, statsmodels, GeoPandas, Polars), SQL, R, MATLAB; Git/GitHub, pytest.
 - **Machine learning:** Gradient boosting (XGBoost, LightGBM, CatBoost), cross-validation, feature engineering, model stacking, regularization.
 - **Deployment:** Streamlit (multiple live apps), reproducible requirements, auto-deploy from GitHub.
-- **Data at scale:** Multi-million-row panels, high-frequency price data, geospatial rasters, multi-regional input-output tables.
+- **Data at scale:** Retail scanner panels, multi-million-row price panels, high-frequency commodity price data, geospatial rasters, multi-regional input-output tables.
 
 ---
 

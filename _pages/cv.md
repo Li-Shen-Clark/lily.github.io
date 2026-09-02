@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV — Li Shen, Applied Economist & Quantitative Scientist"
-excerpt: "Curriculum vitae of Li Shen. Ph.D. Candidate in Economics at Clark University. Working papers, applied decision tools, machine learning competitions, teaching, and references."
+title: "CV — Li Shen, Ph.D., Applied Economist & Pricing Data Scientist"
+excerpt: "Curriculum vitae of Li Shen, Ph.D. Applied economist and pricing data scientist with working papers, pricing decision tools, machine learning competitions, teaching, and references."
 permalink: /cv/
 author_profile: true
 hide_title: true
@@ -26,7 +26,7 @@ redirect_from:
 
 ## Education
 
-- **Clark University**, Ph.D. in Economics (expected August 2026)
+- **Clark University**, Ph.D. in Economics (2026)
 - **The State University of New York at Buffalo**, M.A. in Economics (2019)
 - **Valparaiso University**, M.S. in International Economics and Finance (2018)
 - **Chongqing University**, B.Mgmt. in Accounting (2014)
@@ -38,14 +38,14 @@ International trade; quantitative spatial economics; market integration; regiona
 ## Detail pages
 
 - **Working papers and research methods:** [Research](/research/)
-- **Counterfactual decision tools and machine-learning competitions:** [Applied Decision Tools](/applied/)
+- **Pricing decision tools and machine-learning competitions:** [Pricing & Data Projects](/applied/)
 - **Teaching assistantships and courses supported:** [Teaching](/teaching/)
 
 ## Honors and Awards
 
 - Sheftel Award for Research Excellence, Clark University, 2025
 - Veendorp Best Field Paper Award, Clark University, 2022
-- Doctoral Fellowship, Clark University, 2019--present
+- Doctoral Fellowship, Clark University, 2019--2026
 - Distinguished Student Award (Graduate School), Valparaiso University Alumni Association, 2018
 - Kaggle Silver Medal (2024) and Bronze Medal (2023)
 

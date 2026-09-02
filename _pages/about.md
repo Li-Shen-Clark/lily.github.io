@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Li Shen — Applied Economist & Quantitative Scientist"
-excerpt: "Research portfolio on trade shocks, market integration, and pricing analytics. Ph.D. Candidate in Economics at Clark University combining causal inference, quantitative spatial models, and large-scale data systems."
+title: "Li Shen, Ph.D. — Applied Economist & Pricing Data Scientist"
+excerpt: "Portfolio of Li Shen, Ph.D., an applied economist and pricing data scientist working with price, cost, demand, trade, mobility, and market-integration data."
 layout: home
 author_profile: false
 og_image: "og_research.png"
@@ -15,26 +15,27 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <div class="home-copy" data-home-reveal>
-      <h1 class="home-title">Applied Economist and Quantitative Scientist</h1>
+      <h1 class="home-title">Applied Economist & Pricing Data Scientist</h1>
       <p class="home-lead">
-        I study how trade, transport, and pricing shocks propagate through connected markets and local economies.
-        My work combines causal inference, quantitative spatial models, and large-scale data systems to produce
-        counterfactual evidence for policy and business decisions.
+        I model price, cost, demand, and market-integration data across retail scanner panels, commodity wholesale prices,
+        mobility traces, input-output tables, customs micro-data, and geospatial rasters. My work combines causal inference,
+        demand estimation, structural modeling, machine learning, and counterfactual simulation to turn complex market questions
+        into decision-ready evidence.
       </p>
 
       <div class="home-actions">
         <a href="{{ '/research/' | relative_url }}" class="home-button home-button--primary">Research</a>
-        <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Decision Tools</a>
+        <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Pricing & Data Projects</a>
         <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">CV</a>
       </div>
 
       <div class="home-skill-row" aria-label="Core skills">
+        <span>Price · Demand · Cost Modeling</span>
         <span>Causal Inference (DiD, Shift-Share IV)</span>
-        <span>Quantitative Spatial Models</span>
-        <span>Demand Estimation + Optimization</span>
+        <span>Counterfactual Simulation + Optimization</span>
         <span>Machine Learning (Kaggle Silver/Bronze)</span>
         <span>Python / SQL / Stata / MATLAB</span>
-        <span>MRIO / ICIO</span>
+        <span>MRIO / ICIO / Customs Micro-data</span>
       </div>
     </div>
 
@@ -59,11 +60,12 @@ redirect_from:
 
       <div class="home-panel__profile home-panel__profile--center">
         <div>
-          <p class="home-availability">On the 2026 economics job market and open to research and policy analysis opportunities.</p>
+          <p class="home-availability">Applied economist and pricing data scientist with a Ph.D. in Economics from Clark University.</p>
+          <p class="home-availability">Open to applied economist, pricing data scientist, pricing analytics, product analytics, risk analytics, economic consulting, and strategy analytics roles.</p>
           <p class="home-availability">Live apps: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
           <p class="home-rotator-label">Rotating between</p>
-          <p class="home-rotator" data-home-rotator data-words="local trade multipliers and labor spillovers|high-speed rail and market integration|demand estimation and pricing optimization at scale">
-            local trade multipliers and labor spillovers
+          <p class="home-rotator" data-home-rotator data-words="price, demand, and margin-sensitive decisions|commodity wholesale price dispersion|trade-cost shocks and local multipliers">
+            price, demand, and margin-sensitive decisions
           </p>
         </div>
       </div>
@@ -113,14 +115,14 @@ redirect_from:
 
   <section class="home-pillars">
     <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Trade shocks and local multipliers</p>
+      <p class="home-label">Trade-cost shocks and local multipliers</p>
       <h2>How do external trade-cost shocks propagate across regional economies?</h2>
       <p>I build quantitative spatial models to measure how international trade shocks propagate across China's provincial economies through domestic production networks and non-tradable demand. <strong>Core asset: Job Market Paper.</strong></p>
     </article>
 
     <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Transport and market integration</p>
-      <h2>How do mobility and connectivity shocks integrate spatial markets?</h2>
+      <p class="home-label">Commodity prices and market integration</p>
+      <h2>How do mobility and connectivity shocks change spatial price dispersion?</h2>
       <p>I use high-frequency wholesale prices and smartphone-based mobility data to study how passenger connectivity, rather than freight costs, shapes spatial price dispersion across Chinese cities. <strong>Core asset: HSR and Market Integration paper.</strong></p>
     </article>
 
@@ -135,20 +137,19 @@ redirect_from:
     <div class="home-card" data-home-reveal>
       <div class="home-section__header">
         <div>
-          <p class="home-label">Working Papers</p>
-          <h2>Selected research</h2>
+          <p class="home-label">Research and Tools</p>
+          <h2>Selected work</h2>
         </div>
         <a href="{{ '/research/' | relative_url }}" class="home-inline-link">Full research list</a>
       </div>
 
       <div class="home-research-grid">
         <article class="home-feature-card">
-          <p class="home-feature-card__meta">Job Market Paper - 2024-Present</p>
-          <h3>The Local Multiplier Effects of Trade</h3>
+          <p class="home-feature-card__meta">Decision Tool - 2025-Present</p>
+          <h3>Pricing and Promotion Decision Engine</h3>
           <p>
-            Built a multi-sector quantitative spatial model for 31 Chinese provinces calibrated to MRIO, ICIO, and Customs micro-data.
-            Identifies the own-trade share as the structural organizing statistic for multiplier heterogeneity, with inland inward-oriented
-            economies amplifying external shocks through non-tradable service demand.
+            Built on 6.6M rows of Dominick's scanner data: log-log fixed-effects demand estimation, price and promotion counterfactuals,
+            constrained profit optimization under cost and margin inputs, and A/B power calculations, deployed as a live Streamlit app.
           </p>
         </article>
 
@@ -162,11 +163,12 @@ redirect_from:
         </article>
 
         <article class="home-feature-card">
-          <p class="home-feature-card__meta">Decision Tool - 2025-Present</p>
-          <h3>Pricing and Promotion Decision Engine</h3>
+          <p class="home-feature-card__meta">Job Market Paper - 2024-Present</p>
+          <h3>The Local Multiplier Effects of Trade</h3>
           <p>
-            Extends the estimate--simulate--optimize workflow from regional trade models to firm-level pricing on 6.6M rows of Dominick's scanner data:
-            log-log fixed-effects demand estimation, counterfactual simulation, and constrained profit optimization, deployed as a live Streamlit app.
+            Built a multi-sector quantitative spatial model for 31 Chinese provinces calibrated to MRIO, ICIO, and Customs micro-data.
+            Identifies the own-trade share as the structural organizing statistic for multiplier heterogeneity, with inland inward-oriented
+            economies amplifying external shocks through non-tradable service demand.
           </p>
         </article>
       </div>
@@ -182,15 +184,15 @@ redirect_from:
 
       <div class="home-list">
         <article class="home-list__item">
-          <p class="home-list__meta">Empirical panel evidence</p>
-          <h3>High-frequency gravity and within-pair analysis</h3>
-          <p>Panel gravity regressions on 3.99M city-pair-month observations of daily Chinese wholesale prices with city-pair fixed effects. Distance heterogeneity and cross-product heterogeneity (bulky low-value vs. perishable goods) separate passenger-mobility channels from direct freight substitution.</p>
+          <p class="home-list__meta">Pricing and demand evidence</p>
+          <h3>Retail scanner panels and wholesale price data</h3>
+          <p>Demand estimation, promotion counterfactuals, and margin-sensitive pricing simulations on scanner data, plus panel gravity regressions on 3.99M city-pair-month observations of daily Chinese wholesale prices.</p>
         </article>
 
         <article class="home-list__item">
           <p class="home-list__meta">Structural quantification</p>
-          <h3>Multi-region general equilibrium modeling</h3>
-          <p>Counterfactual simulations with calibrated trade costs, productivity, and input-output coefficients.</p>
+          <h3>Trade-cost shocks and local multipliers</h3>
+          <p>Counterfactual simulations with calibrated trade costs, productivity, and input-output coefficients to study how shocks move through regional production networks.</p>
         </article>
 
         <article class="home-list__item">
@@ -213,20 +215,20 @@ redirect_from:
 
       <div class="home-timeline">
         <article class="home-timeline__item">
-          <p class="home-timeline__date">2024 - Present</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Job Market Paper</span>
-            <h3>The Local Multiplier Effects of Trade</h3>
-            <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data; model-implied provincial GDP multipliers from 0.30 to 1.02.</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
           <p class="home-timeline__date">2025 - Present</p>
           <div class="home-timeline__body">
             <span class="home-badge">Applied</span>
             <h3>Pricing and Promotion Decision Engine</h3>
             <p>Live demand-estimation and constrained-optimization tool on 6.6M rows of scanner data, deployed as a Streamlit app.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2024 - Present</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Job Market Paper</span>
+            <h3>The Local Multiplier Effects of Trade</h3>
+            <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data; model-implied provincial GDP multipliers from 0.30 to 1.02.</p>
           </div>
         </article>
 
@@ -280,7 +282,7 @@ redirect_from:
         <article class="home-list__item home-profile__item">
           <p class="home-list__meta">Education</p>
           <div class="home-profile__lines">
-            <p class="home-profile__line">Clark University, Ph.D. in Economics (Expected Aug 2026)</p>
+            <p class="home-profile__line">Clark University, Ph.D. in Economics (2026)</p>
             <p class="home-profile__line">SUNY Buffalo, M.A. in Economics</p>
             <p class="home-profile__line">Valparaiso University, M.S. in International Economics and Finance</p>
             <p class="home-profile__line">Chongqing University, B.Mgmt. in Accounting</p>
@@ -292,7 +294,7 @@ redirect_from:
           <div class="home-profile__lines">
             <p class="home-profile__line">Sheftel Award for Research Excellence, Clark University (2025, two-time recipient)</p>
             <p class="home-profile__line">Veendorp Best Field Paper Award (2022)</p>
-            <p class="home-profile__line">Doctoral Fellowship, Clark University (2019-Present)</p>
+            <p class="home-profile__line">Doctoral Fellowship, Clark University (2019-2026)</p>
             <p class="home-profile__line">Distinguished Student Award (Graduate School), Valparaiso University Alumni Association (2018)</p>
             <p class="home-profile__line">Kaggle Silver Medal (2024) and Bronze Medal (2023)</p>
           </div>
@@ -313,9 +315,9 @@ redirect_from:
   <section class="home-card home-card--cta" data-home-reveal>
     <div>
       <p class="home-label">Contact</p>
-      <h2>Interested in shock propagation, market integration, counterfactual decision systems, or the research-to-decision pipeline behind them?</h2>
+      <h2>Interested in pricing analytics, market integration, counterfactual decision systems, or the research-to-decision pipeline behind them?</h2>
       <p>
-        I am happy to discuss research collaboration, counterfactual decision tools, economic consulting, policy analysis, and quantitative research roles in industry or government.
+        I am happy to discuss pricing analytics, product analytics, risk analytics, economic consulting, policy analysis, and quantitative research roles in industry or government.
         Email is the fastest way to reach me.
       </p>
     </div>
@@ -324,7 +326,7 @@ redirect_from:
       <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">Email Me</a>
       <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
       <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
-      <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Applied Decision Tools</a>
+      <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Pricing & Data Projects</a>
       <a href="{{ '/teaching/' | relative_url }}" class="home-button home-button--ghost">Teaching</a>
     </div>
   </section>
