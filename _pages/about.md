@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Li Shen, Ph.D. — Applied Economist & Pricing Data Scientist"
-excerpt: "Portfolio of Li Shen, Ph.D., an applied economist and pricing data scientist working with price, cost, demand, trade, mobility, and market-integration data."
+excerpt: "Portfolio of Li Shen, Ph.D., an applied economist and pricing data scientist working with retail scanner data, wholesale prices, demand models, and regional trade-cost shocks."
 layout: home
 author_profile: false
 og_image: "og_research.png"
@@ -17,16 +17,17 @@ redirect_from:
     <div class="home-copy" data-home-reveal>
       <h1 class="home-title">Applied Economist & Pricing Data Scientist</h1>
       <p class="home-lead">
-        I model price, cost, demand, and market-integration data across retail scanner panels, commodity wholesale prices,
-        mobility traces, input-output tables, customs micro-data, and geospatial rasters. My work combines causal inference,
-        demand estimation, structural modeling, machine learning, and counterfactual simulation to turn complex market questions
-        into decision-ready evidence.
+        I turn price, cost, demand, and market-integration data into empirical models, deployed tools, and clear decisions.
+        My work spans 6.6M retail scanner records, 3.99M commodity-price observations, mobility traces, input-output tables,
+        customs micro-data, and geospatial rasters, using causal inference, demand estimation, structural modeling,
+        machine learning, and counterfactual simulation.
       </p>
 
       <div class="home-actions">
-        <a href="{{ '/research/' | relative_url }}" class="home-button home-button--primary">Research</a>
+        <a href="{{ '/pricing-engine/' | relative_url }}" class="home-button home-button--primary">Pricing Engine</a>
         <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Pricing & Data Projects</a>
-        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">CV</a>
+        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Public Resume</a>
+        <a href="{{ '/research/' | relative_url }}" class="home-button home-button--ghost">Research</a>
       </div>
 
       <div class="home-skill-row" aria-label="Core skills">
@@ -61,7 +62,7 @@ redirect_from:
       <div class="home-panel__profile home-panel__profile--center">
         <div>
           <p class="home-availability">Applied economist and pricing data scientist with a Ph.D. in Economics from Clark University.</p>
-          <p class="home-availability">Open to applied economist, pricing data scientist, pricing analytics, product analytics, risk analytics, economic consulting, and strategy analytics roles.</p>
+          <p class="home-availability">Open to pricing data science, applied economics, pricing analytics, product and risk analytics, economic consulting, and strategy analytics roles.</p>
           <p class="home-availability">Live apps: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
           <p class="home-rotator-label">Rotating between</p>
           <p class="home-rotator" data-home-rotator data-words="price, demand, and margin-sensitive decisions|commodity wholesale price dispersion|trade-cost shocks and local multipliers">
@@ -70,9 +71,9 @@ redirect_from:
         </div>
       </div>
 
-      <div class="home-jmp" data-jmp-map aria-label="JMP local multiplier map animation">
+      <div class="home-jmp" data-jmp-map aria-label="Regional shock multiplier map animation">
         <div class="home-jmp__top">
-          <span class="home-jmp__title">JMP Local Multiplier Map</span>
+          <span class="home-jmp__title">Regional Shock Multiplier Map</span>
           <div class="home-jmp__meta">
             <span class="home-jmp__round" data-jmp-map-focus>Active: Beijing (BJ)</span>
             <span class="home-jmp__round home-jmp__round--value" data-jmp-map-value>m = 0.82</span>
@@ -87,23 +88,23 @@ redirect_from:
           </div>
         </div>
         <div class="home-jmp__legend">
-          <span>Map from JMP calibration</span>
-          <span>Inland provinces amplify shocks most</span>
+          <span>Trade-cost shock calibration</span>
+          <span>Local absorption shapes exposure</span>
         </div>
       </div>
 
       <div class="home-metrics">
         <article>
-          <strong data-counter="31">31</strong>
-          <span>provinces in spatial model</span>
+          <strong>6.6M</strong>
+          <span>retail scanner rows in pricing engine</span>
         </article>
         <article>
           <strong>3.99M</strong>
-          <span>city-pair-month observations</span>
+          <span>commodity-price observations</span>
         </article>
         <article>
-          <strong data-counter="117">117</strong>
-          <span>cities in price panel</span>
+          <strong data-counter="31">31</strong>
+          <span>provinces in spatial model</span>
         </article>
         <article>
           <strong>0.30–1.02</strong>
@@ -115,9 +116,9 @@ redirect_from:
 
   <section class="home-pillars">
     <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Trade-cost shocks and local multipliers</p>
-      <h2>How do external trade-cost shocks propagate across regional economies?</h2>
-      <p>I build quantitative spatial models to measure how international trade shocks propagate across China's provincial economies through domestic production networks and non-tradable demand. <strong>Core asset: Job Market Paper.</strong></p>
+      <p class="home-label">Retail pricing decisions</p>
+      <h2>How should price and promotion changes be tested before rollout?</h2>
+      <p>I estimate demand response, simulate price and promotion scenarios, and optimize profit under cost, inventory, and margin constraints. <strong>Core asset: Pricing and Promotion Decision Engine.</strong></p>
     </article>
 
     <article class="home-card home-card--pillar" data-home-reveal>
@@ -127,9 +128,9 @@ redirect_from:
     </article>
 
     <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Pricing and business counterfactuals</p>
-      <h2>How does the same counterfactual logic translate into firm-level decisions?</h2>
-      <p>I extend the estimate--simulate--optimize workflow from regional trade models to firm-level pricing: estimate demand response, simulate alternative policies, and optimize revenue or margin under cost, inventory, and feasibility constraints. <strong>Core asset: Pricing and Promotion Decision Engine.</strong></p>
+      <p class="home-label">Trade-cost shocks and local multipliers</p>
+      <h2>Why do similar external shocks produce different regional outcomes?</h2>
+      <p>I build quantitative spatial models to measure how trade-cost shocks propagate through domestic production networks, local absorption, and non-tradable demand. <strong>Core asset: Trade shock paper.</strong></p>
     </article>
   </section>
 
@@ -163,7 +164,7 @@ redirect_from:
         </article>
 
         <article class="home-feature-card">
-          <p class="home-feature-card__meta">Job Market Paper - 2024-Present</p>
+          <p class="home-feature-card__meta">Working Paper - 2024-Present</p>
           <h3>The Local Multiplier Effects of Trade</h3>
           <p>
             Built a multi-sector quantitative spatial model for 31 Chinese provinces calibrated to MRIO, ICIO, and Customs micro-data.
@@ -226,7 +227,7 @@ redirect_from:
         <article class="home-timeline__item">
           <p class="home-timeline__date">2024 - Present</p>
           <div class="home-timeline__body">
-            <span class="home-badge">Job Market Paper</span>
+            <span class="home-badge">Research</span>
             <h3>The Local Multiplier Effects of Trade</h3>
             <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data; model-implied provincial GDP multipliers from 0.30 to 1.02.</p>
           </div>
@@ -317,7 +318,7 @@ redirect_from:
       <p class="home-label">Contact</p>
       <h2>Interested in pricing analytics, market integration, counterfactual decision systems, or the research-to-decision pipeline behind them?</h2>
       <p>
-        I am happy to discuss pricing analytics, product analytics, risk analytics, economic consulting, policy analysis, and quantitative research roles in industry or government.
+        I am happy to discuss pricing analytics, product analytics, risk analytics, economic consulting, policy analysis, and quantitative research roles where rigorous empirical work needs to become clear business or policy decisions.
         Email is the fastest way to reach me.
       </p>
     </div>
