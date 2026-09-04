@@ -71,25 +71,111 @@ redirect_from:
         </div>
       </div>
 
-      <div class="home-jmp" data-jmp-map aria-label="Regional shock multiplier map animation">
-        <div class="home-jmp__top">
-          <span class="home-jmp__title">Regional Shock Multiplier Map</span>
-          <div class="home-jmp__meta">
-            <span class="home-jmp__round" data-jmp-map-focus>Active: Beijing (BJ)</span>
-            <span class="home-jmp__round home-jmp__round--value" data-jmp-map-value>m = 0.82</span>
+      <div class="home-journey home-journey--lab" data-home-journey aria-label="Pricing decision lab from market evidence to validation">
+        <div class="home-journey__header">
+          <div>
+            <p class="home-label">Research-to-decision trajectory</p>
+            <h3>From market prices to pricing decisions</h3>
+            <p class="home-journey__dek">Price evidence, counterfactuals, constraints, and test design in one empirical workflow.</p>
+          </div>
+          <div class="home-journey__controls" aria-label="Timeline controls">
+            <button type="button" class="home-journey__control" data-journey-toggle aria-pressed="false">Pause</button>
+            <button type="button" class="home-journey__control" data-journey-replay>Replay</button>
           </div>
         </div>
-        <div class="home-jmp-map__panel">
-          <img src="{{ '/images/mgdp_map.png' | relative_url }}" alt="Provincial local GDP multiplier map in China" class="home-jmp-map__image">
-          <div class="home-jmp-map__overlay" data-jmp-map-overlay>
-            <span class="home-jmp-map__beam" data-jmp-map-beam aria-hidden="true"></span>
-            <span class="home-jmp-map__pulse" data-jmp-map-pulse aria-hidden="true"></span>
-            <div class="home-jmp-map__nodes" data-jmp-map-nodes aria-hidden="true"></div>
+
+        <div class="home-lab" aria-label="Pricing decision lab visual">
+          <div class="home-lab__main">
+            <article class="home-lab__screen home-lab__screen--evidence is-active" data-journey-panel>
+              <span class="home-lab__eyebrow">Price evidence</span>
+              <div class="home-lab__stat">
+                <strong>3.99M</strong>
+                <span>city-pair-month observations built from daily wholesale vegetable prices and mobility indices</span>
+              </div>
+              <div class="home-lab__fields" aria-label="Price evidence inputs">
+                <span>daily prices</span>
+                <span>city pairs</span>
+                <span>mobility</span>
+                <span>HSR access</span>
+                <span>fixed effects</span>
+                <span>price dispersion</span>
+              </div>
+            </article>
+
+            <div class="home-lab__side">
+              <article class="home-lab__screen" data-journey-panel>
+                <span class="home-lab__eyebrow">Counterfactual inputs</span>
+                <div class="home-lab__source-grid">
+                  <span>MRIO</span><strong>province-sector links</strong>
+                  <span>ICIO</span><strong>global exposure</strong>
+                  <span>Customs</span><strong>micro-data shocks</strong>
+                </div>
+                <p class="home-lab__note">Trade-cost counterfactuals through domestic production networks.</p>
+              </article>
+
+              <article class="home-lab__screen" data-journey-panel>
+                <span class="home-lab__eyebrow">Retail decision engine</span>
+                <ul class="home-lab__checks">
+                  <li>6.6M scanner rows</li>
+                  <li>Demand + promo response</li>
+                  <li>Cost / margin constraints</li>
+                </ul>
+              </article>
+
+              <article class="home-lab__screen" data-journey-panel>
+                <span class="home-lab__eyebrow">Validation plan</span>
+                <div class="home-lab__test">
+                  <strong>A/B</strong>
+                  <span>Power</span>
+                  <span>Risk</span>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
-        <div class="home-jmp__legend">
-          <span>Trade-cost shock calibration</span>
-          <span>Local absorption shapes exposure</span>
+
+        <div class="home-journey__track" aria-hidden="true">
+          <span class="home-journey__rail"></span>
+          <span class="home-journey__progress" data-journey-progress></span>
+          <span class="home-journey__marker is-active" data-journey-marker style="--step-x: 0%;">1</span>
+          <span class="home-journey__marker" data-journey-marker style="--step-x: 33.333%;">2</span>
+          <span class="home-journey__marker" data-journey-marker style="--step-x: 66.666%;">3</span>
+          <span class="home-journey__marker" data-journey-marker style="--step-x: 100%;">4</span>
+        </div>
+
+        <div class="home-journey__steps">
+          <article class="home-journey__step is-active" data-journey-step>
+            <span class="home-journey__year">2022</span>
+            <strong>Market evidence</strong>
+            <span>3.99M commodity-price observations</span>
+          </article>
+          <article class="home-journey__step" data-journey-step>
+            <span class="home-journey__year">2024</span>
+            <strong>Counterfactuals</strong>
+            <span>Trade-cost and market-integration scenarios</span>
+          </article>
+          <article class="home-journey__step" data-journey-step>
+            <span class="home-journey__year">2025</span>
+            <strong>Retail pricing</strong>
+            <span>6.6M scanner rows for demand estimation</span>
+          </article>
+          <article class="home-journey__step" data-journey-step>
+            <span class="home-journey__year">Now</span>
+            <strong>Test and validate</strong>
+            <span>A/B power analysis and risk guardrails</span>
+          </article>
+        </div>
+
+        <div class="home-cockpit">
+          <div>
+            <span class="home-cockpit__label">Decision pipeline</span>
+            <strong>Evidence -> Model -> Decision -> Validation</strong>
+            <span>Demand, cost, inventory, and margin constraints</span>
+          </div>
+          <div class="home-cockpit__status" data-journey-status>
+            <span>Active</span>
+            <strong>Market evidence</strong>
+          </div>
         </div>
       </div>
 

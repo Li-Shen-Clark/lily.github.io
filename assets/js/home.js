@@ -9,6 +9,7 @@
   var shell = document.querySelector(".home-shell");
   var clockNode = document.querySelector("[data-home-time]");
   var rotatorNode = document.querySelector("[data-home-rotator]");
+  var journeyNode = document.querySelector("[data-home-journey]");
   var jmpNode = document.querySelector("[data-jmp-map]");
   var revealNodes = Array.prototype.slice.call(document.querySelectorAll("[data-home-reveal]"));
   var counterNodes = Array.prototype.slice.call(document.querySelectorAll("[data-counter]"));
@@ -130,6 +131,89 @@
       }, 2600);
     } else if (words.length > 0) {
       rotatorNode.textContent = words[0];
+    }
+  }
+
+  if (journeyNode) {
+    var journeySteps = Array.prototype.slice.call(journeyNode.querySelectorAll("[data-journey-step]"));
+    var journeyMarkers = Array.prototype.slice.call(journeyNode.querySelectorAll("[data-journey-marker]"));
+    var journeyPanels = Array.prototype.slice.call(journeyNode.querySelectorAll("[data-journey-panel]"));
+    var journeyToggle = journeyNode.querySelector("[data-journey-toggle]");
+    var journeyReplay = journeyNode.querySelector("[data-journey-replay]");
+    var journeyStatus = journeyNode.querySelector("[data-journey-status] strong");
+    var journeyLabels = ["Price evidence", "Counterfactual inputs", "Retail decision engine", "Validation plan"];
+    var journeyIndex = 0;
+    var journeyPaused = reduceMotion;
+    var journeyTimer = null;
+
+    function paintJourney(index) {
+      var maxIndex = Math.max(journeySteps.length - 1, 1);
+      var progress = clamp((index / maxIndex) * 100, 0, 100);
+      var sweep = [-68, -18, 34, 82][index] || -68;
+
+      journeyNode.style.setProperty("--journey-progress", progress.toFixed(2) + "%");
+      journeyNode.style.setProperty("--lab-sweep", sweep + "%");
+
+      journeySteps.forEach(function (step, stepIndex) {
+        step.classList.toggle("is-active", stepIndex === index);
+      });
+
+      journeyMarkers.forEach(function (marker, markerIndex) {
+        marker.classList.toggle("is-active", markerIndex === index);
+      });
+
+      journeyPanels.forEach(function (panel, panelIndex) {
+        panel.classList.toggle("is-active", panelIndex === index);
+      });
+
+      if (journeyStatus) {
+        journeyStatus.textContent = journeyLabels[index] || journeyLabels[0];
+      }
+    }
+
+    function advanceJourney() {
+      if (journeyPaused || journeySteps.length === 0) {
+        return;
+      }
+
+      journeyIndex = (journeyIndex + 1) % journeySteps.length;
+      paintJourney(journeyIndex);
+    }
+
+    function syncJourneyToggle() {
+      if (!journeyToggle) {
+        return;
+      }
+
+      journeyToggle.textContent = journeyPaused ? "Play" : "Pause";
+      journeyToggle.setAttribute("aria-pressed", String(journeyPaused));
+    }
+
+    paintJourney(journeyIndex);
+    syncJourneyToggle();
+
+    if (!reduceMotion && journeySteps.length > 1) {
+      journeyTimer = window.setInterval(advanceJourney, 1800);
+    }
+
+    if (journeyToggle) {
+      journeyToggle.addEventListener("click", function () {
+        journeyPaused = !journeyPaused;
+        syncJourneyToggle();
+      });
+    }
+
+    if (journeyReplay) {
+      journeyReplay.addEventListener("click", function () {
+        journeyIndex = 0;
+        journeyPaused = false;
+        paintJourney(journeyIndex);
+        syncJourneyToggle();
+
+        if (!journeyTimer && !reduceMotion && journeySteps.length > 1) {
+          journeyTimer = window.setInterval(advanceJourney, 1800);
+        }
+      });
     }
   }
 
