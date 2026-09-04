@@ -10,9 +10,22 @@
   var clockNode = document.querySelector("[data-home-time]");
   var rotatorNode = document.querySelector("[data-home-rotator]");
   var journeyNode = document.querySelector("[data-home-journey]");
-  var jmpNode = document.querySelector("[data-jmp-map]");
+  var staleJmpNode = document.querySelector("[data-jmp-map]");
+  var jmpNode = null;
   var revealNodes = Array.prototype.slice.call(document.querySelectorAll("[data-home-reveal]"));
   var counterNodes = Array.prototype.slice.call(document.querySelectorAll("[data-counter]"));
+
+  document.documentElement.setAttribute("data-home-build", "20260904e");
+
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
+
+  if (staleJmpNode && !journeyNode) {
+    staleJmpNode.setAttribute("hidden", "hidden");
+  }
 
   function clamp(value, min, max) {
     return Math.min(max, Math.max(min, value));

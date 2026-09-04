@@ -392,6 +392,10 @@
   transform: translateY(6px);
 }
 
+.home-jmp {
+  display: none !important;
+}
+
 .home-journey {
   display: grid;
   gap: 0.9rem;
