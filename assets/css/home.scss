@@ -752,20 +752,24 @@
 
 .home-journey__steps {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.45rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
 }
 
 .home-journey__step {
   min-width: 0;
-  padding: 0.7rem 0.55rem 0.75rem;
+  padding: 0.75rem 0.7rem 0.8rem;
   border-top: 2px solid rgba(16, 34, 40, 0.09);
+  border-radius: 0 0 0.8rem 0.8rem;
+  background: rgba(255, 255, 255, 0.28);
   transition:
+    background-color 220ms ease,
     border-color 220ms ease,
     transform 220ms ease;
 }
 
 .home-journey__step.is-active {
+  background: rgba(13, 106, 97, 0.06);
   border-color: var(--home-accent);
   transform: translateY(-2px);
 }
@@ -794,6 +798,7 @@
   color: var(--home-ink);
   font-size: 0.88rem;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .home-journey__step span:last-child {
@@ -802,6 +807,7 @@
   font-size: 0.72rem;
   line-height: 1.35;
   overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .home-cockpit {
