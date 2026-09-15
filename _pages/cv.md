@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV — Li Shen, Ph.D., Applied Economist & Pricing Data Scientist"
-excerpt: "Curriculum vitae of Li Shen, Ph.D. Applied economist and pricing data scientist with working papers, pricing decision tools, machine learning competitions, teaching, and references."
+title: "CV — Li Shen, Ph.D., Applied Economist"
+excerpt: "Curriculum vitae of Li Shen, Ph.D. Structural and applied economist with research in pricing decision tools, market intelligence, and spatial economics."
 permalink: /cv/
 author_profile: true
 hide_title: true
@@ -14,9 +14,10 @@ redirect_from:
 
 {% include base_path %}
 
-## Download
+## Downloads
 
-- **[Download Public Resume (PDF)]({{ '/files/Li_Shen_Public_Resume.pdf' | relative_url }})**
+- **[Applied Economist Resume (PDF)]({{ '/files/Li_Shen_Industry_Resume.pdf' | relative_url }})**
+- **[Research and Structural Economics CV (PDF)]({{ '/files/Li_Shen_CV_Economist_2026.pdf' | relative_url }})**
 
 ## Contact
 
@@ -33,7 +34,7 @@ redirect_from:
 
 ## Research Interests
 
-International trade; quantitative spatial economics; market integration; regional development; urban and population geography; industrial policy; China and emerging Asia.
+International trade; quantitative spatial and structural economics; regional adjustment; market integration; urban and population geography; industrial policy; China and emerging Asia.
 
 ## Detail pages
 

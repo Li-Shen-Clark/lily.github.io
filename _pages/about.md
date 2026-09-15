@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Li Shen, Ph.D. — Applied Economist & Pricing Data Scientist"
-excerpt: "Portfolio of Li Shen, Ph.D., an applied economist and pricing data scientist working with retail scanner data, wholesale prices, demand models, and regional trade-cost shocks."
+title: "Li Shen, Ph.D. — Structural & Applied Economist"
+excerpt: "Portfolio of Li Shen, Ph.D., a structural and applied economist working on pricing and demand models, market intelligence, and quantitative spatial economics."
 layout: home
 author_profile: false
 og_image: "og_research.png"
@@ -15,23 +15,25 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <div class="home-copy" data-home-reveal>
-      <h1 class="home-title">Applied Economist & Pricing Data Scientist</h1>
+      <h1 class="home-title">Structural & Applied Economist</h1>
       <p class="home-lead">
-        I turn price, cost, demand, and market-integration data into empirical models, deployed tools, and clear decisions.
-        My work spans 6.6M retail scanner records, 3.99M commodity-price observations, mobility traces, input-output tables,
-        customs micro-data, and geospatial rasters, using causal inference, demand estimation, structural modeling,
-        machine learning, and counterfactual simulation.
+        I turn pricing, market, and spatial data into decision models, tested tools, and clear evidence.
+        My work spans 6.6M retail scanner records, 8.68M historical market records, mobility traces, input-output tables,
+        customs micro-data, and geospatial rasters, using demand estimation, forecasting, structural modeling,
+        causal-inference discipline, and counterfactual simulation.
       </p>
 
       <div class="home-actions">
         <a href="{{ '/pricing-engine/' | relative_url }}" class="home-button home-button--primary">Pricing Engine</a>
+        <a href="https://li-shen-clark.github.io/vegetable-price-intelligence/" class="home-button home-button--ghost">Price Intelligence</a>
         <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Pricing & Data Projects</a>
         <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Public Resume</a>
         <a href="{{ '/research/' | relative_url }}" class="home-button home-button--ghost">Research</a>
       </div>
 
       <div class="home-skill-row" aria-label="Core skills">
-        <span>Price · Demand · Cost Modeling</span>
+        <span>Pricing and Demand Modeling</span>
+        <span>Forecasting and Model Governance</span>
         <span>Causal Inference (DiD, Shift-Share IV)</span>
         <span>Counterfactual Simulation + Optimization</span>
         <span>Machine Learning (Kaggle Silver/Bronze)</span>
@@ -61,9 +63,9 @@ redirect_from:
 
       <div class="home-panel__profile home-panel__profile--center">
         <div>
-          <p class="home-availability">Applied economist and pricing data scientist with a Ph.D. in Economics from Clark University.</p>
-          <p class="home-availability">Open to pricing data science, applied economics, pricing analytics, product and risk analytics, economic consulting, and strategy analytics roles.</p>
-          <p class="home-availability">Live apps: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
+          <p class="home-availability">Ph.D.-trained structural and applied economist from Clark University.</p>
+          <p class="home-availability">Open to applied economics, pricing science, demand forecasting, market intelligence, economic consulting, and strategy analytics roles.</p>
+          <p class="home-availability">Portfolio: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://li-shen-clark.github.io/vegetable-price-intelligence/">Price Intelligence ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
           <p class="home-rotator-label">Rotating between</p>
           <p class="home-rotator" data-home-rotator data-words="price, demand, and margin-sensitive decisions|commodity wholesale price dispersion|trade-cost shocks and local multipliers">
             price, demand, and margin-sensitive decisions
@@ -185,8 +187,8 @@ redirect_from:
           <span>retail scanner rows in pricing engine</span>
         </article>
         <article>
-          <strong>3.99M</strong>
-          <span>commodity-price observations</span>
+          <strong>8.68M</strong>
+          <span>historical market records in price intelligence</span>
         </article>
         <article>
           <strong data-counter="31">31</strong>
@@ -237,6 +239,15 @@ redirect_from:
           <p>
             Built on 6.6M rows of Dominick's scanner data: log-log fixed-effects demand estimation, price and promotion counterfactuals,
             constrained profit optimization under cost and margin inputs, and A/B power calculations, deployed as a live Streamlit app.
+          </p>
+        </article>
+
+        <article class="home-feature-card">
+          <p class="home-feature-card__meta">Market Intelligence - 2026-Present</p>
+          <h3>Vegetable Price Intelligence</h3>
+          <p>
+            Built an auditable historical price system from 8.68M market records: rolling forecasts, a validation-frozen price-risk signal,
+            and explicit fallbacks or no-go decisions when out-of-sample evidence did not support a stronger product claim.
           </p>
         </article>
 
@@ -307,6 +318,15 @@ redirect_from:
             <span class="home-badge">Applied</span>
             <h3>Pricing and Promotion Decision Engine</h3>
             <p>Live demand-estimation and constrained-optimization tool on 6.6M rows of scanner data, deployed as a Streamlit app.</p>
+          </div>
+        </article>
+
+        <article class="home-timeline__item">
+          <p class="home-timeline__date">2026 - Present</p>
+          <div class="home-timeline__body">
+            <span class="home-badge">Applied</span>
+            <h3>Vegetable Price Intelligence</h3>
+            <p>Historical market-data system for rolling forecasts, price-risk signals, and transparent model-governance decisions across 117 cities and 30 vegetables.</p>
           </div>
         </article>
 

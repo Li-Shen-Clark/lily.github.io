@@ -32,6 +32,7 @@ Price, cost, demand, and shock propagation through connected markets and local e
 - Constructs the largest daily-frequency panel of Chinese vegetable wholesale prices to date: 3.99 million city-pair-month observations covering ten commodities across 117 prefecture-level cities (2014--2022), merged with AutoNavi smartphone-based intercity passenger mobility indices.
 - Leverages two institutional features---China's Green Passage highway-toll exemption (which fixes variable freight costs for fresh vegetables) and prohibitive HSR freight tariffs for bulk produce---to study a setting in which differences in HSR connectivity reflect variation in passenger rather than freight costs.
 - Documents that HSR-connected city pairs exhibit 2--5% lower intercity price dispersion; passenger-mobility controls absorb the direct HSR coefficient, and cross-product heterogeneity (larger effects for bulky, low-value commodities) argues against a freight substitution channel, pointing to passenger mobility and trader interaction as the operative mechanism.
+- Related but distinct: [Vegetable Price Intelligence](/applied/) uses a broader historical wholesale-price dataset for rolling forecasts, price-risk flags, and model-governance decisions; it does not present the HSR analysis as a forecasting product.
 
 ### Population Agglomeration and Spatial Reallocation in China
 *Independent regional science project: population agglomeration, spatial exposure, and prefecture-level heterogeneity --- demonstrates geospatial measurement and regional data infrastructure capability.*

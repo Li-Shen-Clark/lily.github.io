@@ -10,9 +10,9 @@ sitemap: true
 
 {% include base_path %}
 
-These projects translate the same research workflow that drives my academic work---**estimate behavioral response, simulate counterfactuals, and evaluate decision rules**---into deployable tools for pricing, market analytics, machine learning, and regional decision support. The common thread is price, cost, demand, and market-integration data; the unit of analysis shifts from products to regions, borrowers, or places.
+These projects translate research workflows into decision tools for pricing, market intelligence, machine learning, and regional measurement. Three independent products anchor the portfolio: a retail pricing engine, a historical price-intelligence system with explicit model-governance decisions, and an interactive population-density atlas.
 
-## Pricing Decision Tools
+## Pricing and Market Intelligence Tools
 
 ### Pricing and Promotion Decision Engine (2025--Present)
 
@@ -27,6 +27,19 @@ An end-to-end demand-estimation and decision-support tool built on 6.6M rows of 
 - **Simulate counterfactuals:** price and promotion counterfactual simulations over the estimated demand system.
 - **Optimize under constraints:** constrained profit optimization under cost, inventory, and margin limits; A/B validation plans with power analysis before any candidate action ships.
 - **Ship:** deployed as an interactive Streamlit application backed by a modular Python codebase, a pytest test suite, reproducible requirements, and auto-deploy from GitHub.
+
+### Vegetable Price Intelligence --- Forecasting, Risk, and Model Governance (2026--Present)
+
+- **Portfolio case study:** [li-shen-clark.github.io/vegetable-price-intelligence](https://li-shen-clark.github.io/vegetable-price-intelligence/)
+- **Code:** [github.com/Li-Shen-Clark/vegetable-price-intelligence](https://github.com/Li-Shen-Clark/vegetable-price-intelligence)
+- **Stack:** Python, pandas, Polars, scikit-learn, statsmodels, pytest, Git/GitHub
+- **Narrative role:** Historical price forecasting, risk flagging, and evidence-based decisions about which features are reliable enough to publish.
+
+Built an economics-informed price-intelligence system from 8.68M historical wholesale-market records across 117 cities and 30 vegetables. The system produces 7.36M auditable city-day facts with versioned mappings, quality flags, and coverage tiers. It is distinct from the HSR market-integration paper: this project focuses on forecasting and model governance rather than estimating how transport connectivity relates to price dispersion.
+
+- **Forecast:** rolling-origin 7/14/28-day forecasts against persistence and seasonal baselines reduced overall WAPE from 18.72% to 17.54% on a sealed 16,217-task final test; 10 weak product-horizon groups route to explicit baseline fallback.
+- **Flag risk:** a validation-frozen 14-day price-spike classifier reached PR-AUC 0.2204 versus 0.0775 for the strongest simple baseline, with 7.18 days of average historical lead time for review.
+- **Withhold weak signals:** stress-tested 2,736 predeclared city lead-lag candidates and withheld the directional network when only 4 of 15 frozen edges improved out of sample.
 
 ## Machine Learning Competitions
 
