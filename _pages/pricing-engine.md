@@ -37,4 +37,4 @@ The workflow — **estimate → simulate → optimize** — mirrors the research
 
 ---
 
-See also: [Pricing & Data Projects](/applied/) | [Research](/research/) | [CV](/cv/)
+See also: [Pricing & Data Projects](/applied/) | [Research](/research/) | [Resume](/cv/)

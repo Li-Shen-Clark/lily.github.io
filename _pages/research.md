@@ -52,4 +52,4 @@ Price, cost, demand, and shock propagation through connected markets and local e
 
 ---
 
-See also: [Pricing & Data Projects](/applied/) | [CV](/cv/)
+See also: [Pricing & Data Projects](/applied/) | [Resume](/cv/)

@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Li Shen, Ph.D. | Structural & Applied Economist"
+title                    : "Li Shen, Ph.D. | Applied Economist"
 title_separator          : "-"
 name                     : &name "Li Shen"
-description              : &description "Ph.D.-trained structural and applied economist working on pricing, demand, market intelligence, and spatial economic modeling."
+description              : &description "Applied economist focused on demand estimation, pricing, and market analysis, with complementary causal-inference and structural counterfactual modeling experience."
 url                      : https://lshen.com.cn/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Li-Shen-Clark/lily.github.io"
@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Li Shen, Ph.D."
   avatar           : "profile-photo.png"
-  bio              : "Structural & Applied Economist | Pricing & Demand Modeling | Causal Inference | Python/SQL"
+  bio              : "Applied Economist | Demand Estimation, Pricing & Market Analysis | Causal-Inference Design | Python/SQL"
   location         : "Worcester, MA, USA"
   employer         : "Ph.D. in Economics, Clark University"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

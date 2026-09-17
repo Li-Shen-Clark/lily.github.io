@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Li Shen, Ph.D. — Structural & Applied Economist"
-excerpt: "Portfolio of Li Shen, Ph.D., a structural and applied economist working on pricing and demand models, market intelligence, and quantitative spatial economics."
+title: "Li Shen, Ph.D. — Applied Economist"
+excerpt: "Portfolio of Li Shen, Ph.D., an applied economist focused on demand estimation, pricing, and market analysis."
 layout: home
 author_profile: false
 og_image: "og_research.png"
@@ -15,30 +15,30 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <div class="home-copy" data-home-reveal>
-      <h1 class="home-title">Structural & Applied Economist</h1>
+      <h1 class="home-title">Applied Economist</h1>
       <p class="home-lead">
-        I turn pricing, market, and spatial data into decision models, tested tools, and clear evidence.
-        My work spans 6.6M retail scanner records, 8.68M historical market records, mobility traces, input-output tables,
-        customs micro-data, and geospatial rasters, using demand estimation, forecasting, structural modeling,
-        causal-inference discipline, and counterfactual simulation.
+        I work with large market datasets to understand how prices, promotions, market structure, and mobility relate to demand and market outcomes,
+        then translate that evidence into forecasts, scenarios, and decision-support tools. My work spans 6.6M retail scanner records,
+        8.68M historical market records, mobility traces, input-output tables, customs micro-data, and geospatial rasters.
       </p>
 
       <div class="home-actions">
         <a href="{{ '/pricing-engine/' | relative_url }}" class="home-button home-button--primary">Pricing Engine</a>
         <a href="https://li-shen-clark.github.io/vegetable-price-intelligence/" class="home-button home-button--ghost">Price Intelligence</a>
         <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Pricing & Data Projects</a>
-        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Public Resume</a>
+        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Resume</a>
         <a href="{{ '/research/' | relative_url }}" class="home-button home-button--ghost">Research</a>
       </div>
 
       <div class="home-skill-row" aria-label="Core skills">
-        <span>Pricing and Demand Modeling</span>
+        <span>Demand Estimation and Elasticity</span>
+        <span>Pricing and Market Analysis</span>
+        <span>Panel Econometrics and Causal-Inference Design</span>
+        <span>Structural and Counterfactual Modeling</span>
         <span>Forecasting and Model Governance</span>
-        <span>Causal Inference (DiD, Shift-Share IV)</span>
-        <span>Counterfactual Simulation + Optimization</span>
+        <span>Experiment Design and Optimization</span>
         <span>Machine Learning (Kaggle Silver/Bronze)</span>
         <span>Python / SQL / Stata / MATLAB</span>
-        <span>MRIO / ICIO / Customs Micro-data</span>
       </div>
     </div>
 
@@ -63,8 +63,8 @@ redirect_from:
 
       <div class="home-panel__profile home-panel__profile--center">
         <div>
-          <p class="home-availability">Ph.D.-trained structural and applied economist from Clark University.</p>
-          <p class="home-availability">Open to applied economics, pricing science, demand forecasting, market intelligence, economic consulting, and strategy analytics roles.</p>
+          <p class="home-availability">Applied economist with a Ph.D. in Economics from Clark University.</p>
+          <p class="home-availability">Interested in Applied Economist roles where demand estimation, market analysis, experimentation, and economic modeling inform pricing and other business decisions.</p>
           <p class="home-availability">Portfolio: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://li-shen-clark.github.io/vegetable-price-intelligence/">Price Intelligence ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
           <p class="home-rotator-label">Rotating between</p>
           <p class="home-rotator" data-home-rotator data-words="price, demand, and margin-sensitive decisions|commodity wholesale price dispersion|trade-cost shocks and local multipliers">
@@ -389,7 +389,7 @@ redirect_from:
         <article class="home-list__item home-profile__item">
           <p class="home-list__meta">Education</p>
           <div class="home-profile__lines">
-            <p class="home-profile__line">Clark University, Ph.D. in Economics (2026)</p>
+            <p class="home-profile__line">Clark University, Ph.D. in Economics (August 2026)</p>
             <p class="home-profile__line">SUNY Buffalo, M.A. in Economics</p>
             <p class="home-profile__line">Valparaiso University, M.S. in International Economics and Finance</p>
             <p class="home-profile__line">Chongqing University, B.Mgmt. in Accounting</p>
@@ -422,9 +422,9 @@ redirect_from:
   <section class="home-card home-card--cta" data-home-reveal>
     <div>
       <p class="home-label">Contact</p>
-      <h2>Interested in pricing analytics, market integration, counterfactual decision systems, or the research-to-decision pipeline behind them?</h2>
+      <h2>Interested in demand estimation, pricing, market analysis, or evidence-driven decision systems?</h2>
       <p>
-        I am happy to discuss pricing analytics, product analytics, risk analytics, economic consulting, policy analysis, and quantitative research roles where rigorous empirical work needs to become clear business or policy decisions.
+        I am happy to discuss Applied Economist roles where rigorous empirical evidence, experimentation, and economic modeling need to become clear business decisions.
         Email is the fastest way to reach me.
       </p>
     </div>

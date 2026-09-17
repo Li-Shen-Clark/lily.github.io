@@ -89,4 +89,4 @@ Interactive geospatial visualization of China's population geography built from 
 
 ---
 
-See also: [Research](/research/) | [CV](/cv/)
+See also: [Research](/research/) | [Resume](/cv/)

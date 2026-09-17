@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV — Li Shen, Ph.D., Applied Economist"
-excerpt: "Curriculum vitae of Li Shen, Ph.D. Structural and applied economist with research in pricing decision tools, market intelligence, and spatial economics."
+title: "Resume — Li Shen, Ph.D., Applied Economist"
+excerpt: "Resume of Li Shen, Ph.D., an applied economist focused on demand estimation, pricing, and market analysis."
 permalink: /cv/
 author_profile: true
 hide_title: true
@@ -14,10 +14,9 @@ redirect_from:
 
 {% include base_path %}
 
-## Downloads
+## Resume
 
-- **[Applied Economist Resume (PDF)]({{ '/files/Li_Shen_Industry_Resume.pdf' | relative_url }})**
-- **[Research and Structural Economics CV (PDF)]({{ '/files/Li_Shen_CV_Economist_2026.pdf' | relative_url }})**
+- **[Applied Economist Resume (PDF)]({{ '/files/Li_Shen_Resume_Applied_Economist_2026.pdf' | relative_url }})**
 
 ## Contact
 
@@ -27,14 +26,14 @@ redirect_from:
 
 ## Education
 
-- **Clark University**, Ph.D. in Economics (2026)
+- **Clark University**, Ph.D. in Economics (August 2026)
 - **The State University of New York at Buffalo**, M.A. in Economics (2019)
 - **Valparaiso University**, M.S. in International Economics and Finance (2018)
 - **Chongqing University**, B.Mgmt. in Accounting (2014)
 
-## Research Interests
+## Applied Economics Focus
 
-International trade; quantitative spatial and structural economics; regional adjustment; market integration; urban and population geography; industrial policy; China and emerging Asia.
+Demand estimation; pricing and market analysis; panel econometrics and causal-inference design; structural counterfactual modeling; forecasting; optimization; market integration; quantitative spatial economics and trade.
 
 ## Detail pages
 
