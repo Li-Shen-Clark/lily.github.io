@@ -23,7 +23,7 @@ redirect_from:
         <a href="{{ '/research/' | relative_url }}" class="home-button home-button--primary">Research</a>
         <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--primary">Applied Projects</a>
         <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Economist CV</a>
-        <a href="{{ '/writing/' | relative_url }}" class="home-button home-button--ghost">Writing</a>
+        <a href="{{ '/blog/' | relative_url }}" class="home-button home-button--ghost">Blog</a>
       </div>
       <div class="home-skill-row" aria-label="Research and applied methods">
         <span>International Trade</span>
@@ -114,7 +114,7 @@ redirect_from:
   </section>
 
   <section class="home-card" data-home-reveal aria-labelledby="home-writing-title">
-    <p class="home-label">Writing</p>
+    <p class="home-label">Blog</p>
     <h2 id="home-writing-title">Trade, cities, and prices</h2>
     {% assign published_writing = site.writing | where: "published", true | where_exp: "article", "article.date <= site.time" | sort: "date" | reverse %}
     {% if published_writing.size > 0 %}
@@ -129,7 +129,7 @@ redirect_from:
     {% else %}
       <p>Essays on economic research, empirical methods, and their applications. No articles have been published yet.</p>
     {% endif %}
-    <a href="{{ '/writing/' | relative_url }}" class="home-inline-link">Visit the writing section →</a>
+    <a href="{{ '/blog/' | relative_url }}" class="home-inline-link">Visit the blog →</a>
   </section>
 
   <section class="home-grid home-grid--split">

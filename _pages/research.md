@@ -58,4 +58,4 @@ With Kensuke Suzuki, Xiaocong Xu, and Junfu Zhang.
 - **Data:** MRIO and ICIO tables, Customs micro-data, wholesale prices, retail scanner panels, passenger mobility, and population rasters.
 - **Tools:** Python, Stata, R, MATLAB, SQL, SAS, GeoPandas, and ArcGIS.
 
-[Applied Projects]({{ '/applied/' | relative_url }}) · [Writing]({{ '/writing/' | relative_url }}) · [Economist CV]({{ '/cv/' | relative_url }})
+[Applied Projects]({{ '/applied/' | relative_url }}) · [Blog]({{ '/blog/' | relative_url }}) · [Economist CV]({{ '/cv/' | relative_url }})

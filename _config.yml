@@ -180,7 +180,7 @@ kramdown:
 collections:
   writing:
     output: true
-    permalink: /writing/:path/
+    permalink: /blog/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -197,7 +197,7 @@ collections:
 
 # Defaults
 defaults:
-  # Writing stays unpublished until a document explicitly sets published: true.
+  # Blog articles stay unpublished until a document explicitly sets published: true.
   - scope:
       path: ""
       type: writing

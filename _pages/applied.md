@@ -61,4 +61,4 @@ These projects apply economic models and empirical methods to pricing, forecasti
 
 **Kaggle bronze medal, 2023.** As a team contributor, I worked on class imbalance, resampling, model ensembles, and threshold selection using TabPFN, XGBoost, and imbalanced-learn.
 
-[Research]({{ '/research/' | relative_url }}) · [Writing]({{ '/writing/' | relative_url }}) · [Economist CV]({{ '/cv/' | relative_url }})
+[Research]({{ '/research/' | relative_url }}) · [Blog]({{ '/blog/' | relative_url }}) · [Economist CV]({{ '/cv/' | relative_url }})
