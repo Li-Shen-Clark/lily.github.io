@@ -1,0 +1,37 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% comment %}Jekyll 3 collection lists can include future documents that have no output page.{% endcomment %}
+{% assign collections = site.collections | where_exp: "collection", "collection.output != false" %}
+{% for collection in collections %}
+  {% for doc in collection.docs %}
+    {% if doc.sitemap != false and doc.published != false %}
+      {% if doc.date == nil or doc.date <= site.time %}
+  <url>
+    <loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+    {% if doc.last_modified_at or doc.date %}<lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </url>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% for item in site.html_pages %}
+  {% if item.sitemap != false and item.url != '/404.html' %}
+  <url>
+    <loc>{{ item.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+    {% if item.last_modified_at %}<lastmod>{{ item.last_modified_at | date_to_xmlschema }}</lastmod>{% endif %}
+  </url>
+  {% endif %}
+{% endfor %}
+{% for file in site.static_files %}
+  {% if file.sitemap != false and file.name != '404.html' %}
+    {% if file.extname == '.html' or file.extname == '.htm' or file.extname == '.xhtml' or file.extname == '.pdf' %}
+  <url><loc>{{ file.path | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc></url>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</urlset>

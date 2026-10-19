@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Li Shen, Ph.D. — Applied Economist"
-excerpt: "Portfolio of Li Shen, Ph.D., an applied economist focused on demand estimation, pricing, and market analysis."
+title: "Li Shen, Ph.D. — Economist"
+excerpt: "Li Shen studies trade, regional economies, and prices, combining economic research with applied work in demand estimation, pricing, and forecasting."
 layout: home
 author_profile: false
 og_image: "og_research.png"
@@ -15,426 +15,138 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <div class="home-copy" data-home-reveal>
-      <h1 class="home-title">Applied Economist</h1>
-      <p class="home-lead">
-        I work with large market datasets to understand how prices, promotions, market structure, and mobility relate to demand and market outcomes,
-        then translate that evidence into forecasts, scenarios, and decision-support tools. My work spans 6.6M retail scanner records,
-        8.68M historical market records, mobility traces, input-output tables, customs micro-data, and geospatial rasters.
-      </p>
-
+      <p class="home-kicker">Li Shen · Ph.D. in Economics</p>
+      <h1 class="home-title">Economist</h1>
+      <p class="home-lead">I study how trade, market connections, and prices shape regional economies and business decisions. My work combines quantitative spatial models, econometrics, and large datasets to examine economic mechanisms and evaluate alternative scenarios.</p>
+      <p class="home-lead">Alongside my research on trade and market integration, I develop tools for demand estimation, pricing, and forecasting.</p>
       <div class="home-actions">
-        <a href="{{ '/pricing-engine/' | relative_url }}" class="home-button home-button--primary">Pricing Engine</a>
-        <a href="https://li-shen-clark.github.io/vegetable-price-intelligence/" class="home-button home-button--ghost">Price Intelligence</a>
-        <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Pricing & Data Projects</a>
-        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Resume</a>
-        <a href="{{ '/research/' | relative_url }}" class="home-button home-button--ghost">Research</a>
+        <a href="{{ '/research/' | relative_url }}" class="home-button home-button--primary">Research</a>
+        <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--primary">Applied Projects</a>
+        <a href="{{ '/cv/' | relative_url }}" class="home-button home-button--ghost">Economist CV</a>
+        <a href="{{ '/writing/' | relative_url }}" class="home-button home-button--ghost">Writing</a>
       </div>
-
-      <div class="home-skill-row" aria-label="Core skills">
-        <span>Demand Estimation and Elasticity</span>
-        <span>Pricing and Market Analysis</span>
-        <span>Panel Econometrics and Causal-Inference Design</span>
-        <span>Structural and Counterfactual Modeling</span>
-        <span>Forecasting and Model Governance</span>
-        <span>Experiment Design and Optimization</span>
-        <span>Machine Learning (Kaggle Silver/Bronze)</span>
-        <span>Python / SQL / Stata / MATLAB</span>
+      <div class="home-skill-row" aria-label="Research and applied methods">
+        <span>International Trade</span>
+        <span>Quantitative Spatial Economics</span>
+        <span>Market Integration</span>
+        <span>Demand Estimation and Pricing</span>
+        <span>Econometrics and Forecasting</span>
       </div>
     </div>
-
-    <aside class="home-card home-card--signal" data-home-reveal>
+    <aside class="home-card home-card--signal" data-home-reveal aria-label="About Li Shen">
       <div class="home-signal__top">
         <img src="{{ '/images/profile-photo.png' | relative_url }}" alt="Li Shen" class="home-avatar home-avatar--inline">
-        <div class="home-actions home-actions--compact">
-          <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">✉ Email</a>
-        </div>
-      </div>
-
-      <div class="home-panel__top home-panel__top--center">
-        <div>
-          <p class="home-label">Live Profile</p>
-          <h2 class="home-panel__title">Current focus</h2>
-        </div>
         <div class="home-clock">
-          <span class="home-clock__time" data-home-time>--:--</span>
-          <span class="home-clock__meta">Worcester, MA</span>
+          <span class="home-clock__time" data-home-time>Eastern Time</span>
+          <span class="home-clock__meta">Worcester, Massachusetts</span>
         </div>
       </div>
-
-      <div class="home-panel__profile home-panel__profile--center">
-        <div>
-          <p class="home-availability">Applied economist with a Ph.D. in Economics from Clark University.</p>
-          <p class="home-availability">Interested in Applied Economist roles where demand estimation, market analysis, experimentation, and economic modeling inform pricing and other business decisions.</p>
-          <p class="home-availability">Portfolio: <a href="https://pricing-promotion-decision-engine.streamlit.app/">Pricing Engine ↗</a> · <a href="https://li-shen-clark.github.io/vegetable-price-intelligence/">Price Intelligence ↗</a> · <a href="https://pop-density-spatial.streamlit.app/">Population Atlas ↗</a></p>
-          <p class="home-rotator-label">Rotating between</p>
-          <p class="home-rotator" data-home-rotator data-words="price, demand, and margin-sensitive decisions|commodity wholesale price dispersion|trade-cost shocks and local multipliers">
-            price, demand, and margin-sensitive decisions
-          </p>
-        </div>
+      <div>
+        <p class="home-label">Background</p>
+        <h2>Research and application</h2>
+        <p>I received my Ph.D. in Economics from Clark University in August 2026. I am interested in research and economist roles in universities, policy institutions, and industry.</p>
       </div>
-
-      <div class="home-journey home-journey--lab" data-home-journey aria-label="Pricing decision lab from market evidence to validation">
-        <div class="home-journey__header">
-          <div>
-            <p class="home-label">Research-to-decision trajectory</p>
-            <h3>From market prices to pricing decisions</h3>
-            <p class="home-journey__dek">Price evidence, counterfactuals, constraints, and test design in one empirical workflow.</p>
-          </div>
-          <div class="home-journey__controls" aria-label="Timeline controls">
-            <button type="button" class="home-journey__control" data-journey-toggle aria-pressed="false">Pause</button>
-            <button type="button" class="home-journey__control" data-journey-replay>Replay</button>
-          </div>
-        </div>
-
-        <div class="home-lab" aria-label="Pricing decision lab visual">
-          <div class="home-lab__main">
-            <article class="home-lab__screen home-lab__screen--evidence is-active" data-journey-panel>
-              <span class="home-lab__eyebrow">Price evidence</span>
-              <div class="home-lab__stat">
-                <strong>3.99M</strong>
-                <span>city-pair-month observations built from daily wholesale vegetable prices and mobility indices</span>
-              </div>
-              <div class="home-lab__fields" aria-label="Price evidence inputs">
-                <span>daily prices</span>
-                <span>city pairs</span>
-                <span>mobility</span>
-                <span>HSR access</span>
-                <span>fixed effects</span>
-                <span>price dispersion</span>
-              </div>
-            </article>
-
-            <div class="home-lab__side">
-              <article class="home-lab__screen" data-journey-panel>
-                <span class="home-lab__eyebrow">Counterfactual inputs</span>
-                <div class="home-lab__source-grid">
-                  <span>MRIO</span><strong>province-sector links</strong>
-                  <span>ICIO</span><strong>global exposure</strong>
-                  <span>Customs</span><strong>micro-data shocks</strong>
-                </div>
-                <p class="home-lab__note">Trade-cost counterfactuals through domestic production networks.</p>
-              </article>
-
-              <article class="home-lab__screen" data-journey-panel>
-                <span class="home-lab__eyebrow">Retail decision engine</span>
-                <ul class="home-lab__checks">
-                  <li>6.6M scanner rows</li>
-                  <li>Demand + promo response</li>
-                  <li>Cost / margin constraints</li>
-                </ul>
-              </article>
-
-              <article class="home-lab__screen" data-journey-panel>
-                <span class="home-lab__eyebrow">Validation plan</span>
-                <div class="home-lab__test">
-                  <strong>A/B</strong>
-                  <span>Power</span>
-                  <span>Risk</span>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="home-journey__track" aria-hidden="true">
-          <span class="home-journey__rail"></span>
-          <span class="home-journey__progress" data-journey-progress></span>
-          <span class="home-journey__marker is-active" data-journey-marker style="--step-x: 0%;">1</span>
-          <span class="home-journey__marker" data-journey-marker style="--step-x: 33.333%;">2</span>
-          <span class="home-journey__marker" data-journey-marker style="--step-x: 66.666%;">3</span>
-          <span class="home-journey__marker" data-journey-marker style="--step-x: 100%;">4</span>
-        </div>
-
-        <div class="home-journey__steps">
-          <article class="home-journey__step is-active" data-journey-step>
-            <span class="home-journey__year">2022</span>
-            <strong>Market evidence</strong>
-            <span>3.99M commodity-price observations</span>
-          </article>
-          <article class="home-journey__step" data-journey-step>
-            <span class="home-journey__year">2024</span>
-            <strong>Counterfactuals</strong>
-            <span>Trade-cost and market-integration scenarios</span>
-          </article>
-          <article class="home-journey__step" data-journey-step>
-            <span class="home-journey__year">2025</span>
-            <strong>Retail pricing</strong>
-            <span>6.6M scanner rows for demand estimation</span>
-          </article>
-          <article class="home-journey__step" data-journey-step>
-            <span class="home-journey__year">Now</span>
-            <strong>Test and validate</strong>
-            <span>A/B power analysis and risk guardrails</span>
-          </article>
-        </div>
-
-        <div class="home-cockpit">
-          <div>
-            <span class="home-cockpit__label">Decision pipeline</span>
-            <strong>Evidence -> Model -> Decision -> Validation</strong>
-            <span>Demand, cost, inventory, and margin constraints</span>
-          </div>
-          <div class="home-cockpit__status" data-journey-status>
-            <span>Active</span>
-            <strong>Market evidence</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="home-metrics">
-        <article>
-          <strong>6.6M</strong>
-          <span>retail scanner rows in pricing engine</span>
-        </article>
-        <article>
-          <strong>8.68M</strong>
-          <span>historical market records in price intelligence</span>
-        </article>
-        <article>
-          <strong data-counter="31">31</strong>
-          <span>provinces in spatial model</span>
-        </article>
-        <article>
-          <strong>0.30–1.02</strong>
-          <span>model-implied multiplier range across provinces</span>
-        </article>
-      </div>
-    </aside>
-  </section>
-
-  <section class="home-pillars">
-    <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Retail pricing decisions</p>
-      <h2>How should price and promotion changes be tested before rollout?</h2>
-      <p>I estimate demand response, simulate price and promotion scenarios, and optimize profit under cost, inventory, and margin constraints. <strong>Core asset: Pricing and Promotion Decision Engine.</strong></p>
-    </article>
-
-    <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Commodity prices and market integration</p>
-      <h2>How do mobility and connectivity shocks change spatial price dispersion?</h2>
-      <p>I use high-frequency wholesale prices and smartphone-based mobility data to study how passenger connectivity, rather than freight costs, shapes spatial price dispersion across Chinese cities. <strong>Core asset: HSR and Market Integration paper.</strong></p>
-    </article>
-
-    <article class="home-card home-card--pillar" data-home-reveal>
-      <p class="home-label">Trade-cost shocks and local multipliers</p>
-      <h2>Why do similar external shocks produce different regional outcomes?</h2>
-      <p>I build quantitative spatial models to measure how trade-cost shocks propagate through domestic production networks, local absorption, and non-tradable demand. <strong>Core asset: Trade shock paper.</strong></p>
-    </article>
-  </section>
-
-  <section class="home-grid home-grid--major">
-    <div class="home-card" data-home-reveal>
-      <div class="home-section__header">
-        <div>
-          <p class="home-label">Research and Tools</p>
-          <h2>Selected work</h2>
-        </div>
-        <a href="{{ '/research/' | relative_url }}" class="home-inline-link">Full research list</a>
-      </div>
-
-      <div class="home-research-grid">
-        <article class="home-feature-card">
-          <p class="home-feature-card__meta">Decision Tool - 2025-Present</p>
-          <h3>Pricing and Promotion Decision Engine</h3>
-          <p>
-            Built on 6.6M rows of Dominick's scanner data: log-log fixed-effects demand estimation, price and promotion counterfactuals,
-            constrained profit optimization under cost and margin inputs, and A/B power calculations, deployed as a live Streamlit app.
-          </p>
-        </article>
-
-        <article class="home-feature-card">
-          <p class="home-feature-card__meta">Market Intelligence - 2026-Present</p>
-          <h3>Vegetable Price Intelligence</h3>
-          <p>
-            Built an auditable historical price system from 8.68M market records: rolling forecasts, a validation-frozen price-risk signal,
-            and explicit fallbacks or no-go decisions when out-of-sample evidence did not support a stronger product claim.
-          </p>
-        </article>
-
-        <article class="home-feature-card">
-          <p class="home-feature-card__meta">Working Paper - 2022-2025</p>
-          <h3>High-Speed Rail and Market Integration</h3>
-          <p>
-            Constructed a panel with 3.99 million city-pair-month observations from daily wholesale prices and mobility indices.
-            Estimates indicate HSR connectivity lowers intercity price dispersion by about 2% on average and up to 5% in short-haul markets.
-          </p>
-        </article>
-
-        <article class="home-feature-card">
-          <p class="home-feature-card__meta">Working Paper - 2024-Present</p>
-          <h3>The Local Multiplier Effects of Trade</h3>
-          <p>
-            Built a multi-sector quantitative spatial model for 31 Chinese provinces calibrated to MRIO, ICIO, and Customs micro-data.
-            Identifies the own-trade share as the structural organizing statistic for multiplier heterogeneity, with inland inward-oriented
-            economies amplifying external shocks through non-tradable service demand.
-          </p>
-        </article>
-      </div>
-    </div>
-
-    <aside class="home-card" data-home-reveal>
-      <div class="home-section__header">
-        <div>
-          <p class="home-label">Methods and Data</p>
-          <h2>Empirical toolkit</h2>
-        </div>
-      </div>
-
       <div class="home-list">
         <article class="home-list__item">
-          <p class="home-list__meta">Pricing and demand evidence</p>
-          <h3>Retail scanner panels and wholesale price data</h3>
-          <p>Demand estimation, promotion counterfactuals, and margin-sensitive pricing simulations on scanner data, plus panel gravity regressions on 3.99M city-pair-month observations of daily Chinese wholesale prices.</p>
+          <h3>Economic research</h3>
+          <p>Trade shocks, local multipliers, production networks, and spatial price differences.</p>
         </article>
-
         <article class="home-list__item">
-          <p class="home-list__meta">Structural quantification</p>
-          <h3>Trade-cost shocks and local multipliers</h3>
-          <p>Counterfactual simulations with calibrated trade costs, productivity, and input-output coefficients to study how shocks move through regional production networks.</p>
-        </article>
-
-        <article class="home-list__item">
-          <p class="home-list__meta">Programming stack</p>
-          <h3>Python, SQL, Stata, MATLAB, R, SAS</h3>
-          <p>Data engineering, econometric workflows, and reproducible research communication.</p>
+          <h3>Applied work</h3>
+          <p>Demand models, pricing scenarios, price forecasting, and geospatial analysis.</p>
         </article>
       </div>
+      <div class="home-actions">
+        <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">Email</a>
+        <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
+      </div>
     </aside>
+  </section>
+
+  <section class="home-grid home-grid--split" aria-label="Selected research and applied projects">
+    <div class="home-card" data-home-reveal>
+      <div class="home-section__header">
+        <div><p class="home-label">Research papers</p><h2>Trade and connected markets</h2></div>
+      </div>
+      <div class="home-list">
+        <article class="home-list__item">
+          <p class="home-list__meta">Job market paper · Joint research</p>
+          <h3><a href="{{ '/research/#local-multipliers' | relative_url }}">The Local Multiplier Effects of Trade</a></h3>
+          <p>Why do similar export shocks have different local effects? A quantitative spatial model connects regional production networks, service demand, and labor mobility.</p>
+          <p>With Kensuke Suzuki, Xiaocong Xu, and Junfu Zhang.</p>
+        </article>
+        <article class="home-list__item">
+          <p class="home-list__meta">Working paper</p>
+          <h3><a href="{{ '/research/#market-integration' | relative_url }}">High-Speed Rail and Market Integration</a></h3>
+          <p>Research on the relationship between passenger connectivity and wholesale vegetable price dispersion across Chinese cities.</p>
+        </article>
+        <article class="home-list__item">
+          <p class="home-list__meta">Preprint</p>
+          <h3><a href="{{ '/research/#population-agglomeration' | relative_url }}">Population Agglomeration and Spatial Reallocation</a></h3>
+          <p>Geospatial evidence on how population concentration and settlement patterns changed across China.</p>
+        </article>
+      </div>
+      <a href="{{ '/research/' | relative_url }}" class="home-inline-link">Explore research and methods →</a>
+    </div>
+    <div class="home-card" data-home-reveal>
+      <div class="home-section__header">
+        <div><p class="home-label">Applied projects</p><h2>Prices, demand, and data</h2></div>
+      </div>
+      <div class="home-list">
+        <article class="home-list__item">
+          <p class="home-list__meta">Interactive tool</p>
+          <h3><a href="{{ '/applied/#pricing-engine' | relative_url }}">Pricing and Promotion Decision Engine</a></h3>
+          <p>Demand estimation, pricing simulations, constrained optimization, and experimental validation plans using retail scanner data.</p>
+        </article>
+        <article class="home-list__item">
+          <p class="home-list__meta">Forecasting case study</p>
+          <h3><a href="{{ '/applied/#price-intelligence' | relative_url }}">Vegetable Price Intelligence</a></h3>
+          <p>Historical price forecasts, risk signals, and comparisons with simple baselines, including fallback decisions when a model performs poorly.</p>
+        </article>
+        <article class="home-list__item">
+          <p class="home-list__meta">Interactive atlas</p>
+          <h3><a href="{{ '/applied/#population-atlas' | relative_url }}">China Population Density Atlas</a></h3>
+          <p>A map-based companion to the population research, built from annual geospatial data.</p>
+        </article>
+      </div>
+      <a href="{{ '/applied/' | relative_url }}" class="home-inline-link">Explore projects, code, and demonstrations →</a>
+    </div>
+  </section>
+
+  <section class="home-card" data-home-reveal aria-labelledby="home-writing-title">
+    <p class="home-label">Writing</p>
+    <h2 id="home-writing-title">Trade, cities, and prices</h2>
+    {% assign published_writing = site.writing | where: "published", true | where_exp: "article", "article.date <= site.time" | sort: "date" | reverse %}
+    {% if published_writing.size > 0 %}
+      <div class="home-list">
+      {% for article in published_writing limit:3 %}
+        <article class="home-list__item">
+          <p class="home-list__meta">{{ article.date | date: "%B %-d, %Y" }}</p>
+          <h3><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>
+        </article>
+      {% endfor %}
+      </div>
+    {% else %}
+      <p>Essays on economic research, empirical methods, and their applications. No articles have been published yet.</p>
+    {% endif %}
+    <a href="{{ '/writing/' | relative_url }}" class="home-inline-link">Visit the writing section →</a>
   </section>
 
   <section class="home-grid home-grid--split">
     <div class="home-card" data-home-reveal>
-      <div class="home-section__header">
-        <div>
-          <p class="home-label">Experience</p>
-          <h2>Research and professional background</h2>
-        </div>
-      </div>
-
-      <div class="home-timeline">
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2025 - Present</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Applied</span>
-            <h3>Pricing and Promotion Decision Engine</h3>
-            <p>Live demand-estimation and constrained-optimization tool on 6.6M rows of scanner data, deployed as a Streamlit app.</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2026 - Present</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Applied</span>
-            <h3>Vegetable Price Intelligence</h3>
-            <p>Historical market-data system for rolling forecasts, price-risk signals, and transparent model-governance decisions across 117 cities and 30 vegetables.</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2024 - Present</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Research</span>
-            <h3>The Local Multiplier Effects of Trade</h3>
-            <p>Quantitative spatial modeling and shift-share IV estimation on Chinese trade and production data; model-implied provincial GDP multipliers from 0.30 to 1.02.</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2022 - 2025</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Research</span>
-            <h3>High-Speed Rail and Market Integration</h3>
-            <p>Linked large-scale price and mobility data to evaluate transport infrastructure effects on market integration.</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2023 - 2024</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">ML</span>
-            <h3>Kaggle Competitions (Silver and Bronze)</h3>
-            <p>Silver Medal on Home Credit Credit Risk Model Stability (LightGBM/CatBoost, Polars ETL); Bronze on ICR Identifying Age-Related Conditions (XGBoost/TabPFN ensemble).</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2022 - Present</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Applied</span>
-            <h3>China Population Density Atlas</h3>
-            <p>Processed 19 years of 5 km population rasters into a harmonized panel; deployed an interactive Streamlit map in 2025.</p>
-          </div>
-        </article>
-
-        <article class="home-timeline__item">
-          <p class="home-timeline__date">2020 - 2025</p>
-          <div class="home-timeline__body">
-            <span class="home-badge">Teaching</span>
-            <h3>Teaching Assistant, Clark University</h3>
-            <p>Supported graduate finance and undergraduate economics courses and coached students in quantitative methods.</p>
-          </div>
-        </article>
-      </div>
+      <p class="home-label">Methods</p>
+      <h2>Models and empirical evidence</h2>
+      <p>Quantitative spatial equilibrium, input-output analysis, panel econometrics, demand estimation, forecasting, and geospatial measurement.</p>
+      <p>I work with retail scanner panels, wholesale prices, mobility records, trade and production data, and population rasters using Python, SQL, Stata, MATLAB, and R.</p>
     </div>
-
     <div class="home-card" data-home-reveal>
-      <div class="home-section__header">
-        <div>
-          <p class="home-label">Education and Honors</p>
-          <h2>Academic profile</h2>
-        </div>
-      </div>
-
-      <div class="home-list home-list--profile">
-        <article class="home-list__item home-profile__item">
-          <p class="home-list__meta">Education</p>
-          <div class="home-profile__lines">
-            <p class="home-profile__line">Clark University, Ph.D. in Economics (August 2026)</p>
-            <p class="home-profile__line">SUNY Buffalo, M.A. in Economics</p>
-            <p class="home-profile__line">Valparaiso University, M.S. in International Economics and Finance</p>
-            <p class="home-profile__line">Chongqing University, B.Mgmt. in Accounting</p>
-          </div>
-        </article>
-
-        <article class="home-list__item home-profile__item">
-          <p class="home-list__meta">Awards</p>
-          <div class="home-profile__lines">
-            <p class="home-profile__line">Sheftel Award for Research Excellence, Clark University (2025, two-time recipient)</p>
-            <p class="home-profile__line">Veendorp Best Field Paper Award (2022)</p>
-            <p class="home-profile__line">Doctoral Fellowship, Clark University (2019-2026)</p>
-            <p class="home-profile__line">Distinguished Student Award (Graduate School), Valparaiso University Alumni Association (2018)</p>
-            <p class="home-profile__line">Kaggle Silver Medal (2024) and Bronze Medal (2023)</p>
-          </div>
-        </article>
-
-        <article class="home-list__item home-profile__item">
-          <p class="home-list__meta">Selected presentations</p>
-          <div class="home-profile__lines">
-            <p class="home-profile__line">Southern Economic Association (2025)</p>
-            <p class="home-profile__line">Midwest Economic Conference (2025)</p>
-            <p class="home-profile__line">Clark Ph.D. seminars (2022-2025)</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-card home-card--cta" data-home-reveal>
-    <div>
-      <p class="home-label">Contact</p>
-      <h2>Interested in demand estimation, pricing, market analysis, or evidence-driven decision systems?</h2>
-      <p>
-        I am happy to discuss Applied Economist roles where rigorous empirical evidence, experimentation, and economic modeling need to become clear business decisions.
-        Email is the fastest way to reach me.
-      </p>
-    </div>
-
-    <div class="home-actions home-actions--compact">
-      <a href="mailto:lshen@clarku.edu" class="home-button home-button--primary">Email Me</a>
-      <a href="https://www.linkedin.com/in/lily-shen/" class="home-button home-button--ghost">LinkedIn</a>
-      <a href="https://github.com/Li-Shen-Clark" class="home-button home-button--ghost">GitHub</a>
-      <a href="{{ '/applied/' | relative_url }}" class="home-button home-button--ghost">Pricing & Data Projects</a>
-      <a href="{{ '/teaching/' | relative_url }}" class="home-button home-button--ghost">Teaching</a>
+      <p class="home-label">Teaching and background</p>
+      <h2>Explaining economic ideas</h2>
+      <p>At Clark University, I supported graduate finance and undergraduate economics courses as a teaching assistant from 2020 to 2025.</p>
+      <p>My work has received the Sheftel Award for Research Excellence and the Veendorp Best Field Paper Award. I also contributed to teams awarded silver and bronze medals in Kaggle competitions.</p>
+      <a href="{{ '/teaching/' | relative_url }}" class="home-inline-link">Teaching experience →</a>
+      <span aria-hidden="true"> · </span>
+      <a href="{{ '/cv/' | relative_url }}" class="home-inline-link">Economist CV →</a>
     </div>
   </section>
 </div>

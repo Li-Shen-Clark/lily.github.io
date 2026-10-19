@@ -12,13 +12,15 @@ sitemap: true
 
 # Pricing and Promotion Decision Engine
 
-**A live, end-to-end pricing decision tool** built on 6.6 million rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks). Translates academic counterfactual-simulation workflow into product-level pricing decisions.
+**A live, end-to-end pricing decision tool** built on 6.6 million rows of Dominick's Finer Foods scanner data (cleaned panel of 4.65 million rows, covering 486 UPCs, 93 stores, and 366 weeks). Translates academic counterfactual-simulation workflow into product-level pricing decisions.
 
 ## 🚀 [Launch the Live App](https://pricing-promotion-decision-engine.streamlit.app/)
 
 ## 💻 [View Source Code on GitHub](https://github.com/Li-Shen-Clark/pricing-promotion-decision-engine)
 
 ---
+
+The observational demand estimates support conditional pricing scenarios. A/B tests are planned validation steps; simulated profit changes are not measured business outcomes.
 
 ## What it does
 
@@ -33,8 +35,8 @@ Python (pandas, statsmodels, scikit-learn), Streamlit, pytest, Git/GitHub.
 
 ## Narrative
 
-The workflow — **estimate → simulate → optimize** — mirrors the research-to-decision pipeline I use in my regional trade and market-integration research. The unit of analysis shifts from regions to firms, but the underlying logic is identical.
+The workflow — **estimate → simulate → optimize** — mirrors the research-to-decision pipeline I use in my regional trade and market-integration research. The unit of analysis shifts from regions to firms, while assumptions and validation requirements depend on the setting.
 
 ---
 
-See also: [Pricing & Data Projects](/applied/) | [Research](/research/) | [Resume](/cv/)
+See also: [Applied Projects](/applied/) | [Research](/research/) | [Economist CV](/cv/)

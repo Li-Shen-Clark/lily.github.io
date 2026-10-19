@@ -1,16 +1,13 @@
-# main links
 main:
   - title: "Home"
     url: /
-
   - title: "Research"
     url: /research/
-
-  - title: "Pricing & Data Projects"
+  - title: "Applied Projects"
     url: /applied/
-
+  - title: "Writing"
+    url: /writing/
   - title: "Teaching"
     url: /teaching/
-
-  - title: "Resume"
+  - title: "CV"
     url: /cv/

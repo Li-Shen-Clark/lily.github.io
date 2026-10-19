@@ -1,92 +1,64 @@
 ---
 layout: archive
-title: "Pricing & Data Projects"
+title: "Applied Projects"
 permalink: /applied/
 author_profile: true
-hide_title: true
+excerpt: "Applications of economic modeling and data analysis to pricing, forecasting, and spatial measurement."
 robots: index,follow
 sitemap: true
 ---
 
-{% include base_path %}
+These projects apply economic models and empirical methods to pricing, forecasting, and spatial analysis. Each project links to a demonstration, case study, or source code so that readers can examine the work in more detail.
 
-These projects translate research workflows into decision tools for pricing, market intelligence, machine learning, and regional measurement. Three independent products anchor the portfolio: a retail pricing engine, a historical price-intelligence system with explicit model-governance decisions, and an interactive population-density atlas.
+<a id="pricing-engine"></a>
+## Pricing and Promotion Decision Engine
 
-## Pricing and Market Intelligence Tools
+**Problem.** How can demand estimates inform pricing decisions when costs, inventory, and margins constrain the available choices?
 
-### Pricing and Promotion Decision Engine (2025--Present)
+**Work.** The application uses 6.6 million raw Dominick's Finer Foods scanner records, yielding a cleaned panel of 4.65 million rows covering 486 UPCs, 93 stores, and 366 weeks. It combines a log-log fixed-effects demand model with price and promotion simulations, constrained profit optimization, and experimental validation plans.
 
-- **Live app:** [pricing-promotion-decision-engine.streamlit.app](https://pricing-promotion-decision-engine.streamlit.app/)
-- **Code:** [github.com/Li-Shen-Clark/pricing-promotion-decision-engine](https://github.com/Li-Shen-Clark/pricing-promotion-decision-engine)
-- **Stack:** Python (pandas, statsmodels, scikit-learn), Streamlit, pytest, Git/GitHub
-- **Narrative role:** Industry translation of the estimate--simulate--optimize workflow used in my regional trade and market-integration research.
+**What it demonstrates.** Demand estimation, simulation, optimization, power analysis, and deployment of an interactive research application. The observational estimates support conditional scenarios; they are not experimental estimates of causal price response. A/B tests are proposed validation steps, and simulated gains are not measured business outcomes.
 
-An end-to-end demand-estimation and decision-support tool built on 6.6M rows of Dominick's Finer Foods scanner data (cleaned panel of 486 UPCs, 93 stores, 366 weeks). The workflow is the same one I use in my academic work, applied to product-level pricing instead of regional GDP.
+**Tools.** Python, pandas, statsmodels, scikit-learn, Streamlit, and pytest.
 
-- **Estimate behavioral response:** log-log fixed-effects demand model with Duan smearing retransformation to reduce log-to-level retransformation bias.
-- **Simulate counterfactuals:** price and promotion counterfactual simulations over the estimated demand system.
-- **Optimize under constraints:** constrained profit optimization under cost, inventory, and margin limits; A/B validation plans with power analysis before any candidate action ships.
-- **Ship:** deployed as an interactive Streamlit application backed by a modular Python codebase, a pytest test suite, reproducible requirements, and auto-deploy from GitHub.
+[Project details]({{ '/pricing-engine/' | relative_url }}) · [Open the application](https://pricing-promotion-decision-engine.streamlit.app/) · [Source code](https://github.com/Li-Shen-Clark/pricing-promotion-decision-engine)
 
-### Vegetable Price Intelligence --- Forecasting, Risk, and Model Governance (2026--Present)
+<a id="price-intelligence"></a>
+## Vegetable Price Intelligence
 
-- **Portfolio case study:** [li-shen-clark.github.io/vegetable-price-intelligence](https://li-shen-clark.github.io/vegetable-price-intelligence/)
-- **Code:** [github.com/Li-Shen-Clark/vegetable-price-intelligence](https://github.com/Li-Shen-Clark/vegetable-price-intelligence)
-- **Stack:** Python, pandas, Polars, scikit-learn, statsmodels, pytest, Git/GitHub
-- **Narrative role:** Historical price forecasting, risk flagging, and evidence-based decisions about which features are reliable enough to publish.
+**Problem.** How can historical wholesale prices support forecasting and risk assessment when coverage and predictive performance vary across markets?
 
-Built an economics-informed price-intelligence system from 8.68M historical wholesale-market records across 117 cities and 30 vegetables. The system produces 7.36M auditable city-day facts with versioned mappings, quality flags, and coverage tiers. It is distinct from the HSR market-integration paper: this project focuses on forecasting and model governance rather than estimating how transport connectivity relates to price dispersion.
+**Work.** The system organizes 8.68 million historical records across 117 cities and 30 vegetables into 7.36 million city-day observations with documented mappings and quality flags. It evaluates 7-, 14-, and 28-day forecasts against persistence and seasonal baselines, and studies 14-day price-spike signals.
 
-- **Forecast:** rolling-origin 7/14/28-day forecasts against persistence and seasonal baselines reduced overall WAPE from 18.72% to 17.54% on a sealed 16,217-task final test; 10 weak product-horizon groups route to explicit baseline fallback.
-- **Flag risk:** a validation-frozen 14-day price-spike classifier reached PR-AUC 0.2204 versus 0.0775 for the strongest simple baseline, with 7.18 days of average historical lead time for review.
-- **Withhold weak signals:** stress-tested 2,736 predeclared city lead-lag candidates and withheld the directional network when only 4 of 15 frozen edges improved out of sample.
+**Evaluation.** On the project's held-out historical test, overall weighted absolute percentage error falls from 18.72% to 17.54%. Ten weak product-horizon groups use a baseline fallback. A proposed directional network was withheld after only 4 of 15 selected edges improved out of sample. These are historical evaluation results, not live forecasts or guaranteed future performance.
 
-## Machine Learning Competitions
+**What it demonstrates.** Data validation, evaluation across time, baseline comparisons, and decisions about when a model is reliable enough to use.
 
-### Kaggle Silver Medal --- Home Credit Credit Risk Model Stability (Feb--May 2024)
+**Tools.** Python, pandas, Polars, scikit-learn, statsmodels, and pytest.
 
-- **Stack:** Python, Polars, scikit-learn, LightGBM, CatBoost
-- **Role:** Statistical modeling and co-developer
+[Case study](https://li-shen-clark.github.io/vegetable-price-intelligence/) · [Source code](https://github.com/Li-Shen-Clark/vegetable-price-intelligence) · [Related market-integration research]({{ '/research/#market-integration' | relative_url }})
 
-Competition focused on model stability over time (Gini Stability metric) rather than raw AUC --- a realistic production concern for credit-risk models that retrain on drifting data.
+<a id="population-atlas"></a>
+## China Population Density Atlas
 
-- Co-developed a Polars lazy-execution ETL pipeline for multi-depth relational data, enabling fast iteration on feature definitions across parent-child tables.
-- Designed aggregation features (max, last, mean) capturing borrower behavioral trends; these were adopted across the team codebase.
-- Optimized directly for the headline Gini Stability metric to prevent performance drift over time; implemented correlation-based feature grouping (Pearson > 0.8) for multicollinearity control and type-downcasting memory optimization (over 50% reduction).
+**Problem.** How can changes in population concentration be compared across places and years?
 
-### Kaggle Bronze Medal --- ICR Identifying Age-Related Conditions (May--Aug 2023)
+**Work.** Annual WorldPop rasters for 2002–2020 are harmonized at approximately 5 km resolution. The interactive atlas presents density, agglomeration, and urban-corridor measures at multiple geographic scales.
 
-- **Stack:** Python, TabPFN, XGBoost, imbalanced-learn
-- **Role:** ML researcher and co-developer
+**What it demonstrates.** Geospatial data processing, consistent measurement, and interactive communication of descriptive research.
 
-Competition on a small, severely class-imbalanced tabular dataset with auxiliary metadata (Greek) hinting at latent subgroup structure.
+**Tools.** Python, GeoPandas, rasterio, NumPy, and Streamlit.
 
-- Designed a stratified resampling strategy using the Greek metadata (RandomOverSampler on Alpha-defined latent subgroups) to preserve population structure under severe class imbalance.
-- Co-developed a voting ensemble combining parametric (XGBoost) and non-parametric (TabPFN) models under a custom Balanced Log Loss metric.
-- Calibrated decision thresholds to prioritize recall in a severely imbalanced classification setting.
+[Open the atlas](https://pop-density-spatial.streamlit.app/) · [Companion research]({{ '/research/#population-agglomeration' | relative_url }})
 
-## Geospatial Measurement Infrastructure
+## Machine learning competitions
 
-### China Population Density Atlas (2022--Present)
+### Home Credit — Credit Risk Model Stability
 
-- **Live app:** [pop-density-spatial.streamlit.app](https://pop-density-spatial.streamlit.app/)
-- **Stack:** Python (GeoPandas, rasterio, NumPy), Streamlit
-- **Companion paper:** [Population Agglomeration and Spatial Reallocation in China](/research/) (SSRN preprint)
-- **Narrative role:** Supporting capability --- demonstrates geospatial data construction, visual analytics, and regional measurement infrastructure that underpin my regional-economics research.
+**Kaggle silver medal, 2024.** As a team contributor, I co-developed data processing with Polars, designed aggregation features, and worked on time stability, feature grouping, and memory efficiency using LightGBM and CatBoost.
 
-Interactive geospatial visualization of China's population geography built from 19 years of 5 km-resolution population-density rasters (2002--2020) harmonized into an annual panel.
+### ICR — Identifying Age-Related Conditions
 
-- Processed WorldPop rasters covering the full territory of China into grid-cell and province-level summaries.
-- Surfaced documented patterns from the underlying research: rising spatial Gini, expansion of dense urban corridors, and a 17 km southeastward shift in the population-weighted centroid.
-- Deployed in 2025 for map-based exploration of density, agglomeration, and urban-corridor metrics at multiple spatial scales.
+**Kaggle bronze medal, 2023.** As a team contributor, I worked on class imbalance, resampling, model ensembles, and threshold selection using TabPFN, XGBoost, and imbalanced-learn.
 
-## Toolkit
-
-- **Programming:** Python (pandas, NumPy, scikit-learn, statsmodels, GeoPandas, Polars), SQL, R, MATLAB; Git/GitHub, pytest.
-- **Machine learning:** Gradient boosting (XGBoost, LightGBM, CatBoost), cross-validation, feature engineering, model stacking, regularization.
-- **Deployment:** Streamlit (multiple live apps), reproducible requirements, auto-deploy from GitHub.
-- **Data at scale:** Retail scanner panels, multi-million-row price panels, high-frequency commodity price data, geospatial rasters, multi-regional input-output tables.
-
----
-
-See also: [Research](/research/) | [Resume](/cv/)
+[Research]({{ '/research/' | relative_url }}) · [Writing]({{ '/writing/' | relative_url }}) · [Economist CV]({{ '/cv/' | relative_url }})

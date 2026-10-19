@@ -7,17 +7,17 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Li Shen, Ph.D. | Applied Economist"
+title                    : "Li Shen, Ph.D. | Economist"
 title_separator          : "-"
 name                     : &name "Li Shen"
-description              : &description "Applied economist focused on demand estimation, pricing, and market analysis, with complementary causal-inference and structural counterfactual modeling experience."
-url                      : https://lshen.com.cn/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Economist studying trade, regional economies, and prices, with applied work in demand estimation, pricing, and forecasting."
+url                      : https://lshen.com.cn # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Li-Shen-Clark/lily.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Li Shen, Ph.D."
   avatar           : "profile-photo.png"
-  bio              : "Applied Economist | Demand Estimation, Pricing & Market Analysis | Causal-Inference Design | Python/SQL"
+  bio              : "Economist | Trade, Regional Economics & Prices | Research and Applied Analysis"
   location         : "Worcester, MA, USA"
   employer         : "Ph.D. in Economics, Clark University"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -125,6 +125,7 @@ include:
   - _pages
   - files
 exclude:
+  - _posts
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -177,6 +178,9 @@ kramdown:
 
 # Collections
 collections:
+  writing:
+    output: true
+    permalink: /writing/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -193,6 +197,20 @@ collections:
 
 # Defaults
 defaults:
+  # Writing stays unpublished until a document explicitly sets published: true.
+  - scope:
+      path: ""
+      type: writing
+    values:
+      layout: single
+      author_profile: true
+      published: false
+      read_time: true
+      comments: false
+      share: true
+      related: false
+      robots: index,follow
+      sitemap: true
   # _posts
   - scope:
       path: ""

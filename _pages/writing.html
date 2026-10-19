@@ -1,0 +1,29 @@
+---
+layout: archive
+title: "Writing"
+permalink: /writing/
+author_profile: true
+excerpt: "Essays on trade, regional economies, prices, and empirical research."
+robots: index,follow
+sitemap: true
+---
+
+<p>Essays on trade, regional economies, prices, and empirical research, connecting economic ideas with evidence and applications.</p>
+
+{% assign articles = site.writing | where: "published", true | where_exp: "article", "article.date <= site.time" | sort: "date" | reverse %}
+{% if articles.size > 0 %}
+  {% for article in articles %}
+    <article class="writing-entry">
+      <h2><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h2>
+      <p><time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: "%B %-d, %Y" }}</time>{% if article.topic %} · {{ article.topic | escape }}{% endif %}</p>
+      {% if article.excerpt %}<div>{{ article.excerpt | markdownify }}</div>{% endif %}
+    </article>
+  {% endfor %}
+{% else %}
+  <div class="notice">
+    <h2>No articles published yet</h2>
+    <p>Published essays will appear here. You can explore my current research and applied projects below.</p>
+  </div>
+{% endif %}
+
+<p><a href="{{ '/research/' | relative_url }}">Research</a> · <a href="{{ '/applied/' | relative_url }}">Applied Projects</a> · <a href="{{ '/cv/' | relative_url }}">Economist CV</a></p>

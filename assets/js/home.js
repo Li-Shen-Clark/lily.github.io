@@ -15,7 +15,7 @@
   var revealNodes = Array.prototype.slice.call(document.querySelectorAll("[data-home-reveal]"));
   var counterNodes = Array.prototype.slice.call(document.querySelectorAll("[data-counter]"));
 
-  document.documentElement.setAttribute("data-home-build", "20260904e");
+  document.documentElement.setAttribute("data-home-build", "20261019a");
 
   window.addEventListener("pageshow", function (event) {
     if (event.persisted) {
